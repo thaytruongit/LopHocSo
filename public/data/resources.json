@@ -1,0 +1,330 @@
+{
+  "badges": [
+    {
+      "id": "b-1",
+      "code": "EXCELLENT",
+      "name": "Huy hiệu Xuất Sắc",
+      "category": "Học tập",
+      "description": "Đạt kết quả cao và xuất sắc (điểm 9 - 10) trong bài kiểm tra Tin học",
+      "icon": "Trophy",
+      "color": "from-amber-400 to-yellow-500",
+      "xpBonus": 100
+    },
+    {
+      "id": "b-2",
+      "code": "HARD_WORK",
+      "name": "Học Sinh Chăm Chỉ",
+      "category": "Thi đua",
+      "description": "Hoàn thành các nhiệm vụ và phiếu học tập liên tục đúng hạn",
+      "icon": "Flame",
+      "color": "from-orange-500 to-red-500",
+      "xpBonus": 70
+    },
+    {
+      "id": "b-3",
+      "code": "CREATIVE",
+      "name": "Nhà Sáng Tạo",
+      "category": "Năng lực",
+      "description": "Có sản phẩm bài tập, bài thuyết trình hoặc cách giải thuật toán sáng tạo",
+      "icon": "Lightbulb",
+      "color": "from-emerald-400 to-teal-600",
+      "xpBonus": 80
+    },
+    {
+      "id": "b-4",
+      "code": "TEAM_PLAYER",
+      "name": "Đồng Đội Tích Cực",
+      "category": "Tập thể",
+      "description": "Tích cực tham gia và hỗ trợ bạn bè trong hoạt động nhóm phòng máy",
+      "icon": "Users",
+      "color": "from-blue-500 to-indigo-600",
+      "xpBonus": 60
+    }
+  ],
+  "practiceFiles": [
+    {
+      "id": "pf-1",
+      "title": "Tiết 6: Địa chỉ tương đối và tuyệt đối trong Excel",
+      "grade": 8,
+      "fileName": "Bai_Tap_Thuc_Hanh_Tiet_6_Dia_Chi_Tuong_Doi_Tuyet_Doi.xlsx",
+      "fileSize": "12.9 KB",
+      "fileUrl": "/practice-files/Bai_Tap_Thuc_Hanh_Tiet_6_Dia_Chi_Tuong_Doi_Tuyet_Doi.xlsx",
+      "description": "Bài tập phân biệt ô tương đối (A1), ô tuyệt đối ($A$1), hỗn hợp và ứng dụng tính bảng lương, bảng tính chiết khấu tự động.",
+      "topics": [
+        "Địa chỉ tương đối",
+        "Địa chỉ tuyệt đối",
+        "Sao chép công thức",
+        "Tin học 8"
+      ],
+      "badge": "Khối 8 - Thực hành chính thức"
+    },
+    {
+      "id": "pf-2",
+      "title": "Bài tập tổng hợp: Các hàm điều kiện IF, SUMIF, COUNTIF",
+      "grade": 7,
+      "fileName": "BTTH_Ham_IF_SUMIF_COUNTIF.xlsx",
+      "fileSize": "7.2 KB",
+      "fileUrl": "/practice-files/BTTH_Ham_IF_SUMIF_COUNTIF.xlsx",
+      "description": "Thực hành tính bảng điểm học sinh, xét kết quả Đạt/Chưa đạt, xếp loại học lực với IF lồng nhau và thống kê bằng COUNTIF, SUMIF.",
+      "topics": [
+        "Hàm IF",
+        "Hàm COUNTIF",
+        "Hàm SUMIF",
+        "Thống kê điểm số"
+      ],
+      "badge": "Khối 7 & 8 - Nâng cao"
+    },
+    {
+      "id": "pf-3",
+      "title": "Bảng tính thực hành lớp 8A1 - 8A4 (Tiết 6)",
+      "grade": 8,
+      "fileName": "BTTH_Tiet_6_8a14.xlsx",
+      "fileSize": "17.5 KB",
+      "fileUrl": "/practice-files/BTTH_Tiet_6_8a14.xlsx",
+      "description": "Tệp mẫu phân chia theo nhóm máy thực hành tại phòng máy Tin học trường THCS Mão Điền.",
+      "topics": [
+        "Phòng máy số 1",
+        "Phòng máy số 2",
+        "Bài tập nhóm",
+        "Tin học 8"
+      ],
+      "badge": "Khối 8 - Dữ liệu thực"
+    },
+    {
+      "id": "pf-4",
+      "title": "Bản sao chuẩn bị: Địa chỉ tương đối & tuyệt đối",
+      "grade": 8,
+      "fileName": "BTTH_Tiet_6_Dia_Chi_Tuong_Doi_Tuyet_Doi.xlsx",
+      "fileSize": "12.9 KB",
+      "fileUrl": "/practice-files/BTTH_Tiet_6_Dia_Chi_Tuong_Doi_Tuyet_Doi.xlsx",
+      "description": "Tệp bài tập cơ bản dành cho học sinh củng cố kỹ năng cố định hàng/cột khi nhân hệ số điểm.",
+      "topics": [
+        "Cố định hàng",
+        "Cố định cột",
+        "Tin học 8"
+      ],
+      "badge": "Khối 8 - Cơ bản"
+    }
+  ],
+  "videos": [
+    {
+      "id": "vid-1",
+      "title": "Mặt trái của mạng xã hội & Kỹ năng an toàn thông tin số",
+      "grade": 7,
+      "videoUrl": "/videos/mattrai_mangXH.mp4",
+      "duration": "04:12",
+      "topic": "Chủ đề D: Đạo đức, pháp luật và văn hóa ứng xử mạng",
+      "description": "Đoạn phim hoạt hình sinh động phân tích các cạm bẫy lừa đảo mạng, bảo vệ thông tin cá nhân và quy tắc ứng xử thông minh.",
+      "keyTakeaways": [
+        "Không chia sẻ mật khẩu và mã OTP cho bất kỳ ai",
+        "Cảnh giác với các đường link lạ và quà tặng ảo",
+        "Giao tiếp lịch sự, không lan truyền tin giả"
+      ],
+      "author": "Thầy Đỗ Mạnh Trường IT"
+    },
+    {
+      "id": "vid-2",
+      "title": "Năng lực số (NLS) - Kỹ năng thiết yếu cho học sinh THCS",
+      "grade": 6,
+      "videoUrl": "/videos/NLS.mp4",
+      "duration": "05:30",
+      "topic": "Chương trình Năng lực số học đường (CV 3456)",
+      "description": "Giới thiệu 5 miền năng lực số cốt lõi và lộ trình rèn luyện kỹ năng số cho học sinh trường THCS Mão Điền.",
+      "keyTakeaways": [
+        "Khai thác và quản lý dữ liệu số hiệu quả",
+        "Giao tiếp và cộng tác số an toàn",
+        "Sáng tạo nội dung số và lập trình",
+        "Giải quyết vấn đề bằng công nghệ"
+      ],
+      "author": "Thầy Đỗ Mạnh Trường IT"
+    },
+    {
+      "id": "vid-3",
+      "title": "Thực hành 1: Làm quen phần mềm bảng tính Excel & Quy tắc phòng máy",
+      "grade": 7,
+      "videoUrl": "/videos/TH1.mp4",
+      "duration": "03:45",
+      "topic": "Chủ đề E: Ứng dụng Tin học (Bảng tính điện tử)",
+      "description": "Hướng dẫn các thao tác mở tệp, nhập dữ liệu, cố định địa chỉ ô và lưu bài làm đúng cấu trúc thư mục.",
+      "keyTakeaways": [
+        "Quy tắc an toàn thiết bị phòng máy tính",
+        "Nhận biết giao diện Workbook, Sheet, Hàng, Cột và Ô tính",
+        "Cách nhập công thức bắt đầu bằng dấu bằng (=)"
+      ],
+      "author": "Thầy Đỗ Mạnh Trường IT"
+    },
+    {
+      "id": "vid-4",
+      "title": "Tích hợp Trí tuệ Nhân tạo (AI) trong học tập và rèn luyện",
+      "grade": 8,
+      "videoUrl": "/videos/TichHopAI.mp4",
+      "duration": "06:15",
+      "topic": "Khung năng lực Trí tuệ nhân tạo (QĐ 3439/QĐ-BGDĐT)",
+      "description": "Hiểu về nguyên lý hoạt động của AI, cách đặt câu hỏi (Prompt) thông minh và sử dụng AI có trách nhiệm.",
+      "keyTakeaways": [
+        "AI là công cụ hỗ trợ tư duy, không thay thế việc học",
+        "Kiểm chứng thông tin do AI cung cấp trước khi sử dụng",
+        "Ứng dụng AI sáng tạo trong giải toán và lập trình"
+      ],
+      "author": "Thầy Đỗ Mạnh Trường IT"
+    }
+  ],
+  "homeworkAssignments": [
+    {
+      "id": "hw-701",
+      "grade": 7,
+      "title": "BTVN Tuần 8: Bài tập ứng dụng hàm IF & Vẽ sơ đồ phân loại học lực",
+      "week": 8,
+      "deadline": "21:00 Chủ Nhật tuần này",
+      "description": "Học sinh củng cố kiến thức về hàm IF lồng nhau và các hàm thống kê bằng cách hoàn thành bài tập ra vở ghi hoặc trên máy tính.",
+      "requirements": [
+        "Cách 1 (Khuyên dùng): Làm bài ra vở bài tập Tin học, dùng điện thoại chụp ảnh thật rõ nét rồi tải ảnh lên nộp.",
+        "Cách 2: Làm trực tiếp vào tệp Excel (.xlsx) hoặc soạn thảo tệp Word (.docx) rồi tải tệp lên nộp.",
+        "Yêu cầu ghi rõ: Họ tên, Lớp, Ngày làm bài trên đầu trang vở/tệp bài làm."
+      ],
+      "acceptedTypes": [
+        "image",
+        "xlsx",
+        "docx"
+      ],
+      "xpReward": 50
+    },
+    {
+      "id": "hw-801",
+      "grade": 8,
+      "title": "BTVN Tuần 8: Viết thuật toán tìm số lớn nhất & Thực hành cố định địa chỉ ô",
+      "week": 8,
+      "deadline": "21:00 Chủ Nhật tuần này",
+      "description": "Vẽ sơ đồ khối thuật toán tìm giá trị lớn nhất của 3 số a, b, c ra vở và hoàn thành bài tập tính toán trên Excel.",
+      "requirements": [
+        "Chụp ảnh sơ đồ khối vẽ trong vở ghi (yêu cầu hình vẽ rõ ràng, có mũi tên luồng điều khiển).",
+        "Hoặc gửi tệp Excel/Word lời giải bài tập thuật toán.",
+        "Điểm cộng (+20 XP) cho bài làm có chữ viết sạch đẹp, phân tích đúng các trường hợp so sánh."
+      ],
+      "acceptedTypes": [
+        "image",
+        "xlsx",
+        "docx"
+      ],
+      "xpReward": 60
+    },
+    {
+      "id": "hw-601",
+      "grade": 6,
+      "title": "BTVN Tuần 8: Vẽ sơ đồ tư duy chủ đề Các thiết bị vào - ra của máy tính",
+      "week": 8,
+      "deadline": "21:00 Chủ Nhật tuần này",
+      "description": "Sử dụng giấy A4 hoặc trang vở bài tập, vẽ sơ đồ tư duy phân loại các thiết bị vào (bàn phím, chuột, micro...) và thiết bị ra (màn hình, máy in, loa...).",
+      "requirements": [
+        "Vẽ bằng bút màu, có nhánh chính và nhánh phụ sinh động.",
+        "Chụp ảnh toàn bộ trang vẽ thật nét, đủ ánh sáng và tải ảnh lên mục Nộp bài về nhà."
+      ],
+      "acceptedTypes": [
+        "image",
+        "docx"
+      ],
+      "xpReward": 50
+    },
+    {
+      "id": "hw-901",
+      "grade": 9,
+      "title": "BTVN Tuần 8: Phân tích tình huống bản quyền phần mềm & An toàn mật khẩu",
+      "week": 8,
+      "deadline": "21:00 Chủ Nhật tuần này",
+      "description": "Trả lời 3 câu hỏi tình huống về việc sử dụng phần mềm không có bản quyền và cách thiết lập mật khẩu mạnh trên không gian số.",
+      "requirements": [
+        "Làm ra vở bài tập và chụp ảnh nộp, hoặc gõ văn bản Word (.docx) nộp lên hệ thống.",
+        "Nêu ít nhất 3 biện pháp phòng tránh mã độc tống tiền (Ransomware)."
+      ],
+      "acceptedTypes": [
+        "image",
+        "docx",
+        "xlsx"
+      ],
+      "xpReward": 50
+    }
+  ],
+  "homeworkSubmissions": [
+    {
+      "id": "hwsub-01",
+      "tenantId": "mao-dien",
+      "homeworkId": "hw-701",
+      "homeworkTitle": "BTVN Tuần 8: Bài tập ứng dụng hàm IF & Vẽ sơ đồ",
+      "period": 8,
+      "grade": 7,
+      "studentCode": "7A1101",
+      "studentName": "Lê Thị Bảo An",
+      "classId": "c-7a11",
+      "className": "Lớp 7A11",
+      "fileType": "image",
+      "fileName": "7A11_LeThiBaoAn_VoBaiTap_Tuan8.jpg",
+      "fileSize": "1.8 MB",
+      "note": "Thưa Thầy, em đã vẽ sơ đồ phân nhánh hàm IF và làm xong 2 bài tập trong vở ạ.",
+      "submittedAt": "Hôm qua lúc 20:15",
+      "score": 10,
+      "tt22Rank": "Đạt",
+      "feedback": "Vở ghi chép rất sạch đẹp, sơ đồ tư duy màu sắc trực quan, công thức hàm IF chính xác 100%!",
+      "status": "graded"
+    },
+    {
+      "id": "hwsub-02",
+      "tenantId": "mao-dien",
+      "homeworkId": "hw-701",
+      "homeworkTitle": "BTVN Tuần 8: Bài tập ứng dụng hàm IF & Vẽ sơ đồ",
+      "period": 8,
+      "grade": 7,
+      "studentCode": "7A1102",
+      "studentName": "Lê Danh Tuấn Anh",
+      "classId": "c-7a11",
+      "className": "Lớp 7A11",
+      "fileType": "xlsx",
+      "fileName": "7A11_LeDanhTuanAnh_BaiTapHamIF.xlsx",
+      "fileSize": "18.4 KB",
+      "note": "Em nộp tệp Excel bài tập về nhà Thầy giao ạ.",
+      "submittedAt": "Hôm nay lúc 08:30",
+      "score": 9,
+      "tt22Rank": "Đạt",
+      "feedback": "Bài làm tốt, chú ý định dạng căn giữa cho cột Xếp loại.",
+      "status": "graded"
+    },
+    {
+      "id": "hwsub-03",
+      "tenantId": "mao-dien",
+      "homeworkId": "hw-801",
+      "homeworkTitle": "BTVN Tuần 8: Viết thuật toán tìm số lớn nhất",
+      "period": 8,
+      "grade": 8,
+      "studentCode": "8A1101",
+      "studentName": "Lê Hoài An",
+      "classId": "c-8a11",
+      "className": "Lớp 8A11",
+      "fileType": "image",
+      "fileName": "8A11_LeHoaiAn_SoDoKhoi_ThuatToan.jpg",
+      "fileSize": "2.4 MB",
+      "note": "Em chụp bằng điện thoại, Thầy xem giúp em sơ đồ rẽ nhánh đã chuẩn chưa ạ.",
+      "submittedAt": "Hôm nay lúc 10:15",
+      "status": "submitted"
+    },
+    {
+      "id": "hwsub-04",
+      "tenantId": "mao-dien",
+      "homeworkId": "hw-601",
+      "homeworkTitle": "BTVN Tuần 8: Vẽ sơ đồ tư duy thiết bị vào - ra",
+      "period": 8,
+      "grade": 6,
+      "studentCode": "6A1001",
+      "studentName": "Lê Thị Hoài An",
+      "classId": "c-6a10",
+      "className": "Lớp 6A10",
+      "fileType": "image",
+      "fileName": "6A10_LeThiHoaiAn_SoDoTuDuy.png",
+      "fileSize": "1.2 MB",
+      "note": "Em tô màu các thiết bị vào màu xanh lá, thiết bị ra màu cam ạ.",
+      "submittedAt": "Hôm qua lúc 19:40",
+      "score": 9.5,
+      "tt22Rank": "Đạt",
+      "feedback": "Sáng tạo và rất dễ nhớ! Thầy khen ngợi tinh thần học tập của em.",
+      "status": "graded"
+    }
+  ]
+}

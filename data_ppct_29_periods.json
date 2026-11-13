@@ -1,0 +1,822 @@
+{
+  "6": [
+    {
+      "period": 1,
+      "topic": "Chủ đề 1. Máy tính và cộng đồng",
+      "title": "Bài 1: Thông tin và dữ liệu",
+      "content": "Mục 1. Thông tin và dữ liệu; Mục 2. Tầm quan trọng của thông tin",
+      "is_practice": false
+    },
+    {
+      "period": 2,
+      "topic": "Chủ đề 1. Máy tính và cộng đồng",
+      "title": "Bài 2: Xử lí thông tin (mục 1)",
+      "content": "Mục 1. Xử lí thông tin",
+      "is_practice": false
+    },
+    {
+      "period": 3,
+      "topic": "Chủ đề 1. Máy tính và cộng đồng",
+      "title": "Bài 2: Xử lí thông tin (mục 2)",
+      "content": "Mục 2. Xử lí thông tin trong máy tính",
+      "is_practice": false
+    },
+    {
+      "period": 4,
+      "topic": "Chủ đề 1. Máy tính và cộng đồng",
+      "title": "Bài 3: Thông tin trong máy tính (mục 1)",
+      "content": "Mục 1. Biểu diễn thông tin trong máy tính",
+      "is_practice": false
+    },
+    {
+      "period": 5,
+      "topic": "Chủ đề 1. Máy tính và cộng đồng",
+      "title": "Bài 3: Thông tin trong máy tính (mục 2)",
+      "content": "Mục 2. Đơn vị đo thông tin",
+      "is_practice": false
+    },
+    {
+      "period": 6,
+      "topic": "Chủ đề 2. Mạng máy tính và Internet",
+      "title": "Bài 4: Mạng máy tính",
+      "content": "Mục 1. Mạng máy tính là gì?",
+      "is_practice": false
+    },
+    {
+      "period": 7,
+      "topic": "Chủ đề 2. Mạng máy tính và Internet",
+      "title": "Bài 4: Mạng máy tính",
+      "content": "Mục 2. Các thành phần của mạng máy tính",
+      "is_practice": false
+    },
+    {
+      "period": 8,
+      "topic": "Chủ đề 2. Mạng máy tính và Internet",
+      "title": "Bài 5: Internet (mục 1, 2)",
+      "content": "Mục 1. Internet; Mục 2. Đặc điểm của Internet",
+      "is_practice": false
+    },
+    {
+      "period": 9,
+      "topic": "Chủ đề 2. Mạng máy tính và Internet",
+      "title": "Bài 5: Internet (mục 3)",
+      "content": "Mục 3. Một số lợi ích của Internet",
+      "is_practice": false
+    },
+    {
+      "period": 10,
+      "topic": "Chủ đề 3. Tổ chức lưu trữ, tìm kiếm và trao đổi thông tin",
+      "title": "Bài 6: Mạng thông tin toàn cầu (mục 1, 2)",
+      "content": "Mục 1. Tổ chức thông tin trên Internet; Mục 2. Trình duyệt",
+      "is_practice": false
+    },
+    {
+      "period": 11,
+      "topic": "Chủ đề 3. Tổ chức lưu trữ, tìm kiếm và trao đổi thông tin",
+      "title": "Bài 6: Mạng thông tin toàn cầu (mục 3 - thực hành)",
+      "content": "Mục 3. Thực hành: Khai thác thông tin trên trang web",
+      "is_practice": true
+    },
+    {
+      "period": 12,
+      "topic": "Chủ đề 3. Tổ chức lưu trữ, tìm kiếm và trao đổi thông tin",
+      "title": "Bài 7: Tìm kiếm thông tin trên Internet (mục 1)",
+      "content": "Mục 1. Tìm kiếm thông tin trên Internet",
+      "is_practice": false
+    },
+    {
+      "period": 13,
+      "topic": "Chủ đề 3. Tổ chức lưu trữ, tìm kiếm và trao đổi thông tin",
+      "title": "Bài 7: Tìm kiếm thông tin trên Internet (mục 2 - thực hành)",
+      "content": "Mục 2. Thực hành: Tìm kiếm và khai thác thông tin trên Internet",
+      "is_practice": true
+    },
+    {
+      "period": 14,
+      "topic": "Chủ đề 3. Tổ chức lưu trữ, tìm kiếm và trao đổi thông tin",
+      "title": "Bài 8: Thư điện tử",
+      "content": "Mục 1. Thư điện tử. Tài khoản thư điện tử; Mục 2. Ưu và nhược điểm của dịch vụ thư điện tử",
+      "is_practice": false
+    },
+    {
+      "period": 15,
+      "topic": "Chủ đề 3. Tổ chức lưu trữ, tìm kiếm và trao đổi thông tin",
+      "title": "Bài 8: Thư điện tử",
+      "content": "Mục 3. Thực hành: Đăng kí tài khoản, đăng nhập, đăng xuất và gửi thư điện tử",
+      "is_practice": true
+    },
+    {
+      "period": 16,
+      "topic": "Chủ đề 4. Đạo đức, pháp luật và văn hoá trong môi trường số",
+      "title": "Bài 9: An toàn thông tin trên Internet",
+      "content": "Mục 1. Tác hại và nguy cơ khi sử dụng Internet; Mục 2. Quy tắc an toàn",
+      "is_practice": false
+    },
+    {
+      "period": 17,
+      "topic": "Chủ đề 4. Đạo đức, pháp luật và văn hoá trong môi trường số",
+      "title": "Bài 9: An toàn thông tin trên Internet",
+      "content": "Mục 3. An toàn thông tin (bảo vệ thông tin cá nhân và chia sẻ an toàn)",
+      "is_practice": false
+    },
+    {
+      "period": 18,
+      "topic": "Chủ đề 5. Ứng dụng tin học",
+      "title": "Bài 10: Sơ đồ tư duy",
+      "content": "Mục 1. Sơ đồ tư duy; Mục 2. Cách tạo sơ đồ tư duy",
+      "is_practice": false
+    },
+    {
+      "period": 19,
+      "topic": "Chủ đề 5. Ứng dụng tin học",
+      "title": "Bài 10: Sơ đồ tư duy",
+      "content": "Mục 3. Thực hành: Tạo sơ đồ tư duy bằng phần mềm máy tính",
+      "is_practice": true
+    },
+    {
+      "period": 20,
+      "topic": "Chủ đề 5. Ứng dụng tin học",
+      "title": "Bài 11: Định dạng văn bản",
+      "content": "Mục 1. Phần mềm soạn thảo; Mục 2. Định dạng văn bản và in; Mục 3. Thực hành",
+      "is_practice": true
+    },
+    {
+      "period": 21,
+      "topic": "Chủ đề 5. Ứng dụng tin học",
+      "title": "Bài 12: Trình bày thông tin ở dạng bảng",
+      "content": "Mục 1. Trình bày dạng bảng; Mục 2. Tạo bảng; Mục 3. Định dạng bảng",
+      "is_practice": false
+    },
+    {
+      "period": 22,
+      "topic": "Chủ đề 5. Ứng dụng tin học",
+      "title": "Bài 12: Trình bày thông tin ở dạng bảng",
+      "content": "Mục 4. Thực hành: Tạo bảng",
+      "is_practice": true
+    },
+    {
+      "period": 23,
+      "topic": "Chủ đề 5. Ứng dụng tin học",
+      "title": "Bài 13: Thực hành: Tìm kiếm và thay thế",
+      "content": "Mục 1. Tại sao phải tìm kiếm và thay thế?; Mục 2. Sử dụng công cụ",
+      "is_practice": true
+    },
+    {
+      "period": 24,
+      "topic": "Chủ đề 5. Ứng dụng tin học",
+      "title": "Bài 14: Thực hành tổng hợp: Hoàn thiện sổ lưu niệm",
+      "content": "Mục Nhiệm vụ và Hướng dẫn (Tập hợp, bổ sung nội dung, tạo trang bìa, hoàn thiện)",
+      "is_practice": true
+    },
+    {
+      "period": 25,
+      "topic": "Chủ đề 6. Giải quyết vấn đề với sự trợ giúp của máy tính",
+      "title": "Bài 15: Thuật toán",
+      "content": "Mục 1. Thuật toán; Mục 2. Mô tả thuật toán",
+      "is_practice": false
+    },
+    {
+      "period": 26,
+      "topic": "Chủ đề 6. Giải quyết vấn đề với sự trợ giúp của máy tính",
+      "title": "Bài 16: Các cấu trúc điều khiển",
+      "content": "Mục 1. Cấu trúc tuần tự, cấu trúc rẽ nhánh",
+      "is_practice": false
+    },
+    {
+      "period": 27,
+      "topic": "Chủ đề 6. Giải quyết vấn đề với sự trợ giúp của máy tính",
+      "title": "Bài 16: Các cấu trúc điều khiển",
+      "content": "Mục 2. Cấu trúc lặp",
+      "is_practice": false
+    },
+    {
+      "period": 28,
+      "topic": "Chủ đề 6. Giải quyết vấn đề với sự trợ giúp của máy tính",
+      "title": "Bài 17: Chương trình máy tính",
+      "content": "Mục 1. Chương trình máy tính",
+      "is_practice": false
+    },
+    {
+      "period": 29,
+      "topic": "Chủ đề 6. Giải quyết vấn đề với sự trợ giúp của máy tính",
+      "title": "Bài 17: Chương trình máy tính",
+      "content": "Mục 2. Thực hành: Tạo chương trình máy tính",
+      "is_practice": true
+    }
+  ],
+  "7": [
+    {
+      "period": 1,
+      "topic": "Chủ đề 1. Máy tính và cộng đồng",
+      "title": "Bài 1. Thiết bị vào ra (mục 1)",
+      "content": "1. Thiết bị vào – ra",
+      "is_practice": false
+    },
+    {
+      "period": 2,
+      "topic": "Chủ đề 1. Máy tính và cộng đồng",
+      "title": "Bài 1. Thiết bị vào ra (mục 2)",
+      "content": "2. An toàn thiết bị",
+      "is_practice": false
+    },
+    {
+      "period": 3,
+      "topic": "Chủ đề 1. Máy tính và cộng đồng",
+      "title": "Bài 2. Phần mềm máy tính (mục 1)",
+      "content": "1. Hệ điều hành",
+      "is_practice": false
+    },
+    {
+      "period": 4,
+      "topic": "Chủ đề 1. Máy tính và cộng đồng",
+      "title": "Bài 2. Phần mềm máy tính (mục 2)",
+      "content": "2. Phần mềm ứng dụng",
+      "is_practice": false
+    },
+    {
+      "period": 5,
+      "topic": "Chủ đề 1. Máy tính và cộng đồng",
+      "title": "Bài 3. Quản lý dữ liệu trong máy tính (mục 1, 2)",
+      "content": "1. Tên tệp và thư mục; 2. Các biện pháp bảo vệ dữ liệu",
+      "is_practice": false
+    },
+    {
+      "period": 6,
+      "topic": "Chủ đề 1. Máy tính và cộng đồng",
+      "title": "Bài 3. Quản lý dữ liệu trong máy tính (mục 3 – Thực hành)",
+      "content": "3. Thực hành: Quản lý dữ liệu trong máy tính",
+      "is_practice": true
+    },
+    {
+      "period": 7,
+      "topic": "Chủ đề 2. Tổ chức lưu trữ, tìm kiếm và trao đổi thông tin",
+      "title": "Bài 4. Mạng xã hội và một số kênh trao đổi thông tin trên Internet (mục 1)",
+      "content": "1. Mạng xã hội – Kênh trao đổi thông tin phổ biến trên Internet",
+      "is_practice": false
+    },
+    {
+      "period": 8,
+      "topic": "Chủ đề 2. Tổ chức lưu trữ, tìm kiếm và trao đổi thông tin",
+      "title": "Bài 4. Mạng xã hội và một số kênh trao đổi thông tin trên Internet (mục 2 – Thực hành)",
+      "content": "2. Thực hành: Sử dụng mạng xã hội",
+      "is_practice": true
+    },
+    {
+      "period": 9,
+      "topic": "Chủ đề 3. Đạo đức, pháp luật và văn hoá trong môi trường số",
+      "title": "Bài 5. Ứng xử trên mạng (mục 1, 2)",
+      "content": "1. Giao tiếp, ứng xử có văn hoá qua mạng; 2. Làm gì khi gặp thông tin xấu?",
+      "is_practice": false
+    },
+    {
+      "period": 10,
+      "topic": "Chủ đề 3. Đạo đức, pháp luật và văn hoá trong môi trường số",
+      "title": "Bài 5. Ứng xử trên mạng (mục 3)",
+      "content": "3. Tác hại và cách phòng tránh bệnh nghiện Internet",
+      "is_practice": false
+    },
+    {
+      "period": 11,
+      "topic": "Chủ đề 4. Ứng dụng tin học",
+      "title": "Bài 6. Làm quen với phần mềm bảng tính (mục 1, 2)",
+      "content": "1. Giao diện bảng tính; 2. Nhập, chỉnh sửa và định dạng dữ liệu",
+      "is_practice": false
+    },
+    {
+      "period": 12,
+      "topic": "Chủ đề 4. Ứng dụng tin học",
+      "title": "Bài 6. Làm quen với phần mềm bảng tính (mục 3 – Thực hành)",
+      "content": "3. Thực hành: Nhập thông tin khảo sát dự án Trường học xanh",
+      "is_practice": true
+    },
+    {
+      "period": 13,
+      "topic": "Chủ đề 4. Ứng dụng tin học",
+      "title": "Bài 7. Tính toán tự động trên bảng tính (mục 1, 2)",
+      "content": "1. Kiểu dữ liệu; 2. Công thức trong bảng tính",
+      "is_practice": false
+    },
+    {
+      "period": 14,
+      "topic": "Chủ đề 4. Ứng dụng tin học",
+      "title": "Bài 7. Tính toán tự động trên bảng tính (mục 3)",
+      "content": "3. Sao chép ô tính chứa công thức",
+      "is_practice": false
+    },
+    {
+      "period": 15,
+      "topic": "Chủ đề 4. Ứng dụng tin học",
+      "title": "Bài 7. Tính toán tự động trên bảng tính (mục 4 – Thực hành)",
+      "content": "4. Thực hành: Nhập thông tin dự kiến số lượng cây trồng",
+      "is_practice": true
+    },
+    {
+      "period": 16,
+      "topic": "Chủ đề 4. Ứng dụng tin học",
+      "title": "Bài 8. Công cụ hỗ trợ tính toán (mục 1, 2)",
+      "content": "1. Hàm trong bảng tính; 2. Một số hàm tính toán đơn giản",
+      "is_practice": false
+    },
+    {
+      "period": 17,
+      "topic": "Chủ đề 4. Ứng dụng tin học",
+      "title": "Bài 8. Công cụ hỗ trợ tính toán (mục 3 – Thực hành)",
+      "content": "3. Thực hành: Tính toán trên dữ liệu trồng cây thực tế",
+      "is_practice": true
+    },
+    {
+      "period": 18,
+      "topic": "Chủ đề 4. Ứng dụng tin học",
+      "title": "Bài 9. Trình bày bảng tính (mục 1, 2, 3)",
+      "content": "1. Định dạng dữ liệu số; 2. Trình bày bảng tính; 3. Tính chất của hàm",
+      "is_practice": false
+    },
+    {
+      "period": 19,
+      "topic": "Chủ đề 4. Ứng dụng tin học",
+      "title": "Bài 9. Trình bày bảng tính (mục 4 – Thực hành)",
+      "content": "4. Thực hành: Hoàn thiện dữ liệu dự án Trường học xanh",
+      "is_practice": true
+    },
+    {
+      "period": 20,
+      "topic": "Chủ đề 4. Ứng dụng tin học",
+      "title": "Bài 10. Hoàn thiện bảng tính",
+      "content": "1. Thao tác trang tính; 2. In dữ liệu; 3. Thực hành trình bày hoàn chỉnh",
+      "is_practice": true
+    },
+    {
+      "period": 21,
+      "topic": "Chủ đề 4. Ứng dụng tin học",
+      "title": "Bài 11. Tạo bài trình chiếu (mục 1, 2, 3)",
+      "content": "1. Chức năng phần mềm trình chiếu; 2. Tiêu đề; 3. Cấu trúc phân cấp",
+      "is_practice": false
+    },
+    {
+      "period": 22,
+      "topic": "Chủ đề 4. Ứng dụng tin học",
+      "title": "Bài 11. Tạo bài trình chiếu (mục 4 – Thực hành)",
+      "content": "4. Thực hành: Tạo bài trình chiếu có tiêu đề, cấu trúc phân cấp",
+      "is_practice": true
+    },
+    {
+      "period": 23,
+      "topic": "Chủ đề 4. Ứng dụng tin học",
+      "title": "Bài 12. Định dạng đối tượng trên trang chiếu",
+      "content": "1. Ảnh minh họa; 2. Định dạng văn bản; 3. Thực hành sao chép, chèn ảnh, định dạng",
+      "is_practice": true
+    },
+    {
+      "period": 24,
+      "topic": "Chủ đề 4. Ứng dụng tin học",
+      "title": "Bài 13. Thực hành tổng hợp: Hoàn thiện bài trình chiếu",
+      "content": "1. Hiệu ứng động; 2. Thực hành tổng hợp: Hoàn thiện bài trình chiếu",
+      "is_practice": true
+    },
+    {
+      "period": 25,
+      "topic": "Chủ đề 5. Giải quyết vấn đề với sự trợ giúp của máy tính",
+      "title": "Bài 14. Thuật toán tìm kiếm tuần tự",
+      "content": "1. Thuật toán tìm kiếm tuần tự; Mô tả thuật toán tìm kiếm tuần tự",
+      "is_practice": false
+    },
+    {
+      "period": 26,
+      "topic": "Chủ đề 5. Giải quyết vấn đề với sự trợ giúp của máy tính",
+      "title": "Bài 15. Thuật toán tìm kiếm nhị phân (mục 1)",
+      "content": "1. Thuật toán tìm kiếm nhị phân",
+      "is_practice": false
+    },
+    {
+      "period": 27,
+      "topic": "Chủ đề 5. Giải quyết vấn đề với sự trợ giúp của máy tính",
+      "title": "Bài 15. Thuật toán tìm kiếm nhị phân (mục 2)",
+      "content": "2. Sắp xếp và tìm kiếm",
+      "is_practice": false
+    },
+    {
+      "period": 28,
+      "topic": "Chủ đề 5. Giải quyết vấn đề với sự trợ giúp của máy tính",
+      "title": "Bài 16. Thuật toán sắp xếp (mục 1)",
+      "content": "1. Thuật toán sắp xếp nổi bọt",
+      "is_practice": false
+    },
+    {
+      "period": 29,
+      "topic": "Chủ đề 5. Giải quyết vấn đề với sự trợ giúp của máy tính",
+      "title": "Bài 16. Thuật toán sắp xếp (mục 2, 3)",
+      "content": "2. Thuật toán sắp xếp chọn; 3. Chia bài toán thành bài toán nhỏ hơn",
+      "is_practice": false
+    }
+  ],
+  "8": [
+    {
+      "period": 1,
+      "topic": "Chủ đề 1: Máy tính và cộng đồng",
+      "title": "Bài 1. Lược sử công cụ tính toán (Tiết 1)",
+      "content": "1. Máy tính cơ học 2. Máy tính điện tử",
+      "is_practice": false
+    },
+    {
+      "period": 2,
+      "topic": "Chủ đề 1: Máy tính và cộng đồng",
+      "title": "Bài 1. Lược sử công cụ tính toán (Tiết 2)",
+      "content": "3. Máy tính thay đổi thế giới như thế nào?",
+      "is_practice": false
+    },
+    {
+      "period": 3,
+      "topic": "Chủ đề 2: Tổ chức lưu trữ, tìm kiếm và trao đổi thông tin",
+      "title": "Bài 2. Thông tin trong môi trường số",
+      "content": "1. Thông tin trong môi trường số 2. Thông tin đáng tin cậy",
+      "is_practice": false
+    },
+    {
+      "period": 4,
+      "topic": "Chủ đề 2: Tổ chức lưu trữ, tìm kiếm và trao đổi thông tin",
+      "title": "Bài 3. Thực hành khai thác thông tin số",
+      "content": "Nhiệm vụ 1, 2, 3: Khai thác, đánh giá, xử lý và trao đổi thông tin",
+      "is_practice": true
+    },
+    {
+      "period": 5,
+      "topic": "Chủ đề 3: Đạo đức, pháp luật và văn hóa trong môi trường số",
+      "title": "Bài 4. Đạo đức và văn hóa trong sử dụng công nghệ kỹ thuật số",
+      "content": "1. Biểu hiện vi phạm khi sử dụng CNKTS 2. Tuân thủ quy định khi tạo ra sản phẩm số",
+      "is_practice": false
+    },
+    {
+      "period": 6,
+      "topic": "Chủ đề 4: Ứng dụng tin học",
+      "title": "Bài 5. Sử dụng bảng tính giải quyết bài toán thực tế (Tiết 1)",
+      "content": "1. Địa chỉ tương đối 2. Địa chỉ tuyệt đối",
+      "is_practice": false
+    },
+    {
+      "period": 7,
+      "topic": "Chủ đề 4: Ứng dụng tin học",
+      "title": "Bài 5. Sử dụng bảng tính giải quyết bài toán thực tế (Tiết 2)",
+      "content": "3. Thực hành bảng tính 4. Sao chép dữ liệu từ văn bản/trang chiếu",
+      "is_practice": true
+    },
+    {
+      "period": 8,
+      "topic": "Chủ đề 4: Ứng dụng tin học",
+      "title": "Bài 6. Sắp xếp và lọc dữ liệu (Tiết 1)",
+      "content": "1. Sử dụng phần mềm bảng tính trợ giúp giải quyết bài toán thực tế",
+      "is_practice": false
+    },
+    {
+      "period": 9,
+      "topic": "Chủ đề 4: Ứng dụng tin học",
+      "title": "Bài 6. Sắp xếp và lọc dữ liệu (Tiết 2)",
+      "content": "2. Thực hành sắp xếp dữ liệu 3. Thực hành lọc dữ liệu",
+      "is_practice": true
+    },
+    {
+      "period": 10,
+      "topic": "Chủ đề 4: Ứng dụng tin học",
+      "title": "Bài 7. Trình bày dữ liệu bằng biểu đồ (Tiết 1)",
+      "content": "1. Trình bày dữ liệu bằng biểu đồ",
+      "is_practice": false
+    },
+    {
+      "period": 11,
+      "topic": "Chủ đề 4: Ứng dụng tin học",
+      "title": "Bài 7. Trình bày dữ liệu bằng biểu đồ (Tiết 2)",
+      "content": "2. Thực hành tạo biểu đồ",
+      "is_practice": true
+    },
+    {
+      "period": 12,
+      "topic": "Chủ đề 4: Ứng dụng tin học",
+      "title": "Bài 8a. Làm việc với danh sách dạng liệt kê và hình ảnh trong văn bản (Tiết 1)",
+      "content": "1. Danh sách dạng liệt kê 2. Hình ảnh minh họa và hình đồ họa",
+      "is_practice": false
+    },
+    {
+      "period": 13,
+      "topic": "Chủ đề 4: Ứng dụng tin học",
+      "title": "Bài 8a. Làm việc với danh sách dạng liệt kê và hình ảnh trong văn bản (Tiết 2)",
+      "content": "3. Thực hành: Tạo sản phẩm là văn bản phục vụ nhu cầu thực tế",
+      "is_practice": true
+    },
+    {
+      "period": 14,
+      "topic": "Chủ đề 4: Ứng dụng tin học",
+      "title": "Bài 9a. Tạo đầu trang, chân trang cho văn bản (Tiết 1)",
+      "content": "1. Đầu trang và chân trang 2. Đánh số trang",
+      "is_practice": false
+    },
+    {
+      "period": 15,
+      "topic": "Chủ đề 4: Ứng dụng tin học",
+      "title": "Bài 9a. Tạo đầu trang, chân trang cho văn bản (Tiết 2)",
+      "content": "3. Thực hành: Đánh số trang, thêm đầu trang và chân trang",
+      "is_practice": true
+    },
+    {
+      "period": 16,
+      "topic": "Chủ đề 4: Ứng dụng tin học",
+      "title": "Bài 10a. Định dạng nâng cao cho trang chiếu (Tiết 1)",
+      "content": "1. Văn bản và màu sắc trên trang chiếu 2. Số trang, đầu trang và chân trang",
+      "is_practice": false
+    },
+    {
+      "period": 17,
+      "topic": "Chủ đề 4: Ứng dụng tin học",
+      "title": "Bài 10a. Định dạng nâng cao cho trang chiếu (Tiết 2)",
+      "content": "3. Thực hành: Tạo bài trình chiếu cho Lễ ra mắt CLB Tin học",
+      "is_practice": true
+    },
+    {
+      "period": 18,
+      "topic": "Chủ đề 4: Ứng dụng tin học",
+      "title": "Bài 11a. Sử dụng bản mẫu tạo bài trình chiếu (Tiết 1)",
+      "content": "1. Bản mẫu trong phần mềm trình chiếu",
+      "is_practice": false
+    },
+    {
+      "period": 19,
+      "topic": "Chủ đề 4: Ứng dụng tin học",
+      "title": "Bài 11a. Sử dụng bản mẫu tạo bài trình chiếu (Tiết 2)",
+      "content": "2. Thực hành: Tạo sản phẩm số phục vụ học tập, giao lưu",
+      "is_practice": true
+    },
+    {
+      "period": 20,
+      "topic": "Chủ đề 5: Giải quyết vấn đề với sự trợ giúp của máy tính",
+      "title": "Bài 12. Từ thuật toán đến chương trình (Tiết 1)",
+      "content": "1. Từ thuật toán đến chương trình",
+      "is_practice": false
+    },
+    {
+      "period": 21,
+      "topic": "Chủ đề 5: Giải quyết vấn đề với sự trợ giúp của máy tính",
+      "title": "Bài 12. Từ thuật toán đến chương trình (Tiết 2)",
+      "content": "2. Thực hành: Tạo chương trình điều khiển máy tính thực hiện thuật toán",
+      "is_practice": true
+    },
+    {
+      "period": 22,
+      "topic": "Chủ đề 5: Giải quyết vấn đề với sự trợ giúp của máy tính",
+      "title": "Bài 13. Biểu diễn dữ liệu (Tiết 1)",
+      "content": "1. Kiểu dữ liệu 2. Hằng, biến, biểu thức",
+      "is_practice": false
+    },
+    {
+      "period": 23,
+      "topic": "Chủ đề 5: Giải quyết vấn đề với sự trợ giúp của máy tính",
+      "title": "Bài 13. Biểu diễn dữ liệu (Tiết 2)",
+      "content": "3. Thực hành: Sử dụng hằng, biến, biểu thức trong chương trình",
+      "is_practice": true
+    },
+    {
+      "period": 24,
+      "topic": "Chủ đề 5: Giải quyết vấn đề với sự trợ giúp của máy tính",
+      "title": "Bài 14. Cấu trúc điều khiển (Tiết 1)",
+      "content": "1. Cấu trúc điều khiển cơ bản (tuần tự, rẽ nhánh, lặp)",
+      "is_practice": false
+    },
+    {
+      "period": 25,
+      "topic": "Chủ đề 5: Giải quyết vấn đề với sự trợ giúp của máy tính",
+      "title": "Bài 14. Cấu trúc điều khiển (Tiết 2)",
+      "content": "2. Thực hành: Xây dựng trò chơi Đoán số",
+      "is_practice": true
+    },
+    {
+      "period": 26,
+      "topic": "Chủ đề 5: Giải quyết vấn đề với sự trợ giúp của máy tính",
+      "title": "Bài 15. Gỡ lỗi (Tiết 1)",
+      "content": "1. Kiểm thử và phân loại lỗi 2. Phát hiện lỗi và sửa lỗi lôgic",
+      "is_practice": false
+    },
+    {
+      "period": 27,
+      "topic": "Chủ đề 5: Giải quyết vấn đề với sự trợ giúp của máy tính",
+      "title": "Bài 15. Gỡ lỗi (Tiết 2)",
+      "content": "3. Thực hành: Gỡ lỗi",
+      "is_practice": true
+    },
+    {
+      "period": 28,
+      "topic": "Chủ đề 6: Hướng nghiệp với Tin học",
+      "title": "Bài 16. Tin học với nghề nghiệp (Tiết 1)",
+      "content": "1. Tin học giúp nâng cao hiệu quả công việc",
+      "is_practice": false
+    },
+    {
+      "period": 29,
+      "topic": "Chủ đề 6: Hướng nghiệp với Tin học",
+      "title": "Bài 16. Tin học với nghề nghiệp (Tiết 2)",
+      "content": "2. Bình đẳng giới trong sử dụng máy tính và ứng dụng tin học",
+      "is_practice": false
+    }
+  ],
+  "9": [
+    {
+      "period": 1,
+      "topic": "Chủ đề 1. Máy tính và cộng đồng",
+      "title": "Bài 1. Thế giới kĩ thuật số (mục 1,2)",
+      "content": "1. Thiết bị có gắn bộ xử lý thông tin ở khắp nơi. 2. Khả năng của máy tính.",
+      "is_practice": false
+    },
+    {
+      "period": 2,
+      "topic": "Chủ đề 1. Máy tính và cộng đồng",
+      "title": "Bài 1. Thế giới kĩ thuật số (mục 3)",
+      "content": "3. Tác động của công nghệ thông tin lên giáo dục và xã hội.",
+      "is_practice": false
+    },
+    {
+      "period": 3,
+      "topic": "Chủ đề 2. Tổ chức lưu trữ, tìm kiếm và trao đổi thông tin",
+      "title": "Bài 2. Thông tin trong giải quyết vấn đề (mục 1)",
+      "content": "1. Vai trò của chất lượng thông tin trong giải quyết vấn đề.",
+      "is_practice": false
+    },
+    {
+      "period": 4,
+      "topic": "Chủ đề 2. Tổ chức lưu trữ, tìm kiếm và trao đổi thông tin",
+      "title": "Bài 2. Thông tin trong giải quyết vấn đề (mục 2)",
+      "content": "2. Các tiêu chí đánh giá chất lượng thông tin.",
+      "is_practice": false
+    },
+    {
+      "period": 5,
+      "topic": "Chủ đề 2. Tổ chức lưu trữ, tìm kiếm và trao đổi thông tin",
+      "title": "Bài 3. Thực hành: Đánh giá chất lượng thông tin",
+      "content": "Nhiệm vụ 1: Tìm kiếm theo mục đích. Nhiệm vụ 2: Đánh giá chất lượng thông tin.",
+      "is_practice": true
+    },
+    {
+      "period": 6,
+      "topic": "Chủ đề 3. Đạo đức, pháp luật và văn hoá trong môi trường số",
+      "title": "Bài 4. Một số vấn đề pháp lí về sử dụng dịch vụ Internet (mục 1)",
+      "content": "1. Một số tác động tiêu cực của công nghệ kĩ thuật số.",
+      "is_practice": false
+    },
+    {
+      "period": 7,
+      "topic": "Chủ đề 3. Đạo đức, pháp luật và văn hoá trong môi trường số",
+      "title": "Bài 4. Một số vấn đề pháp lí về sử dụng dịch vụ Internet (mục 2)",
+      "content": "2. Hành vi vi phạm pháp luật và văn hoá trong môi trường số.",
+      "is_practice": false
+    },
+    {
+      "period": 8,
+      "topic": "Chủ đề 4. Ứng dụng tin học",
+      "title": "Bài 5. Tìm hiểu phần mềm mô phỏng",
+      "content": "1. Phần mềm mô phỏng. 2. Khám phá tri thức với phần mềm mô phỏng.",
+      "is_practice": false
+    },
+    {
+      "period": 9,
+      "topic": "Chủ đề 4. Ứng dụng tin học",
+      "title": "Bài 6. Thực hành: Khai thác phần mềm mô phỏng (nhiệm vụ 1,2)",
+      "content": "Nhiệm vụ 1: Chuyển hoá năng lượng. Nhiệm vụ 2: Đo năng lượng.",
+      "is_practice": true
+    },
+    {
+      "period": 10,
+      "topic": "Chủ đề 4. Ứng dụng tin học",
+      "title": "Bài 6. Thực hành: Khai thác phần mềm mô phỏng (Nhiệm vụ 3)",
+      "content": "Nhiệm vụ 3: Tỉ lệ vàng trong ngôi sao năm cánh.",
+      "is_practice": true
+    },
+    {
+      "period": 11,
+      "topic": "Chủ đề 4. Ứng dụng tin học",
+      "title": "Bài 7. Trình bày thông tin trong trao đổi và hợp tác",
+      "content": "1. Trình bày thông tin trong trao đổi và hợp tác. 2. Sử dụng công cụ trực quan.",
+      "is_practice": false
+    },
+    {
+      "period": 12,
+      "topic": "Chủ đề 4. Ứng dụng tin học",
+      "title": "Bài 8. Thực hành: Sử dụng công cụ trực quan trình bày thông tin... (nhiệm vụ 1, 2)",
+      "content": "Nhiệm vụ 1: Sơ đồ tư duy đính kèm dữ liệu. Nhiệm vụ 2: Liên kết dữ liệu trong bài trình chiếu.",
+      "is_practice": true
+    },
+    {
+      "period": 13,
+      "topic": "Chủ đề 4. Ứng dụng tin học",
+      "title": "Bài 8. Thực hành: Sử dụng công cụ trực quan trình bày thông tin... (nhiệm vụ 3)",
+      "content": "Nhiệm vụ 3: Tạo bài trình chiếu có sử dụng công cụ trực quan.",
+      "is_practice": true
+    },
+    {
+      "period": 14,
+      "topic": "Chủ đề 4. Ứng dụng tin học - a. Sử dụng bảng tính điện tử nâng cao",
+      "title": "Bài 9a. Sử dụng công cụ xác thực dữ liệu (mục 1)",
+      "content": "1. Công cụ xác thực dữ liệu trong bảng tính.",
+      "is_practice": false
+    },
+    {
+      "period": 15,
+      "topic": "Chủ đề 4. Ứng dụng tin học - a. Sử dụng bảng tính điện tử nâng cao",
+      "title": "Bài 9a. Sử dụng công cụ xác thực dữ liệu (mục 2 – thực hành)",
+      "content": "2. Thực hành: Sử dụng công cụ xác thực dữ liệu.",
+      "is_practice": true
+    },
+    {
+      "period": 16,
+      "topic": "Chủ đề 4. Ứng dụng tin học - a. Sử dụng bảng tính điện tử nâng cao",
+      "title": "Bài 10a. Sử dụng hàm COUNTIF",
+      "content": "1. Hàm COUNTIF. 2. Thực hành sử dụng hàm COUNTIF.",
+      "is_practice": true
+    },
+    {
+      "period": 17,
+      "topic": "Chủ đề 4. Ứng dụng tin học - a. Sử dụng bảng tính điện tử nâng cao",
+      "title": "Bài 11a. Sử dụng hàm SUMIF",
+      "content": "1. Hàm SUMIF. 2. Thực hành sử dụng hàm SUMIF.",
+      "is_practice": true
+    },
+    {
+      "period": 18,
+      "topic": "Chủ đề 4. Ứng dụng tin học - a. Sử dụng bảng tính điện tử nâng cao",
+      "title": "Bài 12a. Sử dụng hàm IF (mục 1)",
+      "content": "1. Hàm IF (Quy tắc logic rẽ nhánh điều kiện).",
+      "is_practice": false
+    },
+    {
+      "period": 19,
+      "topic": "Chủ đề 4. Ứng dụng tin học - a. Sử dụng bảng tính điện tử nâng cao",
+      "title": "Bài 12a. Sử dụng hàm IF (mục 2 – thực hành)",
+      "content": "2. Thực hành: Sử dụng hàm IF trong bảng tính.",
+      "is_practice": true
+    },
+    {
+      "period": 20,
+      "topic": "Chủ đề 4. Ứng dụng tin học - a. Sử dụng bảng tính điện tử nâng cao",
+      "title": "Bài 13a. Hoàn thiện bảng tính quản lí tài chính gia đình (mục 1)",
+      "content": "1. Trang tính tổng hợp liên kết dữ liệu.",
+      "is_practice": false
+    },
+    {
+      "period": 21,
+      "topic": "Chủ đề 4. Ứng dụng tin học - a. Sử dụng bảng tính điện tử nâng cao",
+      "title": "Bài 13a. Hoàn thiện bảng tính quản lí tài chính gia đình (mục 2 – Thực hành)",
+      "content": "2. Thực hành: Hoàn thiện bảng tính quản lí tài chính gia đình.",
+      "is_practice": true
+    },
+    {
+      "period": 22,
+      "topic": "Chủ đề 5. Giải quyết vấn đề với sự trợ giúp của máy tính",
+      "title": "Bài 14. Giải quyết vấn đề (mục 1)",
+      "content": "1. Khái niệm và 5 bước trong quy trình giải quyết vấn đề.",
+      "is_practice": false
+    },
+    {
+      "period": 23,
+      "topic": "Chủ đề 5. Giải quyết vấn đề với sự trợ giúp của máy tính",
+      "title": "Bài 14. Giải quyết vấn đề (mục 2)",
+      "content": "2. Mô tả giải pháp dưới dạng thuật toán (sơ đồ khối và ngôn ngữ tự nhiên).",
+      "is_practice": false
+    },
+    {
+      "period": 24,
+      "topic": "Chủ đề 5. Giải quyết vấn đề với sự trợ giúp của máy tính",
+      "title": "Bài 15. Bài toán Tin học (mục 1)",
+      "content": "1. Khái niệm bài toán Tin học và xác định Input/Output.",
+      "is_practice": false
+    },
+    {
+      "period": 25,
+      "topic": "Chủ đề 5. Giải quyết vấn đề với sự trợ giúp của máy tính",
+      "title": "Bài 15. Bài toán Tin học (mục 2)",
+      "content": "2. Quy trình con người giao bài toán cho máy tính giải quyết (4 bước).",
+      "is_practice": false
+    },
+    {
+      "period": 26,
+      "topic": "Chủ đề 5. Giải quyết vấn đề với sự trợ giúp của máy tính",
+      "title": "Bài 16. Thực hành: Lập chương trình máy tính. (nhiệm vụ 1)",
+      "content": "Nhiệm vụ 1: Lập chương trình Scratch tính tiền lương.",
+      "is_practice": true
+    },
+    {
+      "period": 27,
+      "topic": "Chủ đề 5. Giải quyết vấn đề với sự trợ giúp của máy tính",
+      "title": "Bài 16. Thực hành: Lập chương trình máy tính. (nhiệm vụ 2)",
+      "content": "Nhiệm vụ 2: Lập chương trình Scratch tìm giá trị lớn nhất trong dãy số.",
+      "is_practice": true
+    },
+    {
+      "period": 28,
+      "topic": "Chủ đề 6. Hướng nghiệp với tin học",
+      "title": "Bài 17. Tin học và thế giới nghề nghiệp (mục 1)",
+      "content": "1. Các nhóm nghề nghiệp chính trong lĩnh vực Tin học.",
+      "is_practice": false
+    },
+    {
+      "period": 29,
+      "topic": "Chủ đề 6. Hướng nghiệp với tin học",
+      "title": "Bài 17. Tin học và thế giới nghề nghiệp (mục 2)",
+      "content": "2. Đặc điểm nghề nghiệp Tin học và Bình đẳng giới trong công nghệ.",
+      "is_practice": false
+    }
+  ]
+}

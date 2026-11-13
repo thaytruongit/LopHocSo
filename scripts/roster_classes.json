@@ -1,0 +1,107 @@
+[
+  {
+    "id": "c-6a10",
+    "grade": 6,
+    "name": "Lớp 6A10",
+    "classCode": "6A10-2026",
+    "studentCount": 42
+  },
+  {
+    "id": "c-6a11",
+    "grade": 6,
+    "name": "Lớp 6A11",
+    "classCode": "6A11-2026",
+    "studentCount": 43
+  },
+  {
+    "id": "c-6a12",
+    "grade": 6,
+    "name": "Lớp 6A12",
+    "classCode": "6A12-2026",
+    "studentCount": 44
+  },
+  {
+    "id": "c-6a13",
+    "grade": 6,
+    "name": "Lớp 6A13",
+    "classCode": "6A13-2026",
+    "studentCount": 40
+  },
+  {
+    "id": "c-7a10",
+    "grade": 7,
+    "name": "Lớp 7A10",
+    "classCode": "7A10-2026",
+    "studentCount": 42
+  },
+  {
+    "id": "c-7a11",
+    "grade": 7,
+    "name": "Lớp 7A11",
+    "classCode": "7A11-2026",
+    "studentCount": 39
+  },
+  {
+    "id": "c-7a12",
+    "grade": 7,
+    "name": "Lớp 7A12",
+    "classCode": "7A12-2026",
+    "studentCount": 37
+  },
+  {
+    "id": "c-7a13",
+    "grade": 7,
+    "name": "Lớp 7A13",
+    "classCode": "7A13-2026",
+    "studentCount": 39
+  },
+  {
+    "id": "c-8a11",
+    "grade": 8,
+    "name": "Lớp 8A11",
+    "classCode": "8A11-2026",
+    "studentCount": 47
+  },
+  {
+    "id": "c-8a12",
+    "grade": 8,
+    "name": "Lớp 8A12",
+    "classCode": "8A12-2026",
+    "studentCount": 48
+  },
+  {
+    "id": "c-8a13",
+    "grade": 8,
+    "name": "Lớp 8A13",
+    "classCode": "8A13-2026",
+    "studentCount": 46
+  },
+  {
+    "id": "c-9a13",
+    "grade": 9,
+    "name": "Lớp 9A13",
+    "classCode": "9A13-2026",
+    "studentCount": 49
+  },
+  {
+    "id": "c-9a14",
+    "grade": 9,
+    "name": "Lớp 9A14",
+    "classCode": "9A14-2026",
+    "studentCount": 51
+  },
+  {
+    "id": "c-9a15",
+    "grade": 9,
+    "name": "Lớp 9A15",
+    "classCode": "9A15-2026",
+    "studentCount": 52
+  },
+  {
+    "id": "c-9a16",
+    "grade": 9,
+    "name": "Lớp 9A16",
+    "classCode": "9A16-2026",
+    "studentCount": 50
+  }
+]

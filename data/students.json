@@ -1,0 +1,5362 @@
+[
+  {
+    "code": "HS7A1101",
+    "name": "Lê Thị Bảo An",
+    "dob": "19/08/2014",
+    "class": "7A11",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1102",
+    "name": "Lê Danh Tuấn Anh",
+    "dob": "08/10/2014",
+    "class": "7A11",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1103",
+    "name": "Nguyễn Thị Mai Anh",
+    "dob": "30/12/2014",
+    "class": "7A11",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1104",
+    "name": "Nguyễn Văn Việt Anh",
+    "dob": "09/10/2014",
+    "class": "7A11",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1105",
+    "name": "Nguyễn Đắc Gia Bảo",
+    "dob": "21/10/2014",
+    "class": "7A11",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1106",
+    "name": "Đinh Yến Chi",
+    "dob": "14/01/2014",
+    "class": "7A11",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1107",
+    "name": "Nguyễn Quỳnh Chi",
+    "dob": "20/08/2014",
+    "class": "7A11",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1108",
+    "name": "Nguyễn Quang Cường",
+    "dob": "13/03/2014",
+    "class": "7A11",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1109",
+    "name": "Nguyễn Thị Thùy Dung",
+    "dob": "17/09/2014",
+    "class": "7A11",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1110",
+    "name": "Vương Văn Đạo",
+    "dob": "09/06/2014",
+    "class": "7A11",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1111",
+    "name": "Nguyễn Hương Giang",
+    "dob": "09/10/2014",
+    "class": "7A11",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1112",
+    "name": "Nguyễn Mai Hoa",
+    "dob": "15/09/2014",
+    "class": "7A11",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1113",
+    "name": "Nguyễn Thị Huyền",
+    "dob": "16/01/2014",
+    "class": "7A11",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1114",
+    "name": "Lê Thị Thu Hương",
+    "dob": "14/04/2014",
+    "class": "7A11",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1115",
+    "name": "Nguyễn Đăng Nhật Khang",
+    "dob": "01/06/2014",
+    "class": "7A11",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1116",
+    "name": "Lê Đình Quốc Khánh",
+    "dob": "02/09/2014",
+    "class": "7A11",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1117",
+    "name": "Phan Minh Khang",
+    "dob": "02/06/2014",
+    "class": "7A11",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1118",
+    "name": "Nguyễn Bá Khánh",
+    "dob": "22/10/2014",
+    "class": "7A11",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1119",
+    "name": "Nguyễn Thị Mai Lan",
+    "dob": "06/10/2014",
+    "class": "7A11",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1120",
+    "name": "Lê Thị Duy Linh",
+    "dob": "20/09/2014",
+    "class": "7A11",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1121",
+    "name": "Nguyễn Thị Thanh Mai",
+    "dob": "16/05/2014",
+    "class": "7A11",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1122",
+    "name": "Nguyễn Huy Mạnh",
+    "dob": "25/01/2014",
+    "class": "7A11",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1123",
+    "name": "Lê Khả Gia Minh",
+    "dob": "20/09/2014",
+    "class": "7A11",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1124",
+    "name": "Nguyễn Đạt Minh",
+    "dob": "17/03/2014",
+    "class": "7A11",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1125",
+    "name": "Nguyễn Thị Thảo Nguyên",
+    "dob": "15/09/2014",
+    "class": "7A11",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1126",
+    "name": "Lê Thị Quỳnh Nhi",
+    "dob": "02/08/2014",
+    "class": "7A11",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1127",
+    "name": "Lê Danh Phúc",
+    "dob": "21/01/2014",
+    "class": "7A11",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1128",
+    "name": "Nguyễn Hữu Phúc",
+    "dob": "24/03/2014",
+    "class": "7A11",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1129",
+    "name": "Vương Trường Phúc",
+    "dob": "10/11/2014",
+    "class": "7A11",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1130",
+    "name": "Nguyễn Thị Phương Thảo",
+    "dob": "13/04/2014",
+    "class": "7A11",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1131",
+    "name": "Lê Danh Thắng",
+    "dob": "15/05/2014",
+    "class": "7A11",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1132",
+    "name": "Nguyễn Hữu Thiện",
+    "dob": "26/11/2014",
+    "class": "7A11",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1133",
+    "name": "Nguyễn Đức Thực",
+    "dob": "17/02/2014",
+    "class": "7A11",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1134",
+    "name": "Lô Thị Quỳnh Trang",
+    "dob": "04/01/2014",
+    "class": "7A11",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1135",
+    "name": "Nguyễn Phương Trang",
+    "dob": "14/08/2014",
+    "class": "7A11",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1136",
+    "name": "Nguyễn Duy Trí",
+    "dob": "29/04/2014",
+    "class": "7A11",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1137",
+    "name": "Nguyễn Văn Vượng",
+    "dob": "05/10/2014",
+    "class": "7A11",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1138",
+    "name": "Nguyễn Bảo Yến",
+    "dob": "01/06/2014",
+    "class": "7A11",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1139",
+    "name": "Nguyễn Thị Diệu Linh",
+    "dob": "26/04/2014",
+    "class": "7A11",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1001",
+    "name": "Nguyễn Thị Thúy An",
+    "dob": "21/10/2014",
+    "class": "7A10",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1002",
+    "name": "Nguyễn Vân Anh",
+    "dob": "14/04/2014",
+    "class": "7A10",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1003",
+    "name": "Đỗ Lê Gia Bảo",
+    "dob": "15/05/2014",
+    "class": "7A10",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1004",
+    "name": "Vương Sao Băng",
+    "dob": "30/03/2014",
+    "class": "7A10",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1005",
+    "name": "Lê Thị Ngọc Bích",
+    "dob": "19/11/2014",
+    "class": "7A10",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1006",
+    "name": "Nguyễn Đạt Thái Bình",
+    "dob": "09/06/2014",
+    "class": "7A10",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1007",
+    "name": "Nguyễn Minh Châu",
+    "dob": "23/09/2014",
+    "class": "7A10",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1008",
+    "name": "Nguyễn Thị Bảo Châu",
+    "dob": "12/09/2014",
+    "class": "7A10",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1009",
+    "name": "Vương Bảo Chi",
+    "dob": "03/10/2014",
+    "class": "7A10",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1010",
+    "name": "Nguyễn Hữu Chiến",
+    "dob": "08/09/2014",
+    "class": "7A10",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1011",
+    "name": "Nguyễn Ngọc Diệp",
+    "dob": "10/07/2014",
+    "class": "7A10",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1012",
+    "name": "Trần Quang Dũng",
+    "dob": "30/12/2014",
+    "class": "7A10",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1013",
+    "name": "Đỗ Thùy Dương",
+    "dob": "06/02/2014",
+    "class": "7A10",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1014",
+    "name": "Lê Minh Hà",
+    "dob": "24/04/2014",
+    "class": "7A10",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1015",
+    "name": "Nguyễn Thị Hân",
+    "dob": "07/01/2014",
+    "class": "7A10",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1016",
+    "name": "Nguyễn Quang Hiếu",
+    "dob": "23/12/2014",
+    "class": "7A10",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1017",
+    "name": "Lý Trọng Hưởng",
+    "dob": "11/01/2014",
+    "class": "7A10",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1018",
+    "name": "Nguyễn Đình Hưởng",
+    "dob": "14/12/2014",
+    "class": "7A10",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1019",
+    "name": "Nguyễn An Khánh",
+    "dob": "13/09/2014",
+    "class": "7A10",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1020",
+    "name": "Nguyễn Gia Linh",
+    "dob": "13/07/2014",
+    "class": "7A10",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1021",
+    "name": "Nguyễn Thị Khánh Linh",
+    "dob": "08/02/2014",
+    "class": "7A10",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1022",
+    "name": "Trần Diệu Linh",
+    "dob": "10/02/2014",
+    "class": "7A10",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1023",
+    "name": "Vương Gia Linh",
+    "dob": "23/06/2014",
+    "class": "7A10",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1024",
+    "name": "Nguyễn Bá Đại Lộc",
+    "dob": "19/01/2014",
+    "class": "7A10",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1025",
+    "name": "Nguyễn Thị Trà Mi",
+    "dob": "16/10/2014",
+    "class": "7A10",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1026",
+    "name": "Nguyễn Thị Trà My",
+    "dob": "12/10/2014",
+    "class": "7A10",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1027",
+    "name": "Đỗ Thị Bích Ngọc",
+    "dob": "08/06/2014",
+    "class": "7A10",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1028",
+    "name": "Nguyễn Thị Khánh Ngọc",
+    "dob": "07/07/2014",
+    "class": "7A10",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1029",
+    "name": "Nguyễn Thị Khánh Ngọc",
+    "dob": "08/08/2014",
+    "class": "7A10",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1030",
+    "name": "Nguyễn Thảo Nguyên",
+    "dob": "04/04/2014",
+    "class": "7A10",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1031",
+    "name": "Lê Thị Yến Nhi",
+    "dob": "24/02/2014",
+    "class": "7A10",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1032",
+    "name": "Nguyễn Thị Như",
+    "dob": "04/05/2014",
+    "class": "7A10",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1033",
+    "name": "Nguyễn Đình Quang",
+    "dob": "14/03/2014",
+    "class": "7A10",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1034",
+    "name": "Nguyễn Đăng Hữu Thạc",
+    "dob": "18/06/2014",
+    "class": "7A10",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1035",
+    "name": "Nguyễn Thị Bảo Tiên",
+    "dob": "05/03/2014",
+    "class": "7A10",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1036",
+    "name": "Nguyễn Thảo Trang",
+    "dob": "11/10/2014",
+    "class": "7A10",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1037",
+    "name": "Nguyễn Hữu Minh Trí",
+    "dob": "19/06/2014",
+    "class": "7A10",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1038",
+    "name": "Vương Đại Trí",
+    "dob": "08/02/2014",
+    "class": "7A10",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1039",
+    "name": "Nguyễn Đức Trường",
+    "dob": "21/12/2014",
+    "class": "7A10",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1040",
+    "name": "Nguyễn Đình Tuấn",
+    "dob": "15/09/2014",
+    "class": "7A10",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1041",
+    "name": "Nguyễn Ngọc Thanh Vân",
+    "dob": "03/07/2014",
+    "class": "7A10",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1042",
+    "name": "Vương Hà Vy",
+    "dob": "30/08/2014",
+    "class": "7A10",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1201",
+    "name": "Nguyễn Quốc An",
+    "dob": "05/01/2014",
+    "class": "7A12",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1202",
+    "name": "Nguyễn Thành Việt Anh",
+    "dob": "14/10/2014",
+    "class": "7A12",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1203",
+    "name": "Vũ Đức Anh",
+    "dob": "24/07/2014",
+    "class": "7A12",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1204",
+    "name": "Vương Huy Bảo",
+    "dob": "07/08/2014",
+    "class": "7A12",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1205",
+    "name": "Nguyễn Hữu Bắc",
+    "dob": "07/06/2014",
+    "class": "7A12",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1206",
+    "name": "Nguyễn Văn Bình",
+    "dob": "29/07/2014",
+    "class": "7A12",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1207",
+    "name": "Nguyễn Quốc Chung",
+    "dob": "22/05/2014",
+    "class": "7A12",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1208",
+    "name": "Nguyễn Bá Công",
+    "dob": "06/10/2014",
+    "class": "7A12",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1209",
+    "name": "Nguyễn Xuân Dũng",
+    "dob": "10/07/2014",
+    "class": "7A12",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1210",
+    "name": "Nguyễn Văn Đạt",
+    "dob": "10/01/2014",
+    "class": "7A12",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1211",
+    "name": "Nguyễn Quang Đông",
+    "dob": "04/11/2014",
+    "class": "7A12",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1212",
+    "name": "Nguyễn Vũ Khánh Hà",
+    "dob": "27/01/2014",
+    "class": "7A12",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1213",
+    "name": "Nguyễn Thị Thúy Hằng",
+    "dob": "28/04/2014",
+    "class": "7A12",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1214",
+    "name": "Nguyễn Gia Hân",
+    "dob": "05/07/2014",
+    "class": "7A12",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1215",
+    "name": "Nguyễn Hữu Hân",
+    "dob": "19/12/2014",
+    "class": "7A12",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1216",
+    "name": "Nguyễn Trọng Minh Hoàng",
+    "dob": "08/01/2014",
+    "class": "7A12",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1217",
+    "name": "Nguyễn Viết Khải",
+    "dob": "24/08/2014",
+    "class": "7A12",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1218",
+    "name": "Nguyễn Thị Phương Lan",
+    "dob": "30/07/2014",
+    "class": "7A12",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1219",
+    "name": "Vương Thị Khánh Ly",
+    "dob": "05/10/2014",
+    "class": "7A12",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1220",
+    "name": "Nguyễn Tá Nam",
+    "dob": "11/07/2014",
+    "class": "7A12",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1221",
+    "name": "Nguyễn Văn Nam",
+    "dob": "29/12/2014",
+    "class": "7A12",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1222",
+    "name": "Nguyễn Thị Kim Ngân",
+    "dob": "12/09/2014",
+    "class": "7A12",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1223",
+    "name": "Nguyễn Đắc Nghĩa",
+    "dob": "12/12/2014",
+    "class": "7A12",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1224",
+    "name": "Nguyễn Thị Bảo Ngọc",
+    "dob": "19/05/2014",
+    "class": "7A12",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1225",
+    "name": "Nguyễn Bá Trung Nguyên",
+    "dob": "12/12/2014",
+    "class": "7A12",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1226",
+    "name": "Nguyễn Bá Đức Phong",
+    "dob": "07/07/2014",
+    "class": "7A12",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1227",
+    "name": "Nguyễn Đạt Đại Phong",
+    "dob": "12/09/2014",
+    "class": "7A12",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1228",
+    "name": "Nguyễn Đạt Hoàng Phúc",
+    "dob": "24/07/2014",
+    "class": "7A12",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1229",
+    "name": "Nguyễn Đăng Phúc",
+    "dob": "12/02/2014",
+    "class": "7A12",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1230",
+    "name": "Nguyễn Thị Lan Phương",
+    "dob": "01/03/2014",
+    "class": "7A12",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1231",
+    "name": "Nguyễn Đạt Thịnh",
+    "dob": "17/09/2014",
+    "class": "7A12",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1232",
+    "name": "Lê Thu Thủy",
+    "dob": "05/12/2014",
+    "class": "7A12",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1233",
+    "name": "Nguyễn Đạt Quốc Toản",
+    "dob": "31/07/2014",
+    "class": "7A12",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1234",
+    "name": "Nguyễn Ngọc Bảo Trang",
+    "dob": "21/08/2014",
+    "class": "7A12",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1235",
+    "name": "Nguyễn Thị Quỳnh Trang",
+    "dob": "03/12/2014",
+    "class": "7A12",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1236",
+    "name": "Lý Trọng Việt",
+    "dob": "05/11/2014",
+    "class": "7A12",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1237",
+    "name": "Nguyễn Thị Phương",
+    "dob": "23/09/2014",
+    "class": "7A12",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1301",
+    "name": "Nguyễn Văn An",
+    "dob": "21/06/2014",
+    "class": "7A13",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1302",
+    "name": "Nguyễn Mậu Lan Anh",
+    "dob": "09/02/2014",
+    "class": "7A13",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1303",
+    "name": "Nguyễn Phương Anh",
+    "dob": "17/07/2014",
+    "class": "7A13",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1304",
+    "name": "Nguyễn Phương Anh",
+    "dob": "20/09/2014",
+    "class": "7A13",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1305",
+    "name": "Nguyễn Duy Cường",
+    "dob": "31/08/2013",
+    "class": "7A13",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1306",
+    "name": "Đỗ Đức Duy",
+    "dob": "22/07/2014",
+    "class": "7A13",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1307",
+    "name": "Nguyễn Văn Đức",
+    "dob": "14/10/2014",
+    "class": "7A13",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1308",
+    "name": "Nguyễn Cao Thanh Hằng",
+    "dob": "12/01/2014",
+    "class": "7A13",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1309",
+    "name": "Nguyễn Hữu Hoàng",
+    "dob": "13/02/2014",
+    "class": "7A13",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1310",
+    "name": "Vương Văn Hồng",
+    "dob": "10/03/2014",
+    "class": "7A13",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1311",
+    "name": "Nguyễn Hữu Khánh",
+    "dob": "06/01/2014",
+    "class": "7A13",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1312",
+    "name": "Nguyễn Văn Khiêm",
+    "dob": "21/10/2014",
+    "class": "7A13",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1313",
+    "name": "Nguyễn Thùy Linh",
+    "dob": "10/12/2014",
+    "class": "7A13",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1314",
+    "name": "Nguyễn Văn Hoàng Linh",
+    "dob": "08/10/2014",
+    "class": "7A13",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1315",
+    "name": "Nguyễn Đắc Lộc",
+    "dob": "13/11/2014",
+    "class": "7A13",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1316",
+    "name": "Phạm Tùng Linh",
+    "dob": "16/10/2014",
+    "class": "7A13",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1317",
+    "name": "Nguyễn Đắc Minh",
+    "dob": "10/08/2014",
+    "class": "7A13",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1318",
+    "name": "Nguyễn Nghĩa Quang Minh",
+    "dob": "16/11/2014",
+    "class": "7A13",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1319",
+    "name": "Phạm Hoàng Minh",
+    "dob": "02/03/2014",
+    "class": "7A13",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1320",
+    "name": "Nguyễn Thị Trà My",
+    "dob": "06/03/2014",
+    "class": "7A13",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1321",
+    "name": "Võ Bảo Ngân",
+    "dob": "03/05/2014",
+    "class": "7A13",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1322",
+    "name": "Nguyễn Bá Nghĩa",
+    "dob": "12/10/2014",
+    "class": "7A13",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1323",
+    "name": "Nguyễn Tuấn Nghĩa",
+    "dob": "03/05/2014",
+    "class": "7A13",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1324",
+    "name": "Đào Minh Ngọc",
+    "dob": "07/09/2014",
+    "class": "7A13",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1325",
+    "name": "Nguyễn Thị Khánh Ngọc",
+    "dob": "20/07/2014",
+    "class": "7A13",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1326",
+    "name": "Vương Văn Nguyên",
+    "dob": "11/06/2014",
+    "class": "7A13",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1327",
+    "name": "Nguyễn Hữu Nhật",
+    "dob": "29/10/2014",
+    "class": "7A13",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1328",
+    "name": "Nguyễn Thị Bảo Nhi",
+    "dob": "20/12/2014",
+    "class": "7A13",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1329",
+    "name": "Nguyễn Hữu Phi",
+    "dob": "24/07/2014",
+    "class": "7A13",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1330",
+    "name": "Nguyễn Đình Phong",
+    "dob": "20/05/2014",
+    "class": "7A13",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1331",
+    "name": "Nguyễn Xuân Phúc",
+    "dob": "03/03/2014",
+    "class": "7A13",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1332",
+    "name": "Nguyễn Phương Thảo",
+    "dob": "13/01/2014",
+    "class": "7A13",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1333",
+    "name": "Nguyễn Thị Thảo",
+    "dob": "01/10/2014",
+    "class": "7A13",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1334",
+    "name": "Nguyễn Thị Phương Thảo",
+    "dob": "12/07/2014",
+    "class": "7A13",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1335",
+    "name": "Đỗ Viết Minh Toàn",
+    "dob": "31/08/2014",
+    "class": "7A13",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1336",
+    "name": "Nguyễn Thiên Trang",
+    "dob": "28/12/2014",
+    "class": "7A13",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1337",
+    "name": "Nguyễn Thanh Trúc",
+    "dob": "10/01/2014",
+    "class": "7A13",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1338",
+    "name": "Nguyễn Xuân Tuấn",
+    "dob": "17/10/2014",
+    "class": "7A13",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS7A1339",
+    "name": "Nguyễn Trọng Sang Vũ",
+    "dob": "13/02/2014",
+    "class": "7A13",
+    "grade": 7,
+    "role": "student"
+  },
+  {
+    "code": "HS8A1201",
+    "name": "Nguyễn Phương Anh",
+    "dob": "01/11/2013",
+    "class": "8A12",
+    "grade": 8,
+    "role": "student"
+  },
+  {
+    "code": "HS8A1202",
+    "name": "Nguyễn Thị Quỳnh Anh",
+    "dob": "10/05/2013",
+    "class": "8A12",
+    "grade": 8,
+    "role": "student"
+  },
+  {
+    "code": "HS8A1203",
+    "name": "Phạm Nhật Anh",
+    "dob": "10/12/2013",
+    "class": "8A12",
+    "grade": 8,
+    "role": "student"
+  },
+  {
+    "code": "HS8A1204",
+    "name": "Vương Thị Quỳnh Anh",
+    "dob": "09/06/2013",
+    "class": "8A12",
+    "grade": 8,
+    "role": "student"
+  },
+  {
+    "code": "HS8A1205",
+    "name": "Nguyễn Thị Ánh",
+    "dob": "11/05/2013",
+    "class": "8A12",
+    "grade": 8,
+    "role": "student"
+  },
+  {
+    "code": "HS8A1206",
+    "name": "Nguyễn Thị Diệp Chi",
+    "dob": "19/02/2013",
+    "class": "8A12",
+    "grade": 8,
+    "role": "student"
+  },
+  {
+    "code": "HS8A1207",
+    "name": "Vương Thành Công",
+    "dob": "17/09/2013",
+    "class": "8A12",
+    "grade": 8,
+    "role": "student"
+  },
+  {
+    "code": "HS8A1208",
+    "name": "Nguyễn Bá Dũng",
+    "dob": "28/10/2013",
+    "class": "8A12",
+    "grade": 8,
+    "role": "student"
+  },
+  {
+    "code": "HS8A1209",
+    "name": "Nguyễn Đình Khương Duy",
+    "dob": "09/05/2013",
+    "class": "8A12",
+    "grade": 8,
+    "role": "student"
+  },
+  {
+    "code": "HS8A1210",
+    "name": "Nguyễn Văn Dũng",
+    "dob": "09/09/2013",
+    "class": "8A12",
+    "grade": 8,
+    "role": "student"
+  },
+  {
+    "code": "HS8A1211",
+    "name": "Vương Quang Đạt",
+    "dob": "10/09/2013",
+    "class": "8A12",
+    "grade": 8,
+    "role": "student"
+  },
+  {
+    "code": "HS8A1212",
+    "name": "Nguyễn Văn Minh Đức",
+    "dob": "27/10/2013",
+    "class": "8A12",
+    "grade": 8,
+    "role": "student"
+  },
+  {
+    "code": "HS8A1213",
+    "name": "Vương Quang Đức",
+    "dob": "19/02/2013",
+    "class": "8A12",
+    "grade": 8,
+    "role": "student"
+  },
+  {
+    "code": "HS8A1214",
+    "name": "Nguyễn Công Hải",
+    "dob": "29/01/2013",
+    "class": "8A12",
+    "grade": 8,
+    "role": "student"
+  },
+  {
+    "code": "HS8A1215",
+    "name": "Nguyễn Quang Hải",
+    "dob": "27/02/2013",
+    "class": "8A12",
+    "grade": 8,
+    "role": "student"
+  },
+  {
+    "code": "HS8A1216",
+    "name": "Lê Thị Hằng",
+    "dob": "16/09/2012",
+    "class": "8A12",
+    "grade": 8,
+    "role": "student"
+  },
+  {
+    "code": "HS8A1217",
+    "name": "Nguyễn Khánh Huyền",
+    "dob": "09/05/2013",
+    "class": "8A12",
+    "grade": 8,
+    "role": "student"
+  },
+  {
+    "code": "HS8A1218",
+    "name": "Nguyễn Ngọc Huyền",
+    "dob": "11/06/2013",
+    "class": "8A12",
+    "grade": 8,
+    "role": "student"
+  },
+  {
+    "code": "HS8A1219",
+    "name": "Nguyễn Thị Khánh Huyền",
+    "dob": "20/11/2013",
+    "class": "8A12",
+    "grade": 8,
+    "role": "student"
+  },
+  {
+    "code": "HS8A1220",
+    "name": "Nguyễn Đắc Hưởng",
+    "dob": "08/03/2013",
+    "class": "8A12",
+    "grade": 8,
+    "role": "student"
+  },
+  {
+    "code": "HS8A1221",
+    "name": "Nguyễn Văn Minh Khang",
+    "dob": "24/08/2013",
+    "class": "8A12",
+    "grade": 8,
+    "role": "student"
+  },
+  {
+    "code": "HS8A1222",
+    "name": "Nguyễn Văn Duy Khánh",
+    "dob": "02/11/2013",
+    "class": "8A12",
+    "grade": 8,
+    "role": "student"
+  },
+  {
+    "code": "HS8A1223",
+    "name": "Nguyễn Đắc Bảo Lâm",
+    "dob": "28/11/2013",
+    "class": "8A12",
+    "grade": 8,
+    "role": "student"
+  },
+  {
+    "code": "HS8A1224",
+    "name": "Nguyễn Thị Linh",
+    "dob": "02/08/2013",
+    "class": "8A12",
+    "grade": 8,
+    "role": "student"
+  },
+  {
+    "code": "HS8A1225",
+    "name": "Nguyễn Bá Bảo Lộc",
+    "dob": "24/09/2013",
+    "class": "8A12",
+    "grade": 8,
+    "role": "student"
+  },
+  {
+    "code": "HS8A1226",
+    "name": "Vương Đình Tiến Lộc",
+    "dob": "02/01/2013",
+    "class": "8A12",
+    "grade": 8,
+    "role": "student"
+  },
+  {
+    "code": "HS8A1227",
+    "name": "Nguyễn Tiến Minh",
+    "dob": "22/06/2013",
+    "class": "8A12",
+    "grade": 8,
+    "role": "student"
+  },
+  {
+    "code": "HS8A1228",
+    "name": "Vương Thị Hồng Ngát",
+    "dob": "20/08/2013",
+    "class": "8A12",
+    "grade": 8,
+    "role": "student"
+  },
+  {
+    "code": "HS8A1229",
+    "name": "Nguyễn Thị Nguyên",
+    "dob": "15/03/2013",
+    "class": "8A12",
+    "grade": 8,
+    "role": "student"
+  },
+  {
+    "code": "HS8A1230",
+    "name": "Nguyễn Khánh Ngân",
+    "dob": "18/09/2013",
+    "class": "8A12",
+    "grade": 8,
+    "role": "student"
+  },
+  {
+    "code": "HS8A1231",
+    "name": "Nguyễn Thị Quỳnh Nguyên",
+    "dob": "30/10/2013",
+    "class": "8A12",
+    "grade": 8,
+    "role": "student"
+  },
+  {
+    "code": "HS8A1232",
+    "name": "Nguyễn Tống Thị Nhi",
+    "dob": "23/05/2013",
+    "class": "8A12",
+    "grade": 8,
+    "role": "student"
+  },
+  {
+    "code": "HS8A1233",
+    "name": "Phạm Thị Tuyết Nhi",
+    "dob": "12/02/2013",
+    "class": "8A12",
+    "grade": 8,
+    "role": "student"
+  },
+  {
+    "code": "HS8A1234",
+    "name": "Nguyễn Đình Quý",
+    "dob": "17/05/2013",
+    "class": "8A12",
+    "grade": 8,
+    "role": "student"
+  },
+  {
+    "code": "HS8A1235",
+    "name": "Nguyễn Tú Quyên",
+    "dob": "02/07/2013",
+    "class": "8A12",
+    "grade": 8,
+    "role": "student"
+  },
+  {
+    "code": "HS8A1236",
+    "name": "Nguyễn Như Sáng",
+    "dob": "28/06/2013",
+    "class": "8A12",
+    "grade": 8,
+    "role": "student"
+  },
+  {
+    "code": "HS8A1237",
+    "name": "Hoàng Văn Sơn",
+    "dob": "22/09/2013",
+    "class": "8A12",
+    "grade": 8,
+    "role": "student"
+  },
+  {
+    "code": "HS8A1238",
+    "name": "Đỗ Trọng Tài",
+    "dob": "14/08/2013",
+    "class": "8A12",
+    "grade": 8,
+    "role": "student"
+  },
+  {
+    "code": "HS8A1239",
+    "name": "Nguyễn Nghĩa Thúy",
+    "dob": "27/11/2013",
+    "class": "8A12",
+    "grade": 8,
+    "role": "student"
+  },
+  {
+    "code": "HS8A1240",
+    "name": "Nguyễn Anh Thư",
+    "dob": "11/08/2013",
+    "class": "8A12",
+    "grade": 8,
+    "role": "student"
+  },
+  {
+    "code": "HS8A1241",
+    "name": "Nguyễn Minh Thư",
+    "dob": "24/08/2013",
+    "class": "8A12",
+    "grade": 8,
+    "role": "student"
+  },
+  {
+    "code": "HS8A1242",
+    "name": "Nguyễn Đình Toàn",
+    "dob": "19/05/2013",
+    "class": "8A12",
+    "grade": 8,
+    "role": "student"
+  },
+  {
+    "code": "HS8A1243",
+    "name": "Nguyễn Huyền Trang",
+    "dob": "04/10/2012",
+    "class": "8A12",
+    "grade": 8,
+    "role": "student"
+  },
+  {
+    "code": "HS8A1244",
+    "name": "Nguyễn Công Trí",
+    "dob": "05/05/2013",
+    "class": "8A12",
+    "grade": 8,
+    "role": "student"
+  },
+  {
+    "code": "HS8A1245",
+    "name": "Lê Danh Tuấn Tú",
+    "dob": "10/06/2013",
+    "class": "8A12",
+    "grade": 8,
+    "role": "student"
+  },
+  {
+    "code": "HS8A1246",
+    "name": "Nguyễn Bá Tuấn",
+    "dob": "08/05/2013",
+    "class": "8A12",
+    "grade": 8,
+    "role": "student"
+  },
+  {
+    "code": "HS8A1247",
+    "name": "Nguyễn Thị Vân",
+    "dob": "15/05/2013",
+    "class": "8A12",
+    "grade": 8,
+    "role": "student"
+  },
+  {
+    "code": "HS8A1248",
+    "name": "Nguyễn Hà Vy",
+    "dob": "16/12/2013",
+    "class": "8A12",
+    "grade": 8,
+    "role": "student"
+  },
+  {
+    "code": "HS8A1101",
+    "name": "Lê Hoài An",
+    "dob": "15/04/2013",
+    "class": "8A11",
+    "grade": 8,
+    "role": "student"
+  },
+  {
+    "code": "HS8A1102",
+    "name": "Lê Thị An",
+    "dob": "01/03/2013",
+    "class": "8A11",
+    "grade": 8,
+    "role": "student"
+  },
+  {
+    "code": "HS8A1103",
+    "name": "Nguyễn Hà Anh",
+    "dob": "20/04/2013",
+    "class": "8A11",
+    "grade": 8,
+    "role": "student"
+  },
+  {
+    "code": "HS8A1104",
+    "name": "Nguyễn Thành Tuấn Anh",
+    "dob": "18/09/2013",
+    "class": "8A11",
+    "grade": 8,
+    "role": "student"
+  },
+  {
+    "code": "HS8A1105",
+    "name": "Nguyễn Thị Quỳnh Anh",
+    "dob": "04/01/2013",
+    "class": "8A11",
+    "grade": 8,
+    "role": "student"
+  },
+  {
+    "code": "HS8A1106",
+    "name": "Nguyễn Thị Nguyệt Ánh",
+    "dob": "27/08/2013",
+    "class": "8A11",
+    "grade": 8,
+    "role": "student"
+  },
+  {
+    "code": "HS8A1107",
+    "name": "Nguyễn Ngọc Bích",
+    "dob": "24/03/2013",
+    "class": "8A11",
+    "grade": 8,
+    "role": "student"
+  },
+  {
+    "code": "HS8A1108",
+    "name": "Nguyễn Bảo Châu",
+    "dob": "03/01/2013",
+    "class": "8A11",
+    "grade": 8,
+    "role": "student"
+  },
+  {
+    "code": "HS8A1109",
+    "name": "Nguyễn Hoàng Ngọc Diệp",
+    "dob": "25/10/2013",
+    "class": "8A11",
+    "grade": 8,
+    "role": "student"
+  },
+  {
+    "code": "HS8A1110",
+    "name": "Vương Thùy Dương",
+    "dob": "18/06/2013",
+    "class": "8A11",
+    "grade": 8,
+    "role": "student"
+  },
+  {
+    "code": "HS8A1111",
+    "name": "Lê Quang Đại",
+    "dob": "17/11/2013",
+    "class": "8A11",
+    "grade": 8,
+    "role": "student"
+  },
+  {
+    "code": "HS8A1112",
+    "name": "Lê Hương Giang",
+    "dob": "17/09/2013",
+    "class": "8A11",
+    "grade": 8,
+    "role": "student"
+  },
+  {
+    "code": "HS8A1113",
+    "name": "Nguyễn Thị Hương Giang",
+    "dob": "05/07/2013",
+    "class": "8A11",
+    "grade": 8,
+    "role": "student"
+  },
+  {
+    "code": "HS8A1114",
+    "name": "Lê Thị Ngọc Hà",
+    "dob": "16/04/2013",
+    "class": "8A11",
+    "grade": 8,
+    "role": "student"
+  },
+  {
+    "code": "HS8A1115",
+    "name": "Nguyễn Đạt Hoàng Hải",
+    "dob": "01/09/2013",
+    "class": "8A11",
+    "grade": 8,
+    "role": "student"
+  },
+  {
+    "code": "HS8A1116",
+    "name": "Vương Gia Hân",
+    "dob": "25/10/2013",
+    "class": "8A11",
+    "grade": 8,
+    "role": "student"
+  },
+  {
+    "code": "HS8A1117",
+    "name": "Nguyễn Quang Huy",
+    "dob": "22/02/2013",
+    "class": "8A11",
+    "grade": 8,
+    "role": "student"
+  },
+  {
+    "code": "HS8A1118",
+    "name": "Nguyễn Thu Huyền",
+    "dob": "11/05/2013",
+    "class": "8A11",
+    "grade": 8,
+    "role": "student"
+  },
+  {
+    "code": "HS8A1119",
+    "name": "Nguyễn Đình Khánh",
+    "dob": "10/11/2013",
+    "class": "8A11",
+    "grade": 8,
+    "role": "student"
+  },
+  {
+    "code": "HS8A1120",
+    "name": "Nguyễn Đăng Khôi",
+    "dob": "10/09/2013",
+    "class": "8A11",
+    "grade": 8,
+    "role": "student"
+  },
+  {
+    "code": "HS8A1121",
+    "name": "Đỗ Thị Tùng Lâm",
+    "dob": "12/08/2013",
+    "class": "8A11",
+    "grade": 8,
+    "role": "student"
+  },
+  {
+    "code": "HS8A1122",
+    "name": "Nguyễn Bảo Linh",
+    "dob": "12/09/2013",
+    "class": "8A11",
+    "grade": 8,
+    "role": "student"
+  },
+  {
+    "code": "HS8A1123",
+    "name": "Nguyễn Thị Ngọc Linh",
+    "dob": "26/08/2013",
+    "class": "8A11",
+    "grade": 8,
+    "role": "student"
+  },
+  {
+    "code": "HS8A1124",
+    "name": "Nguyễn Thị Thùy Linh",
+    "dob": "07/07/2013",
+    "class": "8A11",
+    "grade": 8,
+    "role": "student"
+  },
+  {
+    "code": "HS8A1125",
+    "name": "Nguyễn Đắc Lộc",
+    "dob": "08/09/2013",
+    "class": "8A11",
+    "grade": 8,
+    "role": "student"
+  },
+  {
+    "code": "HS8A1126",
+    "name": "Nguyễn Quỳnh Mai",
+    "dob": "23/09/2013",
+    "class": "8A11",
+    "grade": 8,
+    "role": "student"
+  },
+  {
+    "code": "HS8A1127",
+    "name": "Nguyễn Thị Trà My",
+    "dob": "06/10/2013",
+    "class": "8A11",
+    "grade": 8,
+    "role": "student"
+  },
+  {
+    "code": "HS8A1128",
+    "name": "Nguyễn Thành Nam",
+    "dob": "07/12/2013",
+    "class": "8A11",
+    "grade": 8,
+    "role": "student"
+  },
+  {
+    "code": "HS8A1129",
+    "name": "Đỗ Như Nguyệt",
+    "dob": "24/12/2013",
+    "class": "8A11",
+    "grade": 8,
+    "role": "student"
+  },
+  {
+    "code": "HS8A1130",
+    "name": "Nguyễn Đạt Phát",
+    "dob": "25/07/2013",
+    "class": "8A11",
+    "grade": 8,
+    "role": "student"
+  },
+  {
+    "code": "HS8A1131",
+    "name": "Nguyễn Văn Phúc",
+    "dob": "25/09/2013",
+    "class": "8A11",
+    "grade": 8,
+    "role": "student"
+  },
+  {
+    "code": "HS8A1132",
+    "name": "Nguyễn Ngọc Quỳnh Phương",
+    "dob": "28/04/2013",
+    "class": "8A11",
+    "grade": 8,
+    "role": "student"
+  },
+  {
+    "code": "HS8A1133",
+    "name": "Nguyễn Ngọc Quảng",
+    "dob": "17/05/2013",
+    "class": "8A11",
+    "grade": 8,
+    "role": "student"
+  },
+  {
+    "code": "HS8A1134",
+    "name": "Nguyễn Đình Quân",
+    "dob": "08/01/2013",
+    "class": "8A11",
+    "grade": 8,
+    "role": "student"
+  },
+  {
+    "code": "HS8A1135",
+    "name": "Đặng Thế Quyết",
+    "dob": "03/10/2013",
+    "class": "8A11",
+    "grade": 8,
+    "role": "student"
+  },
+  {
+    "code": "HS8A1136",
+    "name": "Trần Văn Sơn",
+    "dob": "19/12/2013",
+    "class": "8A11",
+    "grade": 8,
+    "role": "student"
+  },
+  {
+    "code": "HS8A1137",
+    "name": "Nguyễn Thanh Tâm",
+    "dob": "11/10/2013",
+    "class": "8A11",
+    "grade": 8,
+    "role": "student"
+  },
+  {
+    "code": "HS8A1138",
+    "name": "Nguyễn Đình Thái",
+    "dob": "09/10/2013",
+    "class": "8A11",
+    "grade": 8,
+    "role": "student"
+  },
+  {
+    "code": "HS8A1139",
+    "name": "Nguyễn Phương Thảo",
+    "dob": "24/11/2013",
+    "class": "8A11",
+    "grade": 8,
+    "role": "student"
+  },
+  {
+    "code": "HS8A1140",
+    "name": "Nguyễn Ngân Thương",
+    "dob": "21/01/2013",
+    "class": "8A11",
+    "grade": 8,
+    "role": "student"
+  },
+  {
+    "code": "HS8A1141",
+    "name": "Nguyễn Thủy Tiên",
+    "dob": "27/09/2013",
+    "class": "8A11",
+    "grade": 8,
+    "role": "student"
+  },
+  {
+    "code": "HS8A1142",
+    "name": "Lê Khả Tín",
+    "dob": "29/01/2013",
+    "class": "8A11",
+    "grade": 8,
+    "role": "student"
+  },
+  {
+    "code": "HS8A1143",
+    "name": "Nguyễn Thành Toàn",
+    "dob": "07/02/2013",
+    "class": "8A11",
+    "grade": 8,
+    "role": "student"
+  },
+  {
+    "code": "HS8A1144",
+    "name": "Nguyễn Bảo Trang",
+    "dob": "18/10/2013",
+    "class": "8A11",
+    "grade": 8,
+    "role": "student"
+  },
+  {
+    "code": "HS8A1145",
+    "name": "Nguyễn Thị Bảo Trân",
+    "dob": "17/11/2013",
+    "class": "8A11",
+    "grade": 8,
+    "role": "student"
+  },
+  {
+    "code": "HS8A1146",
+    "name": "Lê Danh Thế Vinh",
+    "dob": "13/06/2013",
+    "class": "8A11",
+    "grade": 8,
+    "role": "student"
+  },
+  {
+    "code": "HS8A1147",
+    "name": "Vương Khánh Vy",
+    "dob": "14/08/2013",
+    "class": "8A11",
+    "grade": 8,
+    "role": "student"
+  },
+  {
+    "code": "HS8A1301",
+    "name": "Lê An",
+    "dob": "12/02/2013",
+    "class": "8A13",
+    "grade": 8,
+    "role": "student"
+  },
+  {
+    "code": "HS8A1302",
+    "name": "Lê Văn An",
+    "dob": "11/04/2013",
+    "class": "8A13",
+    "grade": 8,
+    "role": "student"
+  },
+  {
+    "code": "HS8A1303",
+    "name": "Nguyễn Thị Lan Anh",
+    "dob": "16/03/2013",
+    "class": "8A13",
+    "grade": 8,
+    "role": "student"
+  },
+  {
+    "code": "HS8A1304",
+    "name": "Phan Thị Lâm Anh",
+    "dob": "22/11/2013",
+    "class": "8A13",
+    "grade": 8,
+    "role": "student"
+  },
+  {
+    "code": "HS8A1305",
+    "name": "Nguyễn Hữu Bách",
+    "dob": "04/11/2013",
+    "class": "8A13",
+    "grade": 8,
+    "role": "student"
+  },
+  {
+    "code": "HS8A1306",
+    "name": "Nguyễn Đình Bảo",
+    "dob": "09/12/2013",
+    "class": "8A13",
+    "grade": 8,
+    "role": "student"
+  },
+  {
+    "code": "HS8A1307",
+    "name": "Lê Thị Thùy Dung",
+    "dob": "12/09/2013",
+    "class": "8A13",
+    "grade": 8,
+    "role": "student"
+  },
+  {
+    "code": "HS8A1308",
+    "name": "Lê Danh Dương",
+    "dob": "04/12/2013",
+    "class": "8A13",
+    "grade": 8,
+    "role": "student"
+  },
+  {
+    "code": "HS8A1309",
+    "name": "Nguyễn Thị Thùy Dương",
+    "dob": "08/12/2013",
+    "class": "8A13",
+    "grade": 8,
+    "role": "student"
+  },
+  {
+    "code": "HS8A1310",
+    "name": "Nguyễn Trung Nhật Dương",
+    "dob": "15/09/2013",
+    "class": "8A13",
+    "grade": 8,
+    "role": "student"
+  },
+  {
+    "code": "HS8A1311",
+    "name": "Nguyễn Văn Đạt",
+    "dob": "24/11/2013",
+    "class": "8A13",
+    "grade": 8,
+    "role": "student"
+  },
+  {
+    "code": "HS8A1312",
+    "name": "Nguyễn Đức Anh Đô",
+    "dob": "20/12/2013",
+    "class": "8A13",
+    "grade": 8,
+    "role": "student"
+  },
+  {
+    "code": "HS8A1313",
+    "name": "Nguyễn Chí Đức",
+    "dob": "27/10/2013",
+    "class": "8A13",
+    "grade": 8,
+    "role": "student"
+  },
+  {
+    "code": "HS8A1314",
+    "name": "Nguyễn Duy Đức",
+    "dob": "29/08/2013",
+    "class": "8A13",
+    "grade": 8,
+    "role": "student"
+  },
+  {
+    "code": "HS8A1315",
+    "name": "Nguyễn Duy Minh Đức",
+    "dob": "12/11/2011",
+    "class": "8A13",
+    "grade": 8,
+    "role": "student"
+  },
+  {
+    "code": "HS8A1316",
+    "name": "Vương Văn Đức",
+    "dob": "30/01/2013",
+    "class": "8A13",
+    "grade": 8,
+    "role": "student"
+  },
+  {
+    "code": "HS8A1317",
+    "name": "Nguyễn Lưu Khánh Hà",
+    "dob": "22/09/2013",
+    "class": "8A13",
+    "grade": 8,
+    "role": "student"
+  },
+  {
+    "code": "HS8A1318",
+    "name": "Nguyễn Mậu Thu Hà",
+    "dob": "02/06/2013",
+    "class": "8A13",
+    "grade": 8,
+    "role": "student"
+  },
+  {
+    "code": "HS8A1319",
+    "name": "Nguyễn Minh Hiếu",
+    "dob": "18/12/2013",
+    "class": "8A13",
+    "grade": 8,
+    "role": "student"
+  },
+  {
+    "code": "HS8A1320",
+    "name": "Nguyễn Minh Hiếu",
+    "dob": "18/12/2013",
+    "class": "8A13",
+    "grade": 8,
+    "role": "student"
+  },
+  {
+    "code": "HS8A1321",
+    "name": "Nguyễn Bá Kiên",
+    "dob": "13/08/2012",
+    "class": "8A13",
+    "grade": 8,
+    "role": "student"
+  },
+  {
+    "code": "HS8A1322",
+    "name": "Vương Thị Thùy Linh",
+    "dob": "15/09/2013",
+    "class": "8A13",
+    "grade": 8,
+    "role": "student"
+  },
+  {
+    "code": "HS8A1323",
+    "name": "Nguyễn Nguyên Lộc",
+    "dob": "19/08/2013",
+    "class": "8A13",
+    "grade": 8,
+    "role": "student"
+  },
+  {
+    "code": "HS8A1324",
+    "name": "Nguyễn Bá Minh",
+    "dob": "19/03/2013",
+    "class": "8A13",
+    "grade": 8,
+    "role": "student"
+  },
+  {
+    "code": "HS8A1325",
+    "name": "Nguyễn Đức Minh",
+    "dob": "27/05/2013",
+    "class": "8A13",
+    "grade": 8,
+    "role": "student"
+  },
+  {
+    "code": "HS8A1326",
+    "name": "Nguyễn Bảo Nam",
+    "dob": "10/03/2013",
+    "class": "8A13",
+    "grade": 8,
+    "role": "student"
+  },
+  {
+    "code": "HS8A1327",
+    "name": "Hoàng Thị Kim Ngân",
+    "dob": "08/02/2013",
+    "class": "8A13",
+    "grade": 8,
+    "role": "student"
+  },
+  {
+    "code": "HS8A1328",
+    "name": "Lê Thị Bích Ngọc",
+    "dob": "31/12/2013",
+    "class": "8A13",
+    "grade": 8,
+    "role": "student"
+  },
+  {
+    "code": "HS8A1329",
+    "name": "Nguyễn Thị Hồng Ngọc",
+    "dob": "26/08/2013",
+    "class": "8A13",
+    "grade": 8,
+    "role": "student"
+  },
+  {
+    "code": "HS8A1330",
+    "name": "Nguyễn Thị Quỳnh Như",
+    "dob": "14/04/2013",
+    "class": "8A13",
+    "grade": 8,
+    "role": "student"
+  },
+  {
+    "code": "HS8A1331",
+    "name": "Nguyễn Công Phú",
+    "dob": "16/03/2013",
+    "class": "8A13",
+    "grade": 8,
+    "role": "student"
+  },
+  {
+    "code": "HS8A1332",
+    "name": "Nguyễn Đình Phúc",
+    "dob": "14/10/2013",
+    "class": "8A13",
+    "grade": 8,
+    "role": "student"
+  },
+  {
+    "code": "HS8A1333",
+    "name": "Nguyễn Thị Minh Phương",
+    "dob": "20/05/2013",
+    "class": "8A13",
+    "grade": 8,
+    "role": "student"
+  },
+  {
+    "code": "HS8A1334",
+    "name": "Vương Thị Phương",
+    "dob": "20/08/2013",
+    "class": "8A13",
+    "grade": 8,
+    "role": "student"
+  },
+  {
+    "code": "HS8A1335",
+    "name": "Dương Ngọc Thái",
+    "dob": "27/01/2013",
+    "class": "8A13",
+    "grade": 8,
+    "role": "student"
+  },
+  {
+    "code": "HS8A1336",
+    "name": "Lê Thị Phương Thanh",
+    "dob": "08/02/2013",
+    "class": "8A13",
+    "grade": 8,
+    "role": "student"
+  },
+  {
+    "code": "HS8A1337",
+    "name": "Nguyễn Hữu Thắng",
+    "dob": "12/04/2013",
+    "class": "8A13",
+    "grade": 8,
+    "role": "student"
+  },
+  {
+    "code": "HS8A1338",
+    "name": "Nguyễn Thị Thu Thủy",
+    "dob": "09/10/2013",
+    "class": "8A13",
+    "grade": 8,
+    "role": "student"
+  },
+  {
+    "code": "HS8A1339",
+    "name": "Nguyễn Thị Minh Thư",
+    "dob": "01/05/2013",
+    "class": "8A13",
+    "grade": 8,
+    "role": "student"
+  },
+  {
+    "code": "HS8A1340",
+    "name": "Đỗ Viết Trung",
+    "dob": "08/09/2013",
+    "class": "8A13",
+    "grade": 8,
+    "role": "student"
+  },
+  {
+    "code": "HS8A1341",
+    "name": "Nguyễn Xuân Trường",
+    "dob": "17/09/2013",
+    "class": "8A13",
+    "grade": 8,
+    "role": "student"
+  },
+  {
+    "code": "HS8A1342",
+    "name": "Nguyễn Hữu Tuân",
+    "dob": "13/01/2013",
+    "class": "8A13",
+    "grade": 8,
+    "role": "student"
+  },
+  {
+    "code": "HS8A1343",
+    "name": "Nguyễn Bá Tuấn",
+    "dob": "23/05/2013",
+    "class": "8A13",
+    "grade": 8,
+    "role": "student"
+  },
+  {
+    "code": "HS8A1344",
+    "name": "Lê Danh Tùng",
+    "dob": "11/01/2013",
+    "class": "8A13",
+    "grade": 8,
+    "role": "student"
+  },
+  {
+    "code": "HS8A1345",
+    "name": "Lê Anh Văn",
+    "dob": "03/10/2013",
+    "class": "8A13",
+    "grade": 8,
+    "role": "student"
+  },
+  {
+    "code": "HS8A1346",
+    "name": "Nguyễn Văn Việt",
+    "dob": "11/08/2013",
+    "class": "8A13",
+    "grade": 8,
+    "role": "student"
+  },
+  {
+    "code": "HS8A1347",
+    "name": "Nguyễn Thị Yến Vy",
+    "dob": "14/09/2013",
+    "class": "8A13",
+    "grade": 8,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1401",
+    "name": "Đỗ Thị Quỳnh Anh",
+    "dob": "12/01/2012",
+    "class": "9A14",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1402",
+    "name": "Lê Thị Minh Anh",
+    "dob": "27/11/2012",
+    "class": "9A14",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1403",
+    "name": "Nguyễn Ngọc Quỳnh Anh",
+    "dob": "09/05/2012",
+    "class": "9A14",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1404",
+    "name": "Nguyễn Thị Phương Anh",
+    "dob": "17/05/2012",
+    "class": "9A14",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1405",
+    "name": "Nguyễn Xuân Nam Anh",
+    "dob": "28/10/2012",
+    "class": "9A14",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1406",
+    "name": "Lê Thị Ngọc Ánh",
+    "dob": "23/10/2012",
+    "class": "9A14",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1407",
+    "name": "Đàm Đức Chính",
+    "dob": "07/09/2012",
+    "class": "9A14",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1408",
+    "name": "Nguyễn Thị Ngọc Diệp",
+    "dob": "22/10/2012",
+    "class": "9A14",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1409",
+    "name": "Nguyễn Hoàng Đắc Duy",
+    "dob": "22/02/2012",
+    "class": "9A14",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1410",
+    "name": "Nguyễn Thị Thùy Dương",
+    "dob": "12/04/2012",
+    "class": "9A14",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1411",
+    "name": "Nguyễn Thùy Dương",
+    "dob": "22/10/2012",
+    "class": "9A14",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1412",
+    "name": "Lê Danh Hải Đăng",
+    "dob": "21/12/2012",
+    "class": "9A14",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1413",
+    "name": "Nguyễn Cầu Đức",
+    "dob": "05/07/2011",
+    "class": "9A14",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1414",
+    "name": "Nguyễn Duy Minh Đức",
+    "dob": "14/07/2012",
+    "class": "9A14",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1415",
+    "name": "Đỗ Minh Giang",
+    "dob": "25/03/2012",
+    "class": "9A14",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1416",
+    "name": "Nguyễn Nghĩa Hiệp",
+    "dob": "10/11/2012",
+    "class": "9A14",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1417",
+    "name": "Nguyễn Tá Hiếu",
+    "dob": "12/10/2012",
+    "class": "9A14",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1418",
+    "name": "Lê Danh Ngọc Hoàng",
+    "dob": "08/07/2012",
+    "class": "9A14",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1419",
+    "name": "Nguyễn Mai Lan",
+    "dob": "06/04/2012",
+    "class": "9A14",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1420",
+    "name": "Trần Văn Lâm",
+    "dob": "30/08/2011",
+    "class": "9A14",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1421",
+    "name": "Lê Thị Ngọc Linh",
+    "dob": "06/04/2012",
+    "class": "9A14",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1422",
+    "name": "Đàm Đức Long",
+    "dob": "04/12/2012",
+    "class": "9A14",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1423",
+    "name": "Nguyễn Đình Long",
+    "dob": "26/02/2012",
+    "class": "9A14",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1424",
+    "name": "Phùng Tuấn Bạch Long",
+    "dob": "09/03/2012",
+    "class": "9A14",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1425",
+    "name": "Lê Danh Minh",
+    "dob": "30/03/2012",
+    "class": "9A14",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1426",
+    "name": "Lê Khả Hoàng Nam",
+    "dob": "07/01/2012",
+    "class": "9A14",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1427",
+    "name": "Nguyễn Thị Kim Ngân",
+    "dob": "13/04/2012",
+    "class": "9A14",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1428",
+    "name": "Đỗ Thị Khánh Ngọc",
+    "dob": "03/01/2012",
+    "class": "9A14",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1429",
+    "name": "Nguyễn Thị Bích Ngọc",
+    "dob": "24/01/2012",
+    "class": "9A14",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1430",
+    "name": "Nguyễn Cầu Nhật",
+    "dob": "05/10/2009",
+    "class": "9A14",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1431",
+    "name": "Nguyễn An Nhiên",
+    "dob": "08/11/2012",
+    "class": "9A14",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1432",
+    "name": "Nguyễn Thị Nụ",
+    "dob": "26/03/2012",
+    "class": "9A14",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1433",
+    "name": "Nguyễn Hữu Tuấn Phong",
+    "dob": "03/04/2012",
+    "class": "9A14",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1434",
+    "name": "Nguyễn Xuân Phúc",
+    "dob": "29/10/2012",
+    "class": "9A14",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1435",
+    "name": "Vũ Văn Quyết",
+    "dob": "27/11/2012",
+    "class": "9A14",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1436",
+    "name": "Giáp Nguyễn Như Quỳnh",
+    "dob": "03/08/2012",
+    "class": "9A14",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1437",
+    "name": "Nguyễn Hữu Quỳnh",
+    "dob": "28/06/2012",
+    "class": "9A14",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1438",
+    "name": "Nguyễn Thị Quỳnh",
+    "dob": "17/09/2012",
+    "class": "9A14",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1439",
+    "name": "Nguyễn Bá Thắng",
+    "dob": "03/11/2012",
+    "class": "9A14",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1440",
+    "name": "Nguyễn Đắc Thìn",
+    "dob": "23/02/2012",
+    "class": "9A14",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1441",
+    "name": "Ngô Thị Thu",
+    "dob": "14/02/2012",
+    "class": "9A14",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1442",
+    "name": "Nguyễn Thị Anh Thơ",
+    "dob": "18/11/2012",
+    "class": "9A14",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1443",
+    "name": "Phùng Thanh Thu",
+    "dob": "22/04/2012",
+    "class": "9A14",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1444",
+    "name": "Nguyễn Xuân Toàn",
+    "dob": "05/10/2012",
+    "class": "9A14",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1445",
+    "name": "Vương Thị Quỳnh Trang",
+    "dob": "12/07/2012",
+    "class": "9A14",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1446",
+    "name": "Nguyễn Hữu Trí",
+    "dob": "02/10/2012",
+    "class": "9A14",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1447",
+    "name": "Nguyễn Phú Trọng",
+    "dob": "05/12/2012",
+    "class": "9A14",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1448",
+    "name": "Nguyễn Đình Trung",
+    "dob": "11/07/2012",
+    "class": "9A14",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1449",
+    "name": "Nguyễn Thu Uyên",
+    "dob": "30/07/2012",
+    "class": "9A14",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1450",
+    "name": "Phùng Tuấn Vương",
+    "dob": "19/07/2012",
+    "class": "9A14",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1451",
+    "name": "Nguyễn Thị Hải Yến",
+    "dob": "23/07/2012",
+    "class": "9A14",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1601",
+    "name": "Đỗ Thị Vân Anh",
+    "dob": "05/07/2012",
+    "class": "9A16",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1602",
+    "name": "Lê Hoài Anh",
+    "dob": "16/11/2012",
+    "class": "9A16",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1603",
+    "name": "Nguyễn Quỳnh Anh",
+    "dob": "19/12/2012",
+    "class": "9A16",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1604",
+    "name": "Nguyễn Thị Châm",
+    "dob": "22/10/2012",
+    "class": "9A16",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1605",
+    "name": "Đỗ Thị Minh Châu",
+    "dob": "27/08/2012",
+    "class": "9A16",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1606",
+    "name": "Nguyễn Đạt Phúc Cường",
+    "dob": "25/02/2012",
+    "class": "9A16",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1607",
+    "name": "Nguyễn Văn Cường",
+    "dob": "10/12/2012",
+    "class": "9A16",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1608",
+    "name": "Nguyễn Công Duy",
+    "dob": "17/10/2012",
+    "class": "9A16",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1609",
+    "name": "Bùi Văn Dương",
+    "dob": "23/08/2012",
+    "class": "9A16",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1610",
+    "name": "Nguyễn Bạch Dương",
+    "dob": "29/05/2012",
+    "class": "9A16",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1611",
+    "name": "Lê Khả Đạt",
+    "dob": "28/11/2012",
+    "class": "9A16",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1612",
+    "name": "Nguyễn Hữu Hải Đăng",
+    "dob": "28/10/2012",
+    "class": "9A16",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1613",
+    "name": "Nguyễn Minh Đăng",
+    "dob": "24/10/2012",
+    "class": "9A16",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1614",
+    "name": "Trần Hoàng Hiệp",
+    "dob": "28/07/2012",
+    "class": "9A16",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1615",
+    "name": "Vương Huy Hùng",
+    "dob": "19/11/2012",
+    "class": "9A16",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1616",
+    "name": "Nguyễn Ngọc Gia Huy",
+    "dob": "01/09/2012",
+    "class": "9A16",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1617",
+    "name": "Vương Quang Huy",
+    "dob": "08/03/2012",
+    "class": "9A16",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1618",
+    "name": "Nguyễn Thị Lan Hương",
+    "dob": "04/06/2012",
+    "class": "9A16",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1619",
+    "name": "Nguyễn Thị Thu Hưởng",
+    "dob": "24/05/2012",
+    "class": "9A16",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1620",
+    "name": "Nguyễn Thành Đức Kiên",
+    "dob": "03/08/2012",
+    "class": "9A16",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1621",
+    "name": "Nguyễn Thị Khánh Linh",
+    "dob": "13/01/2012",
+    "class": "9A16",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1622",
+    "name": "Nguyễn Thị Khánh Linh",
+    "dob": "03/09/2012",
+    "class": "9A16",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1623",
+    "name": "Vương Thị Khánh Linh",
+    "dob": "22/11/2012",
+    "class": "9A16",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1624",
+    "name": "Lê Danh Long",
+    "dob": "18/12/2012",
+    "class": "9A16",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1625",
+    "name": "Nguyễn Duy Long",
+    "dob": "22/02/2012",
+    "class": "9A16",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1626",
+    "name": "Nguyễn Quang Long",
+    "dob": "29/02/2012",
+    "class": "9A16",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1627",
+    "name": "Nguyễn Thị Ngọc Ly",
+    "dob": "28/05/2012",
+    "class": "9A16",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1628",
+    "name": "Nguyễn Hữu Mạnh",
+    "dob": "03/07/2012",
+    "class": "9A16",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1629",
+    "name": "Nguyễn Nghĩa Minh",
+    "dob": "28/08/2012",
+    "class": "9A16",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1630",
+    "name": "Nguyễn Trà My",
+    "dob": "06/06/2012",
+    "class": "9A16",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1631",
+    "name": "Nguyễn Đắc Bảo Nam",
+    "dob": "16/06/2012",
+    "class": "9A16",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1632",
+    "name": "Nguyễn Thị Bảo Ngọc",
+    "dob": "02/05/2012",
+    "class": "9A16",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1633",
+    "name": "Nguyễn Thị Hồng Nhung",
+    "dob": "06/12/2012",
+    "class": "9A16",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1634",
+    "name": "Vương Thị Tuyết Như",
+    "dob": "04/07/2012",
+    "class": "9A16",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1635",
+    "name": "Đỗ Hải Phong",
+    "dob": "13/10/2012",
+    "class": "9A16",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1636",
+    "name": "Nguyễn Minh Phương",
+    "dob": "16/01/2012",
+    "class": "9A16",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1637",
+    "name": "Nguyễn Văn Quang",
+    "dob": "02/01/2012",
+    "class": "9A16",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1638",
+    "name": "Lê Thị Như Quỳnh",
+    "dob": "10/10/2012",
+    "class": "9A16",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1639",
+    "name": "Nguyễn Hữu Anh Tài",
+    "dob": "14/09/2012",
+    "class": "9A16",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1640",
+    "name": "Lê Bùi Minh Tâm",
+    "dob": "31/05/2012",
+    "class": "9A16",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1641",
+    "name": "Đào Thị Thanh",
+    "dob": "14/11/2012",
+    "class": "9A16",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1642",
+    "name": "Nguyễn Thị Bảo Thanh",
+    "dob": "01/09/2012",
+    "class": "9A16",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1643",
+    "name": "Vương Thị Bảo Trang",
+    "dob": "08/02/2012",
+    "class": "9A16",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1644",
+    "name": "Nguyễn Bảo Trâm",
+    "dob": "20/07/2012",
+    "class": "9A16",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1645",
+    "name": "Lê Danh Trường",
+    "dob": "17/01/2012",
+    "class": "9A16",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1646",
+    "name": "Nguyễn Xuân Trường",
+    "dob": "14/09/2012",
+    "class": "9A16",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1647",
+    "name": "Nguyễn Thị Tường Vi",
+    "dob": "27/04/2012",
+    "class": "9A16",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1648",
+    "name": "Hoàng Chí Vịnh",
+    "dob": "23/09/2012",
+    "class": "9A16",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1649",
+    "name": "Lê Đình Vững",
+    "dob": "25/12/2012",
+    "class": "9A16",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1650",
+    "name": "Nguyễn Thị Hải Yến",
+    "dob": "27/08/2012",
+    "class": "9A16",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1501",
+    "name": "Nguyễn Thành An",
+    "dob": "01/09/2012",
+    "class": "9A15",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1502",
+    "name": "Đỗ Thị Phương Anh",
+    "dob": "16/11/2012",
+    "class": "9A15",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1503",
+    "name": "Nguyễn Hà Anh",
+    "dob": "29/03/2012",
+    "class": "9A15",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1504",
+    "name": "Nguyễn Thị Hải Anh",
+    "dob": "16/08/2012",
+    "class": "9A15",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1505",
+    "name": "Nguyễn Hữu Bảo",
+    "dob": "04/11/2012",
+    "class": "9A15",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1506",
+    "name": "Vương Văn Bình",
+    "dob": "10/10/2012",
+    "class": "9A15",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1507",
+    "name": "Nguyễn Băng Châu",
+    "dob": "08/08/2012",
+    "class": "9A15",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1508",
+    "name": "Nguyễn Thị Thanh Chúc",
+    "dob": "09/05/2012",
+    "class": "9A15",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1509",
+    "name": "Nguyễn Văn Công",
+    "dob": "24/11/2012",
+    "class": "9A15",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1510",
+    "name": "Nguyễn Đắc Khương Duy",
+    "dob": "24/12/2012",
+    "class": "9A15",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1511",
+    "name": "Nguyễn Hải Đăng",
+    "dob": "18/12/2010",
+    "class": "9A15",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1512",
+    "name": "Nguyễn Bá Đức",
+    "dob": "06/05/2012",
+    "class": "9A15",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1513",
+    "name": "Nguyễn Minh Hiếu",
+    "dob": "24/05/2012",
+    "class": "9A15",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1514",
+    "name": "Nguyễn Văn Hiếu",
+    "dob": "22/08/2012",
+    "class": "9A15",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1515",
+    "name": "Vương Thị Hòa",
+    "dob": "22/06/2012",
+    "class": "9A15",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1516",
+    "name": "Nguyễn Xuân Hoàng",
+    "dob": "09/10/2012",
+    "class": "9A15",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1517",
+    "name": "Nguyễn Nghĩa Huy",
+    "dob": "04/09/2012",
+    "class": "9A15",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1518",
+    "name": "Nguyễn Khánh Huyền",
+    "dob": "15/12/2012",
+    "class": "9A15",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1519",
+    "name": "Nguyễn Văn Tuấn Hưng",
+    "dob": "29/05/2012",
+    "class": "9A15",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1520",
+    "name": "Nguyễn Thị Thương Huyền",
+    "dob": "22/03/2012",
+    "class": "9A15",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1521",
+    "name": "Dương Hữu Anh Kiệt",
+    "dob": "20/03/2012",
+    "class": "9A15",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1522",
+    "name": "Nguyễn Khánh Linh",
+    "dob": "30/10/2012",
+    "class": "9A15",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1523",
+    "name": "Nguyễn Thị Thu Linh",
+    "dob": "22/08/2012",
+    "class": "9A15",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1524",
+    "name": "Nguyễn Uyên Linh",
+    "dob": "12/12/2012",
+    "class": "9A15",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1525",
+    "name": "Nguyễn Bảo Long",
+    "dob": "18/08/2012",
+    "class": "9A15",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1526",
+    "name": "Nguyễn Đạt Gia Long",
+    "dob": "09/12/2012",
+    "class": "9A15",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1527",
+    "name": "Nguyễn Thành Long",
+    "dob": "13/05/2012",
+    "class": "9A15",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1528",
+    "name": "Nguyễn Văn Long",
+    "dob": "20/10/2012",
+    "class": "9A15",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1529",
+    "name": "Nguyễn Thế Mạnh",
+    "dob": "30/10/2012",
+    "class": "9A15",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1530",
+    "name": "Nguyễn Văn Mạnh",
+    "dob": "29/09/2012",
+    "class": "9A15",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1531",
+    "name": "Nguyễn Tiến Minh",
+    "dob": "07/12/2012",
+    "class": "9A15",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1532",
+    "name": "Nguyễn Bá Nhất",
+    "dob": "17/11/2012",
+    "class": "9A15",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1533",
+    "name": "Nguyễn Thị Yến Nhi",
+    "dob": "10/02/2012",
+    "class": "9A15",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1534",
+    "name": "Nguyễn Kỳ Phong",
+    "dob": "09/10/2012",
+    "class": "9A15",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1535",
+    "name": "Nguyễn Nghĩa Ngọc Phúc",
+    "dob": "18/12/2012",
+    "class": "9A15",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1536",
+    "name": "Nguyễn Quang Phúc",
+    "dob": "31/08/2012",
+    "class": "9A15",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1537",
+    "name": "Nguyễn Đắc Phước",
+    "dob": "13/12/2012",
+    "class": "9A15",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1538",
+    "name": "Nguyễn Thị Phương",
+    "dob": "09/03/2012",
+    "class": "9A15",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1539",
+    "name": "Nguyễn Thị Phương",
+    "dob": "20/03/2012",
+    "class": "9A15",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1540",
+    "name": "Vương Thị Như Quỳnh",
+    "dob": "23/04/2012",
+    "class": "9A15",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1541",
+    "name": "Nguyễn Văn Thuận",
+    "dob": "24/11/2012",
+    "class": "9A15",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1542",
+    "name": "Nguyễn Thị Thủy Tiên",
+    "dob": "28/07/2012",
+    "class": "9A15",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1543",
+    "name": "Lê Thị Quỳnh Trang",
+    "dob": "11/03/2012",
+    "class": "9A15",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1544",
+    "name": "Lý Thị Quỳnh Trang",
+    "dob": "12/08/2012",
+    "class": "9A15",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1545",
+    "name": "Nguyễn Ngọc Thảo Trang",
+    "dob": "10/02/2012",
+    "class": "9A15",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1546",
+    "name": "Nguyễn Chí Trung",
+    "dob": "21/10/2012",
+    "class": "9A15",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1547",
+    "name": "Vương Thị Tươi",
+    "dob": "11/08/2012",
+    "class": "9A15",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1548",
+    "name": "Nguyễn Thị Vân",
+    "dob": "04/09/2012",
+    "class": "9A15",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1549",
+    "name": "Trần Thị Yến Vi",
+    "dob": "14/03/2012",
+    "class": "9A15",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1550",
+    "name": "Vương Khánh Vi",
+    "dob": "04/10/2012",
+    "class": "9A15",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1551",
+    "name": "Phùng Tuấn Việt",
+    "dob": "24/05/2012",
+    "class": "9A15",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1552",
+    "name": "Vương Bảo Yến",
+    "dob": "25/09/2012",
+    "class": "9A15",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1301",
+    "name": "Nguyễn Thị Bình An",
+    "dob": "13/02/2012",
+    "class": "9A13",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1302",
+    "name": "Nguyễn Ngọc Anh",
+    "dob": "21/04/2012",
+    "class": "9A13",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1303",
+    "name": "Trần Diệp Anh",
+    "dob": "17/06/2012",
+    "class": "9A13",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1304",
+    "name": "Vương Ngọc Bích",
+    "dob": "24/08/2012",
+    "class": "9A13",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1305",
+    "name": "Nguyễn Ngọc Minh Châu",
+    "dob": "22/02/2012",
+    "class": "9A13",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1306",
+    "name": "Nguyễn Viết Chiến",
+    "dob": "19/02/2012",
+    "class": "9A13",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1307",
+    "name": "Nguyễn Thị Ngọc Diễm",
+    "dob": "17/08/2012",
+    "class": "9A13",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1308",
+    "name": "Nguyễn Hữu Tùng Dương",
+    "dob": "13/01/2012",
+    "class": "9A13",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1309",
+    "name": "Nguyễn Thùy Dương",
+    "dob": "07/06/2012",
+    "class": "9A13",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1310",
+    "name": "Nguyễn Văn Trí Đức",
+    "dob": "28/06/2012",
+    "class": "9A13",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1311",
+    "name": "Đặng Thái Hà",
+    "dob": "28/12/2012",
+    "class": "9A13",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1312",
+    "name": "Nguyễn Bích Hà",
+    "dob": "16/01/2012",
+    "class": "9A13",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1313",
+    "name": "Nguyễn Quang Hiếu",
+    "dob": "27/07/2012",
+    "class": "9A13",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1314",
+    "name": "Vương Văn Khoa",
+    "dob": "18/04/2012",
+    "class": "9A13",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1315",
+    "name": "Đỗ Ngọc Lan",
+    "dob": "31/12/2012",
+    "class": "9A13",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1316",
+    "name": "Dương Bảo Lâm",
+    "dob": "28/07/2012",
+    "class": "9A13",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1317",
+    "name": "Nguyễn Bá Thiên Lâm",
+    "dob": "14/01/2012",
+    "class": "9A13",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1318",
+    "name": "Nguyễn Bảo Lâm",
+    "dob": "16/08/2012",
+    "class": "9A13",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1319",
+    "name": "Nguyễn Đình Lâm",
+    "dob": "17/05/2012",
+    "class": "9A13",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1320",
+    "name": "Nguyễn Như Mai Lâm",
+    "dob": "09/03/2012",
+    "class": "9A13",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1321",
+    "name": "Nguyễn Quang Lâm",
+    "dob": "14/06/2012",
+    "class": "9A13",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1322",
+    "name": "Nguyễn Gia Linh",
+    "dob": "17/08/2012",
+    "class": "9A13",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1323",
+    "name": "Nguyễn Hà Linh",
+    "dob": "16/02/2012",
+    "class": "9A13",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1324",
+    "name": "Nguyễn Ngọc Linh",
+    "dob": "09/05/2012",
+    "class": "9A13",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1325",
+    "name": "Lê Thị Bích Loan",
+    "dob": "23/06/2012",
+    "class": "9A13",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1326",
+    "name": "Nguyễn Thị Thảo Ly",
+    "dob": "02/11/2012",
+    "class": "9A13",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1327",
+    "name": "Nguyễn Quang Mạnh",
+    "dob": "08/11/2012",
+    "class": "9A13",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1328",
+    "name": "Lê Thị Nhất Minh",
+    "dob": "14/12/2012",
+    "class": "9A13",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1329",
+    "name": "Nguyễn Quang Minh",
+    "dob": "06/05/2012",
+    "class": "9A13",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1330",
+    "name": "Nguyễn Quang Minh",
+    "dob": "29/06/2012",
+    "class": "9A13",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1331",
+    "name": "Nguyễn Văn Nam",
+    "dob": "03/02/2012",
+    "class": "9A13",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1332",
+    "name": "Nguyễn Hoàng Ngân",
+    "dob": "07/12/2012",
+    "class": "9A13",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1333",
+    "name": "Chu Thị Ánh Ngọc",
+    "dob": "05/06/2012",
+    "class": "9A13",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1334",
+    "name": "Nguyễn Thị Bảo Ngọc",
+    "dob": "17/06/2012",
+    "class": "9A13",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1335",
+    "name": "Nguyễn Xuân Minh Nhật",
+    "dob": "28/11/2012",
+    "class": "9A13",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1336",
+    "name": "Nguyễn Thị Hồng Nhung",
+    "dob": "19/12/2012",
+    "class": "9A13",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1337",
+    "name": "Nguyễn Đình Phát",
+    "dob": "02/07/2012",
+    "class": "9A13",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1338",
+    "name": "Nguyễn Xuân Phúc",
+    "dob": "05/09/2012",
+    "class": "9A13",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1339",
+    "name": "Nguyễn Thị Ngọc Phụng",
+    "dob": "27/04/2012",
+    "class": "9A13",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1340",
+    "name": "Nguyễn Hoàng Mai Phương",
+    "dob": "18/12/2012",
+    "class": "9A13",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1341",
+    "name": "Nguyễn Thị Như Quỳnh",
+    "dob": "30/12/2012",
+    "class": "9A13",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1342",
+    "name": "Nguyễn Thanh",
+    "dob": "10/01/2012",
+    "class": "9A13",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1343",
+    "name": "Đào Thị Thủy",
+    "dob": "03/01/2012",
+    "class": "9A13",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1344",
+    "name": "Lê Trần Anh Thư",
+    "dob": "17/11/2012",
+    "class": "9A13",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1345",
+    "name": "Nguyễn Bá Minh Triết",
+    "dob": "14/08/2012",
+    "class": "9A13",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1346",
+    "name": "Nguyễn Đức Trung",
+    "dob": "20/04/2012",
+    "class": "9A13",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1347",
+    "name": "Bùi Ngọc Tường Vy",
+    "dob": "14/06/2012",
+    "class": "9A13",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1348",
+    "name": "Nguyễn Thị Yến",
+    "dob": "09/07/2012",
+    "class": "9A13",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS9A1349",
+    "name": "Nguyễn Hữu Hiền",
+    "dob": "14/07/2012",
+    "class": "9A13",
+    "grade": 9,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1001",
+    "name": "Lê Thị Hoài An",
+    "dob": "05/09/2015",
+    "class": "6A10",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1002",
+    "name": "Nguyễn Hoài An",
+    "dob": "07/06/2015",
+    "class": "6A10",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1003",
+    "name": "Nguyễn Thị Khánh An",
+    "dob": "07/02/2015",
+    "class": "6A10",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1004",
+    "name": "Lê Quỳnh Anh",
+    "dob": "26/04/2015",
+    "class": "6A10",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1005",
+    "name": "Nguyễn Đạt Duy Anh",
+    "dob": "31/05/2015",
+    "class": "6A10",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1006",
+    "name": "Đàm Thị Ngọc Bích",
+    "dob": "16/03/2015",
+    "class": "6A10",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1007",
+    "name": "Nguyễn Bảo Châu",
+    "dob": "25/04/2015",
+    "class": "6A10",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1008",
+    "name": "Nguyễn Quỳnh Chi",
+    "dob": "17/06/2015",
+    "class": "6A10",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1009",
+    "name": "Nguyễn Thị Hạnh Dung",
+    "dob": "23/05/2015",
+    "class": "6A10",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1010",
+    "name": "Nguyễn Hữu Dũng",
+    "dob": "30/10/2015",
+    "class": "6A10",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1011",
+    "name": "Nguyễn Ánh Dương",
+    "dob": "09/05/2015",
+    "class": "6A10",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1012",
+    "name": "Đỗ Tấn Đạt",
+    "dob": "26/09/2015",
+    "class": "6A10",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1013",
+    "name": "Nguyễn Bá Thành Đạt",
+    "dob": "28/05/2015",
+    "class": "6A10",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1014",
+    "name": "Đỗ Hữu Đức",
+    "dob": "18/10/2015",
+    "class": "6A10",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1015",
+    "name": "Nguyễn Đình Minh Đức",
+    "dob": "14/11/2015",
+    "class": "6A10",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1016",
+    "name": "Phạm Thị Thanh Hà",
+    "dob": "28/05/2015",
+    "class": "6A10",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1017",
+    "name": "Vương Nhật Hạ",
+    "dob": "12/10/2015",
+    "class": "6A10",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1018",
+    "name": "Nguyễn Bá Mạnh Hải",
+    "dob": "05/01/2015",
+    "class": "6A10",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1019",
+    "name": "Nguyễn Diệp Hân",
+    "dob": "31/12/2015",
+    "class": "6A10",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1020",
+    "name": "Vương Quỳnh Hoa",
+    "dob": "20/04/2015",
+    "class": "6A10",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1021",
+    "name": "Nguyễn Đạt Hùng",
+    "dob": "30/03/2015",
+    "class": "6A10",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1022",
+    "name": "Đào Văn Huy",
+    "dob": "19/01/2015",
+    "class": "6A10",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1023",
+    "name": "Đỗ Thị Ngọc Huyền",
+    "dob": "24/06/2015",
+    "class": "6A10",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1024",
+    "name": "Nguyễn Duy Gia Hưng",
+    "dob": "16/09/2015",
+    "class": "6A10",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1025",
+    "name": "Nguyễn Bá Minh Khang",
+    "dob": "04/01/2015",
+    "class": "6A10",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1026",
+    "name": "Nguyễn Bảo Khánh",
+    "dob": "19/10/2015",
+    "class": "6A10",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1027",
+    "name": "Nguyễn Kiều Linh",
+    "dob": "17/01/2015",
+    "class": "6A10",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1028",
+    "name": "Nguyễn Thị Khánh Linh",
+    "dob": "16/08/2015",
+    "class": "6A10",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1029",
+    "name": "Nguyễn Thị Mai Linh",
+    "dob": "08/06/2015",
+    "class": "6A10",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1030",
+    "name": "Vương Khánh Linh",
+    "dob": "30/05/2015",
+    "class": "6A10",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1031",
+    "name": "Lê Danh Nam",
+    "dob": "20/09/2015",
+    "class": "6A10",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1032",
+    "name": "Nguyễn Quang Nam",
+    "dob": "01/01/2015",
+    "class": "6A10",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1033",
+    "name": "Nguyễn Hoàng Ngân",
+    "dob": "03/08/2015",
+    "class": "6A10",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1034",
+    "name": "Vương Thị Bảo Ngọc",
+    "dob": "13/05/2015",
+    "class": "6A10",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1035",
+    "name": "Nguyễn Bảo Nhi",
+    "dob": "30/03/2015",
+    "class": "6A10",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1036",
+    "name": "Nguyễn Linh Nhi",
+    "dob": "16/02/2015",
+    "class": "6A10",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1037",
+    "name": "Nguyễn An Như",
+    "dob": "14/08/2015",
+    "class": "6A10",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1038",
+    "name": "Nguyễn Minh Phương",
+    "dob": "18/04/2015",
+    "class": "6A10",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1039",
+    "name": "Trần Văn Trường",
+    "dob": "06/08/2015",
+    "class": "6A10",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1040",
+    "name": "Nguyễn Bách Tùng",
+    "dob": "11/06/2015",
+    "class": "6A10",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1041",
+    "name": "Trần Văn Viết",
+    "dob": "11/09/2015",
+    "class": "6A10",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1042",
+    "name": "Nguyễn Hoàng Yến",
+    "dob": "04/03/2015",
+    "class": "6A10",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1201",
+    "name": "Vương Văn Thế Anh",
+    "dob": "29/01/2015",
+    "class": "6A12",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1202",
+    "name": "Hoàng Văn Minh Anh",
+    "dob": "28/01/2015",
+    "class": "6A12",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1203",
+    "name": "Trần Tuệ Anh",
+    "dob": "28/12/2015",
+    "class": "6A12",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1204",
+    "name": "Đỗ Trọng Ân",
+    "dob": "04/04/2014",
+    "class": "6A12",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1205",
+    "name": "Nguyễn Công Gia Bảo",
+    "dob": "23/01/2015",
+    "class": "6A12",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1206",
+    "name": "Vương Đình Bắc",
+    "dob": "26/05/2015",
+    "class": "6A12",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1207",
+    "name": "Nguyễn Linh Chi",
+    "dob": "30/01/2015",
+    "class": "6A12",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1208",
+    "name": "Trần Đức Duy",
+    "dob": "03/09/2015",
+    "class": "6A12",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1209",
+    "name": "Vương Đình Dương",
+    "dob": "26/05/2015",
+    "class": "6A12",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1210",
+    "name": "Đỗ Thị Kiều Giang",
+    "dob": "02/12/2015",
+    "class": "6A12",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1211",
+    "name": "Nguyễn Tống Giang",
+    "dob": "22/05/2015",
+    "class": "6A12",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1212",
+    "name": "Vương Quốc Hào",
+    "dob": "26/11/2015",
+    "class": "6A12",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1213",
+    "name": "Nguyễn Mậu Hiếu",
+    "dob": "10/10/2015",
+    "class": "6A12",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1214",
+    "name": "Nguyễn Hoàng Khang",
+    "dob": "31/05/2015",
+    "class": "6A12",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1215",
+    "name": "Vương Văn Khôi",
+    "dob": "05/04/2015",
+    "class": "6A12",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1216",
+    "name": "Nguyễn Trung Kiên",
+    "dob": "20/05/2015",
+    "class": "6A12",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1217",
+    "name": "Lê Nguyễn Bảo Linh",
+    "dob": "08/08/2015",
+    "class": "6A12",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1218",
+    "name": "Nguyễn Gia Linh",
+    "dob": "01/10/2015",
+    "class": "6A12",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1219",
+    "name": "Nguyễn Thùy Linh",
+    "dob": "11/07/2015",
+    "class": "6A12",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1220",
+    "name": "Nguyễn Huy Lộc",
+    "dob": "28/07/2015",
+    "class": "6A12",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1221",
+    "name": "Ngô Thị Mai",
+    "dob": "23/07/2015",
+    "class": "6A12",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1222",
+    "name": "Nguyễn Thanh Minh",
+    "dob": "23/09/2015",
+    "class": "6A12",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1223",
+    "name": "Nguyễn Văn Minh",
+    "dob": "01/01/2015",
+    "class": "6A12",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1224",
+    "name": "Nguyễn Viết Minh",
+    "dob": "04/11/2015",
+    "class": "6A12",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1225",
+    "name": "Nguyễn Thị Bảo Ngọc",
+    "dob": "11/08/2015",
+    "class": "6A12",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1226",
+    "name": "Vương Văn An Nguyên",
+    "dob": "10/12/2015",
+    "class": "6A12",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1227",
+    "name": "Trần Như Nguyệt",
+    "dob": "30/11/2015",
+    "class": "6A12",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1228",
+    "name": "Nguyễn Tống Nhất",
+    "dob": "06/12/2014",
+    "class": "6A12",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1229",
+    "name": "Nguyễn Hữu Phú",
+    "dob": "03/08/2015",
+    "class": "6A12",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1230",
+    "name": "Nguyễn Bá Phúc",
+    "dob": "12/01/2015",
+    "class": "6A12",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1231",
+    "name": "Lưu Thị Minh Phương",
+    "dob": "22/11/2015",
+    "class": "6A12",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1232",
+    "name": "Vương Đình Tài",
+    "dob": "28/10/2015",
+    "class": "6A12",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1233",
+    "name": "Nguyễn Hữu Thành",
+    "dob": "24/12/2015",
+    "class": "6A12",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1234",
+    "name": "Nguyễn Đình Diệu Thảo",
+    "dob": "14/09/2015",
+    "class": "6A12",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1235",
+    "name": "Nguyễn Văn Trí Thiện",
+    "dob": "07/05/2015",
+    "class": "6A12",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1236",
+    "name": "Nguyễn Tống Thiết",
+    "dob": "28/12/2015",
+    "class": "6A12",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1237",
+    "name": "Nguyễn Anh Thư",
+    "dob": "25/04/2015",
+    "class": "6A12",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1238",
+    "name": "Nguyễn Quỳnh Trâm",
+    "dob": "28/11/2015",
+    "class": "6A12",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1239",
+    "name": "Vương Bảo Trâm",
+    "dob": "14/09/2015",
+    "class": "6A12",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1240",
+    "name": "Nguyễn Xuân Trung",
+    "dob": "13/04/2015",
+    "class": "6A12",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1241",
+    "name": "Đỗ Thanh Vân",
+    "dob": "24/10/2015",
+    "class": "6A12",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1242",
+    "name": "Bùi Ngọc Như Ý",
+    "dob": "19/09/2015",
+    "class": "6A12",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1243",
+    "name": "Ngô Hải Yến",
+    "dob": "10/12/2015",
+    "class": "6A12",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1244",
+    "name": "Nguyễn Bá Đức",
+    "dob": "16/10/2015",
+    "class": "6A12",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1101",
+    "name": "Lý Nguyệt Anh",
+    "dob": "16/07/2015",
+    "class": "6A11",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1102",
+    "name": "Nguyễn Bảo Anh",
+    "dob": "09/10/2015",
+    "class": "6A11",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1103",
+    "name": "Nguyễn Minh Anh",
+    "dob": "13/02/2015",
+    "class": "6A11",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1104",
+    "name": "Nguyễn Thị Lan Anh",
+    "dob": "21/01/2015",
+    "class": "6A11",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1105",
+    "name": "Nguyễn Thị Ngọc Anh",
+    "dob": "27/07/2015",
+    "class": "6A11",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1106",
+    "name": "Nguyễn Thị Quỳnh Anh",
+    "dob": "17/08/2015",
+    "class": "6A11",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1107",
+    "name": "Từ Đức Anh",
+    "dob": "25/07/2015",
+    "class": "6A11",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1108",
+    "name": "Vương Thị Hoài Anh",
+    "dob": "02/09/2015",
+    "class": "6A11",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1109",
+    "name": "Nguyễn Ngọc Ánh",
+    "dob": "25/03/2015",
+    "class": "6A11",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1110",
+    "name": "Vương Quốc Bảo",
+    "dob": "22/01/2015",
+    "class": "6A11",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1111",
+    "name": "Vương Thị Ngọc Bích",
+    "dob": "14/10/2015",
+    "class": "6A11",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1112",
+    "name": "Lê Thị Quỳnh Chi",
+    "dob": "05/09/2015",
+    "class": "6A11",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1113",
+    "name": "Vương Quỳnh Chi",
+    "dob": "12/01/2015",
+    "class": "6A11",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1114",
+    "name": "Nguyễn Bá Chiến",
+    "dob": "02/09/2015",
+    "class": "6A11",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1115",
+    "name": "Vương Thế Dũng",
+    "dob": "14/07/2015",
+    "class": "6A11",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1116",
+    "name": "Vương Mỹ Duyên",
+    "dob": "22/10/2015",
+    "class": "6A11",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1117",
+    "name": "Nguyễn Thị Thùy Dương",
+    "dob": "08/08/2015",
+    "class": "6A11",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1118",
+    "name": "Nguyễn Văn Đạt",
+    "dob": "16/04/2015",
+    "class": "6A11",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1119",
+    "name": "Phan Nho Minh Đức",
+    "dob": "29/01/2015",
+    "class": "6A11",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1120",
+    "name": "Nguyễn Thị Thu Hà",
+    "dob": "06/11/2015",
+    "class": "6A11",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1121",
+    "name": "Nguyễn Quang Hiếu",
+    "dob": "27/04/2014",
+    "class": "6A11",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1122",
+    "name": "Vương Thị Ánh Hồng",
+    "dob": "31/01/2015",
+    "class": "6A11",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1123",
+    "name": "Nguyễn Thị Kim Huệ",
+    "dob": "05/07/2015",
+    "class": "6A11",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1124",
+    "name": "Sùng A Hùng",
+    "dob": "06/01/2015",
+    "class": "6A11",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1125",
+    "name": "Lê Khả Huy",
+    "dob": "13/12/2015",
+    "class": "6A11",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1126",
+    "name": "Vương Thị Huyền",
+    "dob": "13/07/2015",
+    "class": "6A11",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1127",
+    "name": "Nguyễn Thị Hương",
+    "dob": "15/05/2015",
+    "class": "6A11",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1128",
+    "name": "Nguyễn Thu Hương",
+    "dob": "22/12/2015",
+    "class": "6A11",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1129",
+    "name": "Nguyễn Ngân Khánh",
+    "dob": "07/04/2015",
+    "class": "6A11",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1130",
+    "name": "Đàm Đức Lộc",
+    "dob": "16/03/2015",
+    "class": "6A11",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1131",
+    "name": "Ngô Thị Mai",
+    "dob": "24/10/2015",
+    "class": "6A11",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1132",
+    "name": "Nguyễn Như Hải Ninh",
+    "dob": "11/10/2015",
+    "class": "6A11",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1133",
+    "name": "Nguyễn Tiến Phong",
+    "dob": "02/01/2015",
+    "class": "6A11",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1134",
+    "name": "Nguyễn Bá Hữu Phước",
+    "dob": "30/07/2015",
+    "class": "6A11",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1135",
+    "name": "Nguyễn Bá Quân",
+    "dob": "07/08/2015",
+    "class": "6A11",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1136",
+    "name": "Nguyễn Hữu Minh Quân",
+    "dob": "09/02/2015",
+    "class": "6A11",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1137",
+    "name": "Nguyễn Đạt Quý",
+    "dob": "19/10/2015",
+    "class": "6A11",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1138",
+    "name": "Vương Huy Thắng",
+    "dob": "15/04/2015",
+    "class": "6A11",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1139",
+    "name": "Vương Quang Tĩnh",
+    "dob": "25/06/2015",
+    "class": "6A11",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1140",
+    "name": "Lê Danh Trung",
+    "dob": "04/08/2015",
+    "class": "6A11",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1141",
+    "name": "Ngô Huy Trường",
+    "dob": "23/02/2015",
+    "class": "6A11",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1142",
+    "name": "Trần Văn Tuấn",
+    "dob": "03/12/2015",
+    "class": "6A11",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1143",
+    "name": "Lù Thị Kim Ngân",
+    "dob": "20/01/2015",
+    "class": "6A11",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1301",
+    "name": "Đỗ Xuân Sơn",
+    "dob": "10/01/2014",
+    "class": "6A13",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1302",
+    "name": "Nguyễn Sỹ Hồng Anh",
+    "dob": "10/07/2015",
+    "class": "6A13",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1303",
+    "name": "Nguyễn Thị Mai Anh",
+    "dob": "23/11/2015",
+    "class": "6A13",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1304",
+    "name": "Nguyễn Ngọc Ánh",
+    "dob": "21/11/2015",
+    "class": "6A13",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1305",
+    "name": "Nguyễn Ánh Chi",
+    "dob": "08/08/2015",
+    "class": "6A13",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1306",
+    "name": "Đặng Thế Chung",
+    "dob": "04/10/2015",
+    "class": "6A13",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1307",
+    "name": "Nguyễn Hữu Duy",
+    "dob": "07/02/2015",
+    "class": "6A13",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1308",
+    "name": "Lê Minh Đức",
+    "dob": "07/01/2015",
+    "class": "6A13",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1309",
+    "name": "Trần Hương Giang",
+    "dob": "14/12/2015",
+    "class": "6A13",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1310",
+    "name": "Nguyễn Thị Thu Huyền",
+    "dob": "10/04/2015",
+    "class": "6A13",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1311",
+    "name": "Nguyễn Phương Linh",
+    "dob": "11/10/2015",
+    "class": "6A13",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1312",
+    "name": "Phùng Thị Khánh Linh",
+    "dob": "25/01/2015",
+    "class": "6A13",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1313",
+    "name": "Nguyễn Thị Quỳnh Mai",
+    "dob": "21/09/2015",
+    "class": "6A13",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1314",
+    "name": "Nguyễn Thị Bảo Minh",
+    "dob": "26/12/2015",
+    "class": "6A13",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1315",
+    "name": "Nguyễn Thị Kim Ngân",
+    "dob": "11/04/2015",
+    "class": "6A13",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1316",
+    "name": "Nguyễn Thị Kim Ngân",
+    "dob": "16/06/2015",
+    "class": "6A13",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1317",
+    "name": "Phùng Thị Kim Ngân",
+    "dob": "01/03/2015",
+    "class": "6A13",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1318",
+    "name": "Nguyễn Bảo Ngọc",
+    "dob": "16/09/2015",
+    "class": "6A13",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1319",
+    "name": "Nguyễn Thị Như Ngọc",
+    "dob": "29/10/2015",
+    "class": "6A13",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1320",
+    "name": "Lưu Thị Khánh Nhi",
+    "dob": "11/09/2015",
+    "class": "6A13",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1321",
+    "name": "Triệu Chấn Phong",
+    "dob": "04/03/2015",
+    "class": "6A13",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1322",
+    "name": "Nguyễn Thu Phương",
+    "dob": "21/07/2015",
+    "class": "6A13",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1323",
+    "name": "Hoàng Ngọc Quang",
+    "dob": "02/05/2015",
+    "class": "6A13",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1324",
+    "name": "Lê Danh Quốc",
+    "dob": "04/03/2015",
+    "class": "6A13",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1325",
+    "name": "Hà Trung Sơn",
+    "dob": "28/06/2015",
+    "class": "6A13",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1326",
+    "name": "Nguyễn Bá Thắng",
+    "dob": "13/01/2015",
+    "class": "6A13",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1327",
+    "name": "Nguyễn Xuân Thắng",
+    "dob": "07/12/2015",
+    "class": "6A13",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1328",
+    "name": "Nguyễn Hữu Thiện",
+    "dob": "24/10/2014",
+    "class": "6A13",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1329",
+    "name": "Trần Văn Toản",
+    "dob": "19/01/2015",
+    "class": "6A13",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1330",
+    "name": "Thiều Bảo Trang",
+    "dob": "04/10/2015",
+    "class": "6A13",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1331",
+    "name": "Trần Thanh Trúc",
+    "dob": "06/10/2015",
+    "class": "6A13",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1332",
+    "name": "Nguyễn Quang Trung",
+    "dob": "30/09/2015",
+    "class": "6A13",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1333",
+    "name": "Nguyễn Bá Tú",
+    "dob": "27/12/2015",
+    "class": "6A13",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1334",
+    "name": "Phùng Tuấn Tú",
+    "dob": "19/04/2015",
+    "class": "6A13",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1335",
+    "name": "Nguyễn Thành Duy Vàng",
+    "dob": "26/11/2015",
+    "class": "6A13",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1336",
+    "name": "Nguyễn Thị Vân",
+    "dob": "20/02/2015",
+    "class": "6A13",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1337",
+    "name": "Nguyễn Công Vĩ",
+    "dob": "13/11/2015",
+    "class": "6A13",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1338",
+    "name": "Nguyễn Hữu Việt",
+    "dob": "20/07/2015",
+    "class": "6A13",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1339",
+    "name": "Vương Văn Vương",
+    "dob": "09/01/2015",
+    "class": "6A13",
+    "grade": 6,
+    "role": "student"
+  },
+  {
+    "code": "HS6A1340",
+    "name": "Nguyễn Hải Yến",
+    "dob": "03/06/2015",
+    "class": "6A13",
+    "grade": 6,
+    "role": "student"
+  }
+]

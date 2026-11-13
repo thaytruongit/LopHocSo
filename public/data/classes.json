@@ -1,0 +1,154 @@
+[
+  {
+    "id": "c-6a10",
+    "grade": 6,
+    "name": "Lớp 6A10",
+    "classCode": "6A10-2026",
+    "studentCount": 42,
+    "tenantId": "mao-dien"
+  },
+  {
+    "id": "c-6a11",
+    "grade": 6,
+    "name": "Lớp 6A11",
+    "classCode": "6A11-2026",
+    "studentCount": 43,
+    "tenantId": "mao-dien"
+  },
+  {
+    "id": "c-6a12",
+    "grade": 6,
+    "name": "Lớp 6A12",
+    "classCode": "6A12-2026",
+    "studentCount": 44,
+    "tenantId": "mao-dien"
+  },
+  {
+    "id": "c-6a13",
+    "grade": 6,
+    "name": "Lớp 6A13",
+    "classCode": "6A13-2026",
+    "studentCount": 40,
+    "tenantId": "mao-dien"
+  },
+  {
+    "id": "c-7a10",
+    "grade": 7,
+    "name": "Lớp 7A10",
+    "classCode": "7A10-2026",
+    "studentCount": 42,
+    "tenantId": "mao-dien"
+  },
+  {
+    "id": "c-7a11",
+    "grade": 7,
+    "name": "Lớp 7A11",
+    "classCode": "7A11-2026",
+    "studentCount": 39,
+    "tenantId": "mao-dien"
+  },
+  {
+    "id": "c-7a12",
+    "grade": 7,
+    "name": "Lớp 7A12",
+    "classCode": "7A12-2026",
+    "studentCount": 37,
+    "tenantId": "mao-dien"
+  },
+  {
+    "id": "c-7a13",
+    "grade": 7,
+    "name": "Lớp 7A13",
+    "classCode": "7A13-2026",
+    "studentCount": 39,
+    "tenantId": "mao-dien"
+  },
+  {
+    "id": "c-8a11",
+    "grade": 8,
+    "name": "Lớp 8A11",
+    "classCode": "8A11-2026",
+    "studentCount": 47,
+    "tenantId": "mao-dien"
+  },
+  {
+    "id": "c-8a12",
+    "grade": 8,
+    "name": "Lớp 8A12",
+    "classCode": "8A12-2026",
+    "studentCount": 48,
+    "tenantId": "mao-dien"
+  },
+  {
+    "id": "c-8a13",
+    "grade": 8,
+    "name": "Lớp 8A13",
+    "classCode": "8A13-2026",
+    "studentCount": 47,
+    "tenantId": "mao-dien"
+  },
+  {
+    "id": "c-9a13",
+    "grade": 9,
+    "name": "Lớp 9A13",
+    "classCode": "9A13-2026",
+    "studentCount": 49,
+    "tenantId": "mao-dien"
+  },
+  {
+    "id": "c-9a14",
+    "grade": 9,
+    "name": "Lớp 9A14",
+    "classCode": "9A14-2026",
+    "studentCount": 51,
+    "tenantId": "mao-dien"
+  },
+  {
+    "id": "c-9a15",
+    "grade": 9,
+    "name": "Lớp 9A15",
+    "classCode": "9A15-2026",
+    "studentCount": 52,
+    "tenantId": "mao-dien"
+  },
+  {
+    "id": "c-9a16",
+    "grade": 9,
+    "name": "Lớp 9A16",
+    "classCode": "9A16-2026",
+    "studentCount": 50,
+    "tenantId": "mao-dien"
+  },
+  {
+    "id": "demo-6a1",
+    "tenantId": "chu-van-an",
+    "grade": 6,
+    "name": "Lớp 6A1",
+    "classCode": "CVA-6A1-2026",
+    "studentCount": 4
+  },
+  {
+    "id": "demo-7a1",
+    "tenantId": "chu-van-an",
+    "grade": 7,
+    "name": "Lớp 7A1",
+    "classCode": "CVA-7A1-2026",
+    "studentCount": 4
+  },
+  {
+    "id": "demo-8a1",
+    "tenantId": "chu-van-an",
+    "grade": 8,
+    "name": "Lớp 8A1",
+    "classCode": "CVA-8A1-2026",
+    "studentCount": 4
+  },
+  {
+    "id": "demo-9a1",
+    "tenantId": "chu-van-an",
+    "grade": 9,
+    "name": "Lớp 9A1",
+    "classCode": "CVA-9A1-2026",
+    "studentCount": 4
+  }
+]

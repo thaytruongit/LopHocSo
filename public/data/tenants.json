@@ -1,0 +1,51 @@
+[
+  {
+    "id": "mao-dien",
+    "code": "THCS_MAO_DIEN",
+    "name": "Trường THCS Mão Điền",
+    "shortName": "THCS Mão Điền",
+    "province": "TX Thuận Thành, Bắc Ninh",
+    "teacherName": "Thầy Đỗ Mạnh Trường",
+    "teacherEmail": "manhtruongdo1984@gmail.com",
+    "academicYear": "2025-2026",
+    "rooms": [
+      {
+        "id": "pm-1",
+        "name": "Phòng Tin học 1",
+        "capacity": 24
+      },
+      {
+        "id": "pm-2",
+        "name": "Phòng Tin học 2",
+        "capacity": 24
+      }
+    ],
+    "studentDefaultPass": "123",
+    "teacherPasscode": "666",
+    "studentCount": 670,
+    "classCount": 15,
+    "isDefault": true
+  },
+  {
+    "id": "chu-van-an",
+    "code": "THCS_CHU_VAN_AN",
+    "name": "Trường THCS Chu Văn An (Mẫu Multi-Tenant)",
+    "shortName": "THCS Chu Văn An",
+    "province": "Hà Nội",
+    "teacherName": "Cô Nguyễn Thu Hà",
+    "teacherEmail": "giaovien.demo@chuvanan.edu.vn",
+    "academicYear": "2025-2026",
+    "rooms": [
+      {
+        "id": "pm-a1",
+        "name": "Phòng Lab Tin học A1",
+        "capacity": 24
+      }
+    ],
+    "studentDefaultPass": "123",
+    "teacherPasscode": "666",
+    "studentCount": 16,
+    "classCount": 4,
+    "isDefault": false
+  }
+]
