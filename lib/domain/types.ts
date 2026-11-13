@@ -231,11 +231,17 @@ export interface PracticalSubmission {
   studentName: string;
   classId: string;
   className: string;
+  grade?: GradeLevel;
+  roomId?: string;
+  machineId?: number;
   period: number;
   assignmentTitle: string;
   fileName: string;
   fileSize: string;
+  fileType?: string;
+  fileDataUrl?: string;
   submittedAt: string;
+  submittedTimestamp?: number;
   fileUrl?: string;
   score?: number;
   teacherFeedback?: string;

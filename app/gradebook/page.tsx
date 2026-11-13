@@ -8,6 +8,8 @@ import {
   Check,
   X,
   Download,
+  Lock,
+  ShieldCheck,
 } from 'lucide-react';
 import { getCurrentUser, UserSession } from '@/lib/auth';
 import {
@@ -21,10 +23,16 @@ import {
   computeClassGradeStats,
   updateGradeRowScores,
 } from '@/lib/domain/grading-tt22';
+import {
+  filterAccessibleClassesForUser,
+  isTeacherUser,
+} from '@/lib/domain/access-control';
 import { exportGradebookToExcel } from '@/lib/export-excel';
 import { ClassItem, GradeLevel, OfficialGradeRow, Student } from '@/lib/domain/types';
+import StudentAuthGate from '@/components/StudentAuthGate';
 
 export default function GradebookPage() {
+  const [mounted, setMounted] = useState(false);
   const [user, setUser] = useState<UserSession | null>(null);
   const [classes, setClasses] = useState<ClassItem[]>([]);
   const [students, setStudents] = useState<Student[]>([]);
@@ -37,36 +45,46 @@ export default function GradebookPage() {
   const [draftScores, setDraftScores] = useState<Partial<OfficialGradeRow>>({});
 
   useEffect(() => {
-    const current = getCurrentUser();
-    setUser(current);
-
-    Promise.all([
-      getClassesByTenant(current.tenantId),
-      getStudentsByTenant(current.tenantId),
-    ]).then(([clsList, stList]) => {
-      setClasses(clsList);
-      setStudents(stList);
-
-      if (current.role === 'student' && current.studentGrade) {
-        setSelectedGrade(current.studentGrade);
-        const matchCls = clsList.find(
-          (c) =>
-            c.name === current.studentClass ||
-            current.studentClass?.includes(c.name.replace('Lớp ', ''))
-        );
-        if (matchCls) setSelectedClassId(matchCls.id);
-      } else {
-        const def = clsList.find((c) => c.grade === 7) || clsList[0];
-        if (def) {
-          setSelectedGrade(def.grade);
-          setSelectedClassId(def.id);
-        }
+    setMounted(true);
+    const loadForSession = () => {
+      const current = getCurrentUser();
+      setUser(current);
+      if (!current.isLoggedIn) {
+        setClasses([]);
+        setStudents([]);
+        return;
       }
-    });
+
+      Promise.all([
+        getClassesByTenant(current.tenantId),
+        getStudentsByTenant(current.tenantId),
+      ]).then(([clsList, stList]) => {
+        const accessible = filterAccessibleClassesForUser(current, clsList);
+        setClasses(accessible);
+        setStudents(stList);
+
+        if (current.role === 'student' && current.studentGrade) {
+          setSelectedGrade(current.studentGrade);
+          if (accessible[0]) {
+            setSelectedClassId(accessible[0].id);
+          }
+        } else {
+          const def = accessible.find((c) => c.grade === 7) || accessible[0];
+          if (def) {
+            setSelectedGrade(def.grade);
+            setSelectedClassId(def.id);
+          }
+        }
+      });
+    };
+
+    loadForSession();
+    window.addEventListener('thso_session_change', loadForSession);
+    return () => window.removeEventListener('thso_session_change', loadForSession);
   }, []);
 
   useEffect(() => {
-    if (!user) return;
+    if (!user || !user.isLoggedIn) return;
     getGradebookRecords(user.tenantId, semester).then(setSavedOverrides).catch(() => {});
   }, [user, semester]);
 
@@ -82,25 +100,36 @@ export default function GradebookPage() {
   }, [classesInGrade, selectedClassId]);
 
   const currentClass = useMemo(
-    () => classes.find((c) => c.id === selectedClassId) || classesInGrade[0],
+    () => classes.find((c) => c.id === selectedClassId) || classesInGrade[0] || classes[0],
     [classes, selectedClassId, classesInGrade]
   );
 
-  const rows: OfficialGradeRow[] = useMemo(() => {
-    const classStudents = students.filter((s) => s.classId === currentClass?.id);
-    return classStudents
-      .map((st) => savedOverrides[st.studentCode] || buildBaselineGradeRow(st, semester))
-      .filter((r) => {
-        if (!searchQuery.trim()) return true;
-        const q = searchQuery.toLowerCase().trim();
-        return (
-          r.fullName.toLowerCase().includes(q) ||
-          r.studentCode.toLowerCase().includes(q)
-        );
-      });
-  }, [students, currentClass?.id, savedOverrides, semester, searchQuery]);
+  const allClassRows: OfficialGradeRow[] = useMemo(() => {
+    if (!currentClass?.id) return [];
+    const classStudents = students.filter((s) => s.classId === currentClass.id);
+    return classStudents.map(
+      (st) => savedOverrides[st.studentCode] || buildBaselineGradeRow(st, semester)
+    );
+  }, [students, currentClass?.id, savedOverrides, semester]);
 
-  const stats = useMemo(() => computeClassGradeStats(rows), [rows]);
+  const rows: OfficialGradeRow[] = useMemo(() => {
+    const teacher = isTeacherUser(user);
+    return allClassRows.filter((r) => {
+      if (!teacher) {
+        const isSelf = user?.studentCode === r.studentCode;
+        const isPartner = Boolean(user?.partnerCode && user.partnerCode === r.studentCode);
+        if (!isSelf && !isPartner) return false;
+      }
+      if (!searchQuery.trim()) return true;
+      const q = searchQuery.toLowerCase().trim();
+      return (
+        r.fullName.toLowerCase().includes(q) ||
+        r.studentCode.toLowerCase().includes(q)
+      );
+    });
+  }, [allClassRows, user, searchQuery]);
+
+  const stats = useMemo(() => computeClassGradeStats(allClassRows), [allClassRows]);
 
   const handleSaveRow = async (orig: OfficialGradeRow) => {
     const updated = updateGradeRowScores(orig, {
@@ -116,7 +145,24 @@ export default function GradebookPage() {
     setEditingCode(null);
   };
 
-  const isTeacher = user?.role === 'teacher';
+  const isTeacher = isTeacherUser(user);
+
+  if (!mounted || !user) {
+    return (
+      <div className="max-w-7xl mx-auto px-4 py-16 text-center text-xs text-slate-500 font-semibold">
+        Đang tải sổ điểm...
+      </div>
+    );
+  }
+
+  if (!user.isLoggedIn) {
+    return (
+      <StudentAuthGate
+        title="Sổ Điểm Môn Tin Học"
+        description="Vui lòng đăng nhập tài khoản học sinh hoặc giáo viên để xem bảng điểm theo đúng lớp học của em."
+      />
+    );
+  }
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-6">
@@ -127,29 +173,31 @@ export default function GradebookPage() {
           </div>
           <h1 className="text-2xl font-extrabold text-slate-900 flex items-center gap-2">
             <FileSpreadsheet className="w-6 h-6 text-teal-700" />
-            <span>SỔ ĐIỂM MÔN TIN HỌC · {currentClass?.name || 'CHỌN LỚP'}</span>
+            <span>SỔ ĐIỂM MÔN TIN HỌC · {currentClass?.name || user?.studentClass || 'CHỌN LỚP'}</span>
           </h1>
           <p className="text-xs text-slate-600">
             Công thức ĐTBmhk = (TX1 + TX2 + TX3 + TX4 + 2×GK + 3×CK) / 9 · Phụ trách: {user?.teacherName}
           </p>
         </div>
 
-        <button
-          type="button"
-          onClick={() =>
-            exportGradebookToExcel(
-              rows,
-              `So_Diem_TT22_${currentClass?.name || 'Lop'}_${semester}.xls`,
-              user?.tenantName,
-              user?.teacherName,
-              currentClass?.name
-            )
-          }
-          className="px-4 py-2.5 rounded-xl bg-teal-700 hover:bg-teal-800 text-white text-xs font-bold flex items-center gap-2 self-start lg:self-auto"
-        >
-          <Download className="w-4 h-4" />
-          <span>Xuất Sổ Điểm Excel</span>
-        </button>
+        {isTeacher && (
+          <button
+            type="button"
+            onClick={() =>
+              exportGradebookToExcel(
+                rows,
+                `So_Diem_TT22_${currentClass?.name || 'Lop'}_${semester}.xls`,
+                user?.tenantName,
+                user?.teacherName,
+                currentClass?.name
+              )
+            }
+            className="px-4 py-2.5 rounded-xl bg-teal-700 hover:bg-teal-800 text-white text-xs font-bold flex items-center gap-2 self-start lg:self-auto"
+          >
+            <Download className="w-4 h-4" />
+            <span>Xuất Sổ Điểm Excel</span>
+          </button>
+        )}
       </div>
 
       {/* STATS */}
@@ -181,29 +229,38 @@ export default function GradebookPage() {
       {/* CONTROLS */}
       <div className="bg-white rounded-2xl border border-slate-200 p-4 flex flex-wrap items-center justify-between gap-3 text-xs">
         <div className="flex flex-wrap items-center gap-2">
-          <select
-            value={selectedGrade}
-            onChange={(e) => setSelectedGrade(Number(e.target.value) as GradeLevel)}
-            className="px-3 py-2 rounded-xl border border-slate-300 font-bold bg-white"
-          >
-            {[6, 7, 8, 9].map((g) => (
-              <option key={g} value={g}>
-                Khối {g}
-              </option>
-            ))}
-          </select>
+          {isTeacher ? (
+            <>
+              <select
+                value={selectedGrade}
+                onChange={(e) => setSelectedGrade(Number(e.target.value) as GradeLevel)}
+                className="px-3 py-2 rounded-xl border border-slate-300 font-bold bg-white"
+              >
+                {[6, 7, 8, 9].map((g) => (
+                  <option key={g} value={g}>
+                    Khối {g}
+                  </option>
+                ))}
+              </select>
 
-          <select
-            value={selectedClassId}
-            onChange={(e) => setSelectedClassId(e.target.value)}
-            className="px-3 py-2 rounded-xl border border-slate-300 font-bold bg-white"
-          >
-            {classesInGrade.map((c) => (
-              <option key={c.id} value={c.id}>
-                {c.name}
-              </option>
-            ))}
-          </select>
+              <select
+                value={selectedClassId}
+                onChange={(e) => setSelectedClassId(e.target.value)}
+                className="px-3 py-2 rounded-xl border border-slate-300 font-bold bg-white"
+              >
+                {classesInGrade.map((c) => (
+                  <option key={c.id} value={c.id}>
+                    {c.name}
+                  </option>
+                ))}
+              </select>
+            </>
+          ) : (
+            <span className="px-3 py-2 rounded-xl bg-teal-50 border border-teal-200 text-teal-800 font-bold flex items-center gap-1.5">
+              <Lock className="w-3.5 h-3.5" />
+              <span>Khóa theo {currentClass?.name || user?.studentClass}</span>
+            </span>
+          )}
 
           <div className="flex items-center gap-1 bg-slate-100 p-1 rounded-xl font-bold">
             {(
@@ -227,16 +284,23 @@ export default function GradebookPage() {
           </div>
         </div>
 
-        <div className="relative w-full sm:w-64">
-          <Search className="w-4 h-4 text-slate-400 absolute left-3 top-1/2 -translate-y-1/2" />
-          <input
-            type="text"
-            value={searchQuery}
-            onChange={(e) => setSearchQuery(e.target.value)}
-            placeholder="Tìm học sinh..."
-            className="w-full pl-9 pr-3 py-2 rounded-xl border border-slate-300"
-          />
-        </div>
+        {isTeacher ? (
+          <div className="relative w-full sm:w-64">
+            <Search className="w-4 h-4 text-slate-400 absolute left-3 top-1/2 -translate-y-1/2" />
+            <input
+              type="text"
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+              placeholder="Tìm học sinh..."
+              className="w-full pl-9 pr-3 py-2 rounded-xl border border-slate-300"
+            />
+          </div>
+        ) : (
+          <div className="flex items-center gap-1.5 text-[11px] font-semibold text-slate-600">
+            <ShieldCheck className="w-4 h-4 text-teal-700 shrink-0" />
+            <span>Chế độ bảo mật điểm cá nhân · Chỉ hiển thị bảng điểm của em</span>
+          </div>
+        )}
       </div>
 
       {/* GRADEBOOK TABLE */}

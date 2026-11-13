@@ -11,34 +11,72 @@ import {
 } from 'lucide-react';
 import { getCurrentUser, UserSession } from '@/lib/auth';
 import { getExamResults, getTenantExams } from '@/lib/domain/data-repository';
+import { canAccessGrade, isTeacherUser } from '@/lib/domain/access-control';
 import { Exam, ExamResult, GradeLevel } from '@/lib/domain/types';
+import StudentAuthGate from '@/components/StudentAuthGate';
 
 export default function ExamsListPage() {
+  const [mounted, setMounted] = useState(false);
   const [user, setUser] = useState<UserSession | null>(null);
   const [exams, setExams] = useState<Exam[]>([]);
   const [results, setResults] = useState<ExamResult[]>([]);
   const [gradeFilter, setGradeFilter] = useState<'all' | GradeLevel>('all');
 
   useEffect(() => {
-    const current = getCurrentUser();
-    setUser(current);
-    if (current.role === 'student' && current.studentGrade) {
-      setGradeFilter(current.studentGrade);
-    }
+    setMounted(true);
+    const loadForSession = () => {
+      const current = getCurrentUser();
+      setUser(current);
+      if (!current.isLoggedIn) {
+        setExams([]);
+        setResults([]);
+        return;
+      }
+      if (current.role === 'student' && current.studentGrade) {
+        setGradeFilter(current.studentGrade);
+      }
 
-    Promise.all([
-      getTenantExams(current.tenantId),
-      getExamResults(current.tenantId),
-    ]).then(([ex, res]) => {
-      setExams(ex);
-      setResults(res);
-    });
+      Promise.all([
+        getTenantExams(current.tenantId),
+        getExamResults(current.tenantId),
+      ]).then(([ex, res]) => {
+        setExams(ex);
+        setResults(res);
+      });
+    };
+
+    loadForSession();
+    window.addEventListener('thso_session_change', loadForSession);
+    return () => window.removeEventListener('thso_session_change', loadForSession);
   }, []);
 
+  const isTeacher = isTeacherUser(user);
+
   const filteredExams = useMemo(() => {
+    if (!user?.isLoggedIn) return [];
+    if (!isTeacher) {
+      return exams.filter((e) => canAccessGrade(user, e.grade));
+    }
     if (gradeFilter === 'all') return exams;
     return exams.filter((e) => e.grade === gradeFilter);
-  }, [exams, gradeFilter]);
+  }, [exams, gradeFilter, user, isTeacher]);
+
+  if (!mounted || !user) {
+    return (
+      <div className="max-w-7xl mx-auto px-4 py-16 text-center text-xs text-slate-500 font-semibold">
+        Đang tải danh sách kiểm tra...
+      </div>
+    );
+  }
+
+  if (!user.isLoggedIn) {
+    return (
+      <StudentAuthGate
+        title="Hệ Thống Kiểm Tra Trực Tuyến"
+        description="Vui lòng đăng nhập tài khoản học sinh hoặc giáo viên để làm bài kiểm tra định kỳ theo đúng khối lớp của em."
+      />
+    );
+  }
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-6">
@@ -55,20 +93,27 @@ export default function ExamsListPage() {
           </p>
         </div>
 
-        <div className="flex flex-wrap items-center gap-1.5 bg-slate-100 p-1 rounded-2xl text-xs font-bold self-start">
-          {(['all', 6, 7, 8, 9] as const).map((g) => (
-            <button
-              key={String(g)}
-              type="button"
-              onClick={() => setGradeFilter(g)}
-              className={`px-3.5 py-2 rounded-xl transition-colors ${
-                gradeFilter === g ? 'bg-purple-700 text-white' : 'text-slate-600'
-              }`}
-            >
-              {g === 'all' ? 'Tất cả khối' : `Khối ${g}`}
-            </button>
-          ))}
-        </div>
+        {isTeacher ? (
+          <div className="flex flex-wrap items-center gap-1.5 bg-slate-100 p-1 rounded-2xl text-xs font-bold self-start">
+            {(['all', 6, 7, 8, 9] as const).map((g) => (
+              <button
+                key={String(g)}
+                type="button"
+                onClick={() => setGradeFilter(g)}
+                className={`px-3.5 py-2 rounded-xl transition-colors ${
+                  gradeFilter === g ? 'bg-purple-700 text-white' : 'text-slate-600'
+                }`}
+              >
+                {g === 'all' ? 'Tất cả khối' : `Khối ${g}`}
+              </button>
+            ))}
+          </div>
+        ) : (
+          <div className="px-4 py-2 rounded-2xl bg-purple-50 border border-purple-200 text-purple-800 text-xs font-bold flex items-center gap-2 self-start">
+            <Lock className="w-3.5 h-3.5" />
+            <span>Khóa theo {user.studentClass || `Khối ${user.studentGrade}`}</span>
+          </div>
+        )}
       </div>
 
       {exams.length === 0 ? (

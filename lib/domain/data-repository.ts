@@ -214,14 +214,45 @@ export async function getResources(): Promise<{
 
 export async function getHomeworkSubmissions(tenantId: string): Promise<HomeworkSubmission[]> {
   await ensureSeeded();
-  const all = await idbGetAll<HomeworkSubmission>('homework_submissions');
-  return all
-    .filter((h) => h.tenantId === tenantId)
-    .sort((a, b) => (b.id > a.id ? 1 : -1));
+  const local = (await idbGetAll<HomeworkSubmission>('homework_submissions')).filter(
+    (h) => h.tenantId === tenantId
+  );
+
+  try {
+    const qs = new URLSearchParams({ tenantId });
+    const res = await fetch(`${getAssetUrl('/api/submissions/')}?${qs.toString()}`, {
+      cache: 'no-store',
+    });
+    if (res.ok) {
+      const data = await res.json();
+      const serverList: HomeworkSubmission[] = Array.isArray(data?.homeworkSubmissions)
+        ? data.homeworkSubmissions
+        : [];
+      if (serverList.length > 0) {
+        const mergedMap = new Map<string, HomeworkSubmission>();
+        for (const item of local) mergedMap.set(item.id, item);
+        for (const item of serverList) mergedMap.set(item.id, item);
+        return Array.from(mergedMap.values()).sort((a, b) => (b.id > a.id ? 1 : -1));
+      }
+    }
+  } catch {
+    // Offline fallback to IndexedDB
+  }
+
+  return local.sort((a, b) => (b.id > a.id ? 1 : -1));
 }
 
 export async function saveHomeworkSubmission(sub: HomeworkSubmission): Promise<void> {
   await idbPut('homework_submissions', sub);
+  try {
+    await fetch(getAssetUrl('/api/submissions/'), {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ kind: 'homework', submission: sub }),
+    });
+  } catch {
+    // Keep IndexedDB copy safely
+  }
   if (isSupabaseConfigured && supabase) {
     try {
       await supabase.from('homework_submissions').upsert({
@@ -246,12 +277,51 @@ export async function saveHomeworkSubmission(sub: HomeworkSubmission): Promise<v
 }
 
 export async function getPracticalSubmissions(tenantId: string): Promise<PracticalSubmission[]> {
-  const all = await idbGetAll<PracticalSubmission>('practical_submissions');
-  return all.filter((p) => p.tenantId === tenantId);
+  const local = (await idbGetAll<PracticalSubmission>('practical_submissions')).filter(
+    (p) => p.tenantId === tenantId
+  );
+
+  try {
+    const qs = new URLSearchParams({ tenantId });
+    const res = await fetch(`${getAssetUrl('/api/submissions/')}?${qs.toString()}`, {
+      cache: 'no-store',
+    });
+    if (res.ok) {
+      const data = await res.json();
+      const serverList: PracticalSubmission[] = Array.isArray(data?.practicalSubmissions)
+        ? data.practicalSubmissions
+        : [];
+      const mergedMap = new Map<string, PracticalSubmission>();
+      for (const item of local) mergedMap.set(item.id, item);
+      for (const item of serverList) mergedMap.set(item.id, item);
+      return Array.from(mergedMap.values()).sort(
+        (a, b) => (b.submittedTimestamp || 0) - (a.submittedTimestamp || 0) || (b.id > a.id ? 1 : -1)
+      );
+    }
+  } catch {
+    // Offline fallback
+  }
+
+  return local.sort(
+    (a, b) => (b.submittedTimestamp || 0) - (a.submittedTimestamp || 0) || (b.id > a.id ? 1 : -1)
+  );
 }
 
 export async function savePracticalSubmission(sub: PracticalSubmission): Promise<void> {
-  await idbPut('practical_submissions', sub);
+  const enriched: PracticalSubmission = {
+    ...sub,
+    submittedTimestamp: sub.submittedTimestamp || Date.now(),
+  };
+  await idbPut('practical_submissions', enriched);
+  try {
+    await fetch(getAssetUrl('/api/submissions/'), {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ kind: 'practical', submission: enriched }),
+    });
+  } catch {
+    // Offline resilient
+  }
 }
 
 export async function getExamResults(tenantId: string): Promise<ExamResult[]> {

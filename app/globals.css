@@ -5,6 +5,8 @@
 :root {
   --bg-canvas: #f8fafc;
   --text-primary: #0f172a;
+  --font-sans: "Plus Jakarta Sans", "Inter", system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
 }
 
 body {

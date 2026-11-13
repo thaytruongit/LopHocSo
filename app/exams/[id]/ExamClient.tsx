@@ -25,12 +25,15 @@ import {
   formatCountdown,
   gradeExamSubmission,
 } from '@/lib/domain/exam-engine';
+import { canAccessExam } from '@/lib/domain/access-control';
 import { Exam } from '@/lib/domain/types';
+import StudentAuthGate from '@/components/StudentAuthGate';
 
 export default function ExamClient() {
   const params = useParams();
   const examId = String(params?.id || '');
 
+  const [mounted, setMounted] = useState<boolean>(false);
   const [user, setUser] = useState<UserSession | null>(null);
   const [exam, setExam] = useState<Exam | null>(null);
   const [loading, setLoading] = useState<boolean>(true);
@@ -42,15 +45,27 @@ export default function ExamClient() {
   const [grading, setGrading] = useState<ExamGradingSummary | null>(null);
 
   useEffect(() => {
-    const current = getCurrentUser();
-    setUser(current);
-    getTenantExams(current.tenantId)
-      .then((all) => {
-        const found = all.find((e) => e.id === examId) || null;
-        setExam(found);
-        if (found) setTimeLeftSec(found.durationMin * 60);
-      })
-      .finally(() => setLoading(false));
+    setMounted(true);
+    const syncAndLoad = () => {
+      const current = getCurrentUser();
+      setUser(current);
+      if (!current.isLoggedIn) {
+        setLoading(false);
+        return;
+      }
+      setLoading(true);
+      getTenantExams(current.tenantId)
+        .then((all) => {
+          const found = all.find((e) => e.id === examId) || null;
+          setExam(found);
+          if (found) setTimeLeftSec(found.durationMin * 60);
+        })
+        .finally(() => setLoading(false));
+    };
+
+    syncAndLoad();
+    window.addEventListener('thso_session_change', syncAndLoad);
+    return () => window.removeEventListener('thso_session_change', syncAndLoad);
   }, [examId]);
 
   const handleSubmitExam = useCallback(async () => {
@@ -115,11 +130,20 @@ export default function ExamClient() {
     return () => document.removeEventListener('visibilitychange', onVisibility);
   }, [started, grading]);
 
-  if (loading) {
+  if (!mounted || loading || !user) {
     return (
       <div className="max-w-3xl mx-auto px-4 py-16 text-center text-xs text-slate-500">
         Đang tải đề kiểm tra...
       </div>
+    );
+  }
+
+  if (!user.isLoggedIn) {
+    return (
+      <StudentAuthGate
+        title="Phòng Thi Trực Tuyến"
+        description="Vui lòng đăng nhập tài khoản học sinh hoặc giáo viên trước khi vào làm bài kiểm tra định kỳ."
+      />
     );
   }
 
@@ -138,7 +162,33 @@ export default function ExamClient() {
     );
   }
 
-  if (exam.isLocked) {
+  const access = canAccessExam(user, exam);
+
+  if (!access.allowed && access.reason === 'wrong-grade') {
+    return (
+      <div className="max-w-xl mx-auto px-4 py-20 text-center space-y-4">
+        <div className="w-16 h-16 rounded-2xl bg-amber-50 border border-amber-200 text-amber-700 flex items-center justify-center mx-auto">
+          <Lock className="w-8 h-8" />
+        </div>
+        <h1 className="text-xl font-extrabold text-slate-900">
+          Đề thi không thuộc khối lớp của em
+        </h1>
+        <p className="text-xs sm:text-sm text-slate-600">
+          Đề &ldquo;{exam.title}&rdquo; dành riêng cho <strong>Khối {exam.grade}</strong>. Tài khoản của em đang thuộc{' '}
+          <strong>{user.studentClass || `Khối ${user.studentGrade}`}</strong> nên không thể mở đề khối khác.
+        </p>
+        <Link
+          href="/exams"
+          className="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-purple-700 hover:bg-purple-800 text-white text-xs font-bold"
+        >
+          <ArrowLeft className="w-4 h-4" />
+          <span>Quay lại đề kiểm tra khối của em</span>
+        </Link>
+      </div>
+    );
+  }
+
+  if (!access.allowed || exam.isLocked) {
     return (
       <div className="max-w-xl mx-auto px-4 py-20 text-center space-y-4">
         <div className="w-16 h-16 rounded-2xl bg-slate-100 text-slate-600 flex items-center justify-center mx-auto">

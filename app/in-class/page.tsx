@@ -41,6 +41,7 @@ import {
 import { uploadPracticalToDriveOnline } from '@/lib/google-drive-service';
 import { getAssetUrl } from '@/lib/asset-path';
 import InteractiveDiscoveryPair from '@/components/InteractiveDiscoveryPair';
+import StudentAuthGate from '@/components/StudentAuthGate';
 
 function InClassContent() {
   const searchParams = useSearchParams();
@@ -64,22 +65,35 @@ function InClassContent() {
   const [uploading, setUploading] = useState<boolean>(false);
   const [uploadNotice, setUploadNotice] = useState<string>('');
 
-  useEffect(() => {
-    const current = getCurrentUser();
-    setUser(current);
-    const initial = getClassroomState(current.tenantId, current.roomId);
-    setRoomState(initial);
+  const [mounted, setMounted] = useState(false);
 
+  useEffect(() => {
+    setMounted(true);
+    let unsubRoom = () => {};
+
+    const syncSession = () => {
+      unsubRoom();
+      const current = getCurrentUser();
+      setUser(current);
+      const initial = getClassroomState(current.tenantId, current.roomId);
+      setRoomState(initial);
+      unsubRoom = subscribeToClassroomState(
+        (st) => setRoomState(st),
+        current.tenantId,
+        current.roomId
+      );
+    };
+
+    syncSession();
     getResources()
       .then((res) => setPracticeFiles(res.practiceFiles || []))
       .catch(() => {});
 
-    const unsub = subscribeToClassroomState(
-      (st) => setRoomState(st),
-      current.tenantId,
-      current.roomId
-    );
-    return () => unsub();
+    window.addEventListener('thso_session_change', syncSession);
+    return () => {
+      unsubRoom();
+      window.removeEventListener('thso_session_change', syncSession);
+    };
   }, []);
 
   useEffect(() => {
@@ -130,7 +144,7 @@ function InClassContent() {
     return () => clearInterval(id);
   }, [hasRoomState, isTimerRunning, timerEndTimestamp, timerRemainingSeconds]);
 
-  if (!user || !roomState) {
+  if (!mounted || !user || !roomState) {
     return (
       <div className="max-w-5xl mx-auto px-4 py-16 text-center text-xs text-slate-500 font-semibold">
         Đang kết nối tín hiệu phòng máy...
@@ -138,28 +152,60 @@ function InClassContent() {
     );
   }
 
+  if (!user.isLoggedIn) {
+    return (
+      <StudentAuthGate
+        title="Lớp Học Số Trực Tiếp"
+        description="Vui lòng đăng nhập tài khoản học sinh hoặc giáo viên để kết nối phòng máy thực hành."
+      />
+    );
+  }
+
   const machineId = user.machineId || 1;
   const studentDisplay = user.pairNames || user.studentName || 'Học sinh phòng máy';
 
-  // WAITING WHITEBOARD WHEN TEACHER HAS NOT GONE LIVE
-  if (!roomState.isLive) {
+  // WAITING WHITEBOARD WHEN TEACHER HAS NOT GONE LIVE OR WRONG GRADE FOR THIS STUDENT
+  const isWrongLiveGrade =
+    roomState.isLive &&
+    user.role === 'student' &&
+    Boolean(user.studentGrade) &&
+    roomState.activeGrade !== user.studentGrade;
+
+  if (!roomState.isLive || isWrongLiveGrade) {
     return (
       <div className="max-w-4xl mx-auto px-4 sm:px-6 py-10 space-y-6">
         <div className="bg-white rounded-3xl border border-slate-200 p-8 text-center space-y-4">
           <div className="w-16 h-16 rounded-2xl bg-blue-50 border border-blue-200 text-blue-700 flex items-center justify-center mx-auto">
-            <Monitor className="w-8 h-8" />
+            {isWrongLiveGrade ? <Lock className="w-8 h-8" /> : <Monitor className="w-8 h-8" />}
           </div>
           <div className="space-y-1">
             <div className="text-xs font-bold text-blue-700 uppercase tracking-wider">
               {user.tenantName} · {user.roomName} · Máy {String(machineId).padStart(2, '0')}
             </div>
             <h1 className="text-2xl font-extrabold text-slate-900">
-              Bảng Chờ Tín Hiệu Tiết Học Trực Tiếp
+              {isWrongLiveGrade
+                ? 'Phòng Máy Đang Dạy Khối Lớp Khác'
+                : 'Bảng Chờ Tín Hiệu Tiết Học Trực Tiếp'}
             </h1>
             <p className="text-xs sm:text-sm text-slate-600 max-w-xl mx-auto">
-              Xin chào <strong>{studentDisplay}</strong> ({user.studentClass || roomState.activeClassName}).
-              Hiện tại giáo viên <strong>{user.teacherName}</strong> chưa bật phát trực tiếp bài dạy mới.
-              Trong lúc chờ, em có thể ôn tập hoặc hoàn thành Bài tập về nhà.
+              {isWrongLiveGrade ? (
+                <>
+                  Xin chào <strong>{studentDisplay}</strong> ({user.studentClass} · Khối{' '}
+                  {user.studentGrade}). Hiện tại phòng máy đang phát tiết học của{' '}
+                  <strong>
+                    {roomState.activeClassName} (Khối {roomState.activeGrade})
+                  </strong>
+                  , không thuộc khối lớp của em. Em có thể học đúng tài liệu khối của mình bên
+                  dưới.
+                </>
+              ) : (
+                <>
+                  Xin chào <strong>{studentDisplay}</strong> (
+                  {user.studentClass || roomState.activeClassName}). Hiện tại giáo viên{' '}
+                  <strong>{user.teacherName}</strong> chưa bật phát trực tiếp bài dạy mới. Trong
+                  lúc chờ, em có thể ôn tập hoặc hoàn thành Bài tập về nhà.
+                </>
+              )}
             </p>
           </div>
 
@@ -181,8 +227,8 @@ function InClassContent() {
               className="p-4 rounded-2xl border border-slate-200 hover:border-blue-400 bg-slate-50 hover:bg-blue-50/50 transition-colors space-y-1"
             >
               <PlayCircle className="w-5 h-5 text-emerald-700" />
-              <div className="font-bold text-xs text-slate-900">Kho Tự Học 116 Tiết</div>
-              <div className="text-[11px] text-slate-500">Video &amp; kiến thức 4 khối</div>
+              <div className="font-bold text-xs text-slate-900">Kho Tự Học Theo Khối</div>
+              <div className="text-[11px] text-slate-500">Video &amp; bài học khối của em</div>
             </Link>
             <Link
               href="/exams"
@@ -190,7 +236,7 @@ function InClassContent() {
             >
               <FileCheck2 className="w-5 h-5 text-purple-700" />
               <div className="font-bold text-xs text-slate-900">Kiểm Tra Định Kỳ</div>
-              <div className="text-[11px] text-slate-500">8 đề chuẩn GD&amp;ĐT</div>
+              <div className="text-[11px] text-slate-500">Đề chuẩn GD&amp;ĐT đúng khối</div>
             </Link>
           </div>
         </div>
@@ -230,6 +276,16 @@ function InClassContent() {
     setUploading(true);
     setUploadNotice('');
     try {
+      let fileDataUrl: string | undefined;
+      if (selectedFile.size <= 512 * 1024) {
+        fileDataUrl = await new Promise<string | undefined>((resolve) => {
+          const reader = new FileReader();
+          reader.onload = () => resolve(typeof reader.result === 'string' ? reader.result : undefined);
+          reader.onerror = () => resolve(undefined);
+          reader.readAsDataURL(selectedFile);
+        });
+      }
+
       const driveRes = await uploadPracticalToDriveOnline({
         file: selectedFile,
         grade: periodData.grade,
@@ -249,11 +305,17 @@ function InClassContent() {
         studentName: studentDisplay,
         classId: roomState.activeClassId,
         className: user.studentClass || roomState.activeClassName,
+        grade: periodData.grade as GradeLevel,
+        roomId: user.roomId,
+        machineId,
         period: periodData.period,
         assignmentTitle: periodData.practicalTask?.title || periodData.title,
         fileName: selectedFile.name,
         fileSize: `${Math.max(1, Math.round(selectedFile.size / 1024))} KB`,
+        fileType: selectedFile.type || selectedFile.name.split('.').pop(),
+        fileDataUrl,
         submittedAt: new Date().toLocaleTimeString('vi-VN', { hour: '2-digit', minute: '2-digit' }),
+        submittedTimestamp: Date.now(),
         fileUrl: driveRes.fileUrl,
         score: 9.5,
         status: 'submitted',

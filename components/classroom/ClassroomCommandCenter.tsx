@@ -16,6 +16,7 @@ import {
   BarChart3,
   Power,
   X,
+  FolderClock,
 } from 'lucide-react';
 import {
   ClassItem,
@@ -37,7 +38,9 @@ import {
   selectPeriodForClassroom,
   setActivityDuration,
   setLiveBroadcast,
+  setTaughtPeriodForClass,
   subscribeToClassroomState,
+  subscribeToTaughtPeriods,
   toggleActivityLock,
   updateClassroomState,
   updateMachineScore,
@@ -47,8 +50,16 @@ import Virtual3DClassroom from './Virtual3DClassroom';
 import HomeworkReviewPanel from './HomeworkReviewPanel';
 import GradingPanel from './GradingPanel';
 import SummaryReportPanel from './SummaryReportPanel';
+import SubmissionHistoryPanel from './SubmissionHistoryPanel';
 
-export type ClassroomSubTab = 'control' | 'grid' | 'grading' | 'homework' | 'ranking' | 'summary';
+export type ClassroomSubTab =
+  | 'control'
+  | 'grid'
+  | 'grading'
+  | 'homework'
+  | 'submissions'
+  | 'ranking'
+  | 'summary';
 
 interface ClassroomCommandCenterProps {
   currentClass: ClassItem;
@@ -67,6 +78,7 @@ export default function ClassroomCommandCenter({
     getClassroomState(ctx.tenantId, ctx.roomId)
   );
   const [periods, setPeriods] = useState<CurriculumPeriod[]>([]);
+  const [taughtPeriods, setTaughtPeriods] = useState<number[]>([]);
   const [timerTickSec, setTimerTickSec] = useState<number>(0);
   const [notice, setNotice] = useState<string>('');
   const [broadcastInput, setBroadcastInput] = useState<string>('');
@@ -80,6 +92,16 @@ export default function ClassroomCommandCenter({
     const unsub = subscribeToClassroomState(setRoomState, ctx.tenantId, ctx.roomId);
     return () => unsub();
   }, [ctx.tenantId, ctx.roomId]);
+
+  useEffect(() => {
+    if (!currentClass?.id) return;
+    const unsubTaught = subscribeToTaughtPeriods(
+      ctx.tenantId,
+      currentClass.id,
+      setTaughtPeriods
+    );
+    return () => unsubTaught();
+  }, [ctx.tenantId, currentClass?.id]);
 
   useEffect(() => {
     const grade = (currentClass?.grade || roomState.activeGrade || 7) as GradeLevel;
@@ -131,6 +153,7 @@ export default function ClassroomCommandCenter({
     { id: 'grid', label: 'Sơ Đồ 24 Máy', icon: Monitor },
     { id: 'grading', label: 'Chấm Thực Hành', icon: Award },
     { id: 'homework', label: 'Bài Tập Về Nhà', icon: BookOpen },
+    { id: 'submissions', label: 'Lịch sử nộp bài', icon: FolderClock },
     { id: 'ranking', label: 'Bảng Vàng Lớp', icon: Trophy },
     { id: 'summary', label: 'Tổng Kết Excel', icon: BarChart3 },
   ];
@@ -260,47 +283,89 @@ export default function ClassroomCommandCenter({
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-5">
           {/* LEFT: PERIOD PICKER */}
           <div className="lg:col-span-5 bg-white rounded-2xl border border-slate-200 p-5 space-y-3">
-            <div className="flex items-center justify-between">
+            <div className="flex items-center justify-between gap-2">
               <h3 className="text-sm font-extrabold text-slate-900">
-                Chọn Tiết Dạy (29 Tiết · Khối {currentClass.grade})
+                Chọn Tiết Dạy ({periods.length} Tiết · Khối {currentClass.grade})
               </h3>
-              <span className="font-mono text-xs text-slate-500">{periods.length} tiết</span>
+              <span className="font-mono text-[11px] font-bold text-emerald-700">
+                Đã dạy {taughtPeriods.length}/{periods.length}
+              </span>
             </div>
 
-            <div className="space-y-1.5 max-h-[380px] overflow-y-auto pr-1">
+            <div className="space-y-1.5 max-h-[420px] overflow-y-auto pr-1">
               {periods.map((p) => {
                 const isSelected = roomState.activePeriod === p.period;
+                const isTaught = taughtPeriods.includes(p.period);
                 return (
-                  <button
+                  <div
                     key={p.id}
-                    type="button"
-                    onClick={() => {
-                      const next = selectPeriodForClassroom({
-                        period: p.period,
-                        lessonTitle: p.title,
-                        grade: currentClass.grade,
-                        isPractical: Boolean(p.isPractice || p.practicalTask),
-                        classId: currentClass.id,
-                        className: currentClass.name,
-                        autoLive: true,
-                      });
-                      setRoomState(next);
-                      showToast(`Đã phát Tiết ${p.period}: ${p.title}`);
-                    }}
-                    className={`w-full p-3 rounded-xl border text-left text-xs transition-colors flex items-start justify-between gap-2 ${
+                    className={`w-full p-2.5 rounded-xl border text-xs transition-colors flex items-center justify-between gap-2 ${
                       isSelected
                         ? 'border-blue-600 bg-blue-50 text-blue-950 font-bold'
                         : 'border-slate-200 hover:bg-slate-50 text-slate-700'
                     }`}
                   >
-                    <div className="min-w-0">
-                      <div className="text-[11px] font-bold text-blue-700">
-                        Tiết {p.period} · {p.isPractice ? 'Thực hành' : 'Lý thuyết'}
+                    <button
+                      type="button"
+                      onClick={() => {
+                        const next = selectPeriodForClassroom({
+                          period: p.period,
+                          lessonTitle: p.title,
+                          grade: currentClass.grade,
+                          isPractical: Boolean(p.isPractice || p.practicalTask),
+                          classId: currentClass.id,
+                          className: currentClass.name,
+                          autoLive: true,
+                        });
+                        setRoomState(next);
+                        showToast(`Đã phát Tiết ${p.period}: ${p.title} & mở BTVN cho ${currentClass.name}.`);
+                      }}
+                      className="min-w-0 flex-1 text-left"
+                    >
+                      <div className="flex items-center gap-1.5 flex-wrap">
+                        <span className="text-[11px] font-bold text-blue-700">
+                          Tiết {p.period} · {p.isPractice ? 'Thực hành' : 'Lý thuyết'}
+                        </span>
+                        {isTaught && (
+                          <span className="px-1.5 py-0.5 rounded bg-emerald-100 text-emerald-800 text-[10px] font-bold">
+                            Đã dạy
+                          </span>
+                        )}
                       </div>
                       <div className="truncate font-semibold">{p.title}</div>
-                    </div>
-                    {isSelected && <CheckCircle2 className="w-4 h-4 text-blue-700 shrink-0" />}
-                  </button>
+                    </button>
+
+                    <button
+                      type="button"
+                      onClick={async (e) => {
+                        e.stopPropagation();
+                        const nextList = await setTaughtPeriodForClass(
+                          ctx.tenantId,
+                          currentClass.id,
+                          p.period,
+                          !isTaught
+                        );
+                        setTaughtPeriods(nextList);
+                        showToast(
+                          !isTaught
+                            ? `Đã đánh dấu Tiết ${p.period} là ĐÃ DẠY (Mở BTVN cho ${currentClass.name}).`
+                            : `Đã khóa BTVN Tiết ${p.period} của ${currentClass.name} (Chưa dạy).`
+                        );
+                      }}
+                      className={`px-2 py-1 rounded-lg text-[10px] font-bold shrink-0 border transition-colors ${
+                        isTaught
+                          ? 'bg-emerald-600 text-white border-emerald-600 hover:bg-emerald-700'
+                          : 'bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200'
+                      }`}
+                      title={
+                        isTaught
+                          ? 'Bấm để đánh dấu chưa dạy & khóa BTVN tiết này'
+                          : 'Bấm để đánh dấu đã dạy & mở BTVN tiết này'
+                      }
+                    >
+                      {isTaught ? 'Đã dạy ✓' : 'Chưa dạy'}
+                    </button>
+                  </div>
                 );
               })}
             </div>
@@ -477,7 +542,17 @@ export default function ClassroomCommandCenter({
         />
       )}
 
-      {/* TAB 5 & 6: RANKING / SUMMARY */}
+      {/* TAB 5: REALTIME SUBMISSION HISTORY */}
+      {subTab === 'submissions' && (
+        <SubmissionHistoryPanel
+          tenantId={ctx.tenantId}
+          roomId={ctx.roomId}
+          classId={currentClass.id}
+          className={currentClass.name}
+        />
+      )}
+
+      {/* TAB 6 & 7: RANKING / SUMMARY */}
       {(subTab === 'ranking' || subTab === 'summary') && (
         <SummaryReportPanel
           roomState={roomState}

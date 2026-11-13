@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect, useMemo } from 'react';
+import { useState, useEffect, useMemo, useRef } from 'react';
 import {
   BookOpen,
   Camera,
@@ -8,14 +8,23 @@ import {
   UploadCloud,
   CheckCircle2,
   Type,
+  Lock,
 } from 'lucide-react';
 import { getCurrentUser, UserSession } from '@/lib/auth';
 import {
+  getClassesByTenant,
   getCurriculumByGrade,
   getHomeworkSubmissions,
   saveHomeworkSubmission,
   updateStudentStats,
 } from '@/lib/domain/data-repository';
+import {
+  getEffectiveGrade,
+  isHomeworkPeriodUnlocked,
+  isTeacherUser,
+  matchesStudentClass,
+} from '@/lib/domain/access-control';
+import { subscribeToTaughtPeriods } from '@/lib/classroom-control';
 import { compressImageFile } from '@/lib/image-compressor';
 import { uploadHomeworkToDriveOnline } from '@/lib/google-drive-service';
 import {
@@ -23,12 +32,16 @@ import {
   GradeLevel,
   HomeworkSubmission,
 } from '@/lib/domain/types';
+import StudentAuthGate from '@/components/StudentAuthGate';
 
 export default function HomeworkPage() {
+  const [mounted, setMounted] = useState(false);
   const [user, setUser] = useState<UserSession | null>(null);
   const [selectedGrade, setSelectedGrade] = useState<GradeLevel>(7);
   const [periods, setPeriods] = useState<CurriculumPeriod[]>([]);
   const [selectedPeriodNum, setSelectedPeriodNum] = useState<number>(8);
+  const [studentClassId, setStudentClassId] = useState<string>('');
+  const [taughtPeriods, setTaughtPeriods] = useState<number[]>([]);
   const [submissions, setSubmissions] = useState<HomeworkSubmission[]>([]);
 
   const [submitMode, setSubmitMode] = useState<'image' | 'file' | 'text'>('image');
@@ -39,20 +52,77 @@ export default function HomeworkPage() {
   const [successMsg, setSuccessMsg] = useState<string>('');
 
   useEffect(() => {
-    const current = getCurrentUser();
-    setUser(current);
-    if (current.studentGrade) setSelectedGrade(current.studentGrade);
+    setMounted(true);
+    const syncUser = () => {
+      const current = getCurrentUser();
+      setUser(current);
+      if (current.studentGrade) setSelectedGrade(current.studentGrade);
+      if (current.isLoggedIn) {
+        getHomeworkSubmissions(current.tenantId).then(setSubmissions).catch(() => {});
+        getClassesByTenant(current.tenantId)
+          .then((clsList) => {
+            const matched =
+              clsList.find((c) => matchesStudentClass(current.studentClass, c)) ||
+              clsList.find((c) => c.grade === (current.studentGrade || 7)) ||
+              clsList[0];
+            setStudentClassId(matched?.id || '');
+          })
+          .catch(() => {});
+      } else {
+        setSubmissions([]);
+        setStudentClassId('');
+      }
+    };
 
-    getHomeworkSubmissions(current.tenantId).then(setSubmissions).catch(() => {});
+    syncUser();
+    window.addEventListener('thso_session_change', syncUser);
+    return () => window.removeEventListener('thso_session_change', syncUser);
   }, []);
 
+  const isTeacher = isTeacherUser(user);
+  const effectiveGrade = getEffectiveGrade(user, selectedGrade);
+  const userTenantId = user?.tenantId;
+
   useEffect(() => {
-    getCurriculumByGrade(selectedGrade).then(setPeriods).catch(() => {});
-  }, [selectedGrade]);
+    if (!userTenantId || !studentClassId) {
+      setTaughtPeriods([]);
+      return;
+    }
+    const unsub = subscribeToTaughtPeriods(userTenantId, studentClassId, (list) => {
+      setTaughtPeriods(list);
+    });
+    return () => unsub();
+  }, [userTenantId, studentClassId]);
+
+  const hasAutoSelectedRef = useRef(false);
+
+  useEffect(() => {
+    if (hasAutoSelectedRef.current || isTeacher || taughtPeriods.length === 0) return;
+    hasAutoSelectedRef.current = true;
+    setSelectedPeriodNum((prev) =>
+      taughtPeriods.includes(prev) ? prev : taughtPeriods[taughtPeriods.length - 1]
+    );
+  }, [isTeacher, taughtPeriods]);
+
+  useEffect(() => {
+    if (!effectiveGrade) {
+      setPeriods([]);
+      return;
+    }
+    getCurriculumByGrade(effectiveGrade).then(setPeriods).catch(() => {});
+  }, [effectiveGrade]);
 
   const activePeriod = useMemo(
     () => periods.find((p) => p.period === selectedPeriodNum) || periods[0],
     [periods, selectedPeriodNum]
+  );
+
+  const activePeriodUnlock = useMemo(
+    () =>
+      activePeriod
+        ? isHomeworkPeriodUnlocked(user, activePeriod.period, taughtPeriods)
+        : { unlocked: false, reason: 'untaught' as const },
+    [user, activePeriod, taughtPeriods]
   );
 
   const mySubmissions = useMemo(() => {
@@ -63,6 +133,7 @@ export default function HomeworkPage() {
   const handleSubmitHomework = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!user || !activePeriod) return;
+    if (!isHomeworkPeriodUnlocked(user, activePeriod.period, taughtPeriods).unlocked) return;
     if (submitMode !== 'text' && !selectedFile) return;
     if (submitMode === 'text' && !noteText.trim()) return;
 
@@ -95,12 +166,13 @@ export default function HomeworkPage() {
       }
 
       let driveUrl: string | undefined;
+      const targetGrade = effectiveGrade || 7;
       if (fileToUpload) {
         const driveRes = await uploadHomeworkToDriveOnline({
           file: fileToUpload,
-          grade: selectedGrade,
+          grade: targetGrade,
           period: activePeriod.period,
-          className: user.studentClass || `Khối ${selectedGrade}`,
+          className: user.studentClass || `Khối ${targetGrade}`,
           studentId: user.studentCode || 'GUEST',
           studentName: user.studentName || 'Học sinh',
           assignmentTitle: activePeriod.homework.title,
@@ -116,11 +188,11 @@ export default function HomeworkPage() {
         homeworkId: activePeriod.id,
         homeworkTitle: activePeriod.homework.title,
         period: activePeriod.period,
-        grade: selectedGrade,
+        grade: targetGrade,
         studentCode: user.studentCode || 'HS-DEMO',
         studentName: user.studentName || 'Học sinh tự do',
         classId: user.studentClass ? `c-${user.studentClass.replace('Lớp ', '').toLowerCase()}` : 'c-7a11',
-        className: user.studentClass || `Khối ${selectedGrade}`,
+        className: user.studentClass || `Khối ${targetGrade}`,
         fileType:
           submitMode === 'image'
             ? 'image'
@@ -154,6 +226,23 @@ export default function HomeworkPage() {
     }
   };
 
+  if (!mounted || !user) {
+    return (
+      <div className="max-w-7xl mx-auto px-4 py-16 text-center text-xs text-slate-500 font-semibold">
+        Đang tải cổng bài tập về nhà...
+      </div>
+    );
+  }
+
+  if (!user.isLoggedIn || !effectiveGrade) {
+    return (
+      <StudentAuthGate
+        title="Cổng Nộp Bài Tập Về Nhà"
+        description="Vui lòng đăng nhập tài khoản học sinh hoặc giáo viên để xem và nộp bài tập theo đúng khối lớp của em."
+      />
+    );
+  }
+
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-6">
       <div className="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200 flex flex-col md:flex-row md:items-center justify-between gap-4">
@@ -169,64 +258,126 @@ export default function HomeworkPage() {
           </p>
         </div>
 
-        <div className="flex items-center gap-1.5 bg-slate-100 p-1 rounded-2xl text-xs font-bold self-start">
-          {([6, 7, 8, 9] as GradeLevel[]).map((g) => (
-            <button
-              key={g}
-              type="button"
-              onClick={() => setSelectedGrade(g)}
-              className={`px-3.5 py-2 rounded-xl transition-colors ${
-                selectedGrade === g ? 'bg-blue-700 text-white' : 'text-slate-600'
-              }`}
-            >
-              Khối {g}
-            </button>
-          ))}
-        </div>
+        {isTeacher ? (
+          <div className="flex items-center gap-1.5 bg-slate-100 p-1 rounded-2xl text-xs font-bold self-start">
+            {([6, 7, 8, 9] as GradeLevel[]).map((g) => (
+              <button
+                key={g}
+                type="button"
+                onClick={() => setSelectedGrade(g)}
+                className={`px-3.5 py-2 rounded-xl transition-colors ${
+                  effectiveGrade === g ? 'bg-blue-700 text-white' : 'text-slate-600'
+                }`}
+              >
+                Khối {g}
+              </button>
+            ))}
+          </div>
+        ) : (
+          <div className="px-4 py-2 rounded-2xl bg-blue-50 border border-blue-200 text-blue-800 text-xs font-bold flex items-center gap-2 self-start">
+            <Lock className="w-3.5 h-3.5" />
+            <span>Khóa theo {user.studentClass || `Khối ${effectiveGrade}`}</span>
+          </div>
+        )}
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
         {/* LEFT: PERIOD LIST */}
         <div className="lg:col-span-5 bg-white rounded-2xl border border-slate-200 p-5 space-y-3">
-          <h2 className="text-sm font-extrabold text-slate-900 flex items-center gap-2">
-            <BookOpen className="w-4 h-4 text-blue-700" />
-            <span>Chọn Tiết Học (Khối {selectedGrade} · {periods.length} tiết)</span>
-          </h2>
+          <div className="flex items-center justify-between gap-2">
+            <h2 className="text-sm font-extrabold text-slate-900 flex items-center gap-2">
+              <BookOpen className="w-4 h-4 text-blue-700" />
+              <span>Chọn Tiết Học (Khối {effectiveGrade} · {periods.length} tiết)</span>
+            </h2>
+            {!isTeacher && (
+              <span className="font-mono text-[11px] font-bold text-emerald-700">
+                Đã mở {taughtPeriods.length}/{periods.length}
+              </span>
+            )}
+          </div>
           <div className="space-y-1.5 max-h-[540px] overflow-y-auto pr-1">
             {periods.length === 0 ? (
               <div className="py-8 text-center text-xs text-slate-500 font-semibold">
-                Đang tải 29 tiết học Khối {selectedGrade}...
+                Đang tải 29 tiết học Khối {effectiveGrade}...
               </div>
             ) : (
-              periods.map((p) => (
-                <button
-                  key={p.id}
-                  type="button"
-                  onClick={() => setSelectedPeriodNum(p.period)}
-                  className={`w-full p-3 rounded-xl border text-left text-xs transition-colors ${
-                    selectedPeriodNum === p.period
-                      ? 'border-blue-600 bg-blue-50 text-blue-950 font-bold'
-                      : 'border-slate-200 hover:bg-slate-50 text-slate-700'
-                  }`}
-                >
-                  <div className="text-[11px] font-bold text-blue-700">Tiết {p.period}</div>
-                  <div className="truncate font-semibold">{p.homework.title}</div>
-                </button>
-              ))
+              periods.map((p) => {
+                const unlockState = isHomeworkPeriodUnlocked(user, p.period, taughtPeriods);
+                const isTaught = taughtPeriods.includes(p.period);
+                return (
+                  <button
+                    key={p.id}
+                    type="button"
+                    onClick={() => setSelectedPeriodNum(p.period)}
+                    className={`w-full p-3 rounded-xl border text-left text-xs transition-colors flex items-center justify-between gap-2 ${
+                      selectedPeriodNum === p.period
+                        ? unlockState.unlocked
+                          ? 'border-blue-600 bg-blue-50 text-blue-950 font-bold'
+                          : 'border-amber-500 bg-amber-50/70 text-slate-900 font-bold'
+                        : unlockState.unlocked
+                        ? 'border-slate-200 hover:bg-slate-50 text-slate-700'
+                        : 'border-slate-200 bg-slate-50/70 text-slate-500 hover:bg-slate-100/70'
+                    }`}
+                  >
+                    <div className="min-w-0">
+                      <div className="flex items-center gap-1.5 flex-wrap">
+                        <span className="text-[11px] font-bold text-blue-700">Tiết {p.period}</span>
+                        {isTaught ? (
+                          <span className="px-1.5 py-0.5 rounded bg-emerald-100 text-emerald-800 text-[10px] font-bold">
+                            Đã dạy · Mở BTVN
+                          </span>
+                        ) : (
+                          !isTeacher && (
+                            <span className="px-1.5 py-0.5 rounded bg-slate-200 text-slate-600 text-[10px] font-bold">
+                              Chưa dạy · Khóa
+                            </span>
+                          )
+                        )}
+                      </div>
+                      <div className="truncate font-semibold">{p.homework.title}</div>
+                    </div>
+                    {unlockState.unlocked ? (
+                      <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
+                    ) : (
+                      <Lock className="w-4 h-4 text-slate-400 shrink-0" />
+                    )}
+                  </button>
+                );
+              })
             )}
           </div>
         </div>
 
         {/* RIGHT: SUBMISSION FORM + HISTORY */}
         <div className="lg:col-span-7 space-y-5">
-          {activePeriod && (
+          {activePeriod && !activePeriodUnlock.unlocked && (
+            <div className="bg-white rounded-2xl border border-amber-300 p-8 text-center space-y-3">
+              <div className="w-12 h-12 rounded-2xl bg-amber-50 border border-amber-200 text-amber-700 flex items-center justify-center mx-auto">
+                <Lock className="w-6 h-6" />
+              </div>
+              <div className="text-[11px] font-bold text-amber-700 uppercase">
+                Tiết {activePeriod.period} · {user.studentClass || `Khối ${effectiveGrade}`} Đang Khóa
+              </div>
+              <h3 className="text-base font-extrabold text-slate-900">
+                Tiết Học Chưa Dạy — Bài Tập Về Nhà Chưa Mở
+              </h3>
+              <p className="text-xs text-slate-600 max-w-md mx-auto leading-relaxed">
+                Giáo viên chưa giảng dạy <strong>Tiết {activePeriod.period}</strong> cho lớp{' '}
+                <strong>{user.studentClass || `Khối ${effectiveGrade}`}</strong>, nên nhiệm vụ{' '}
+                <em>&ldquo;{activePeriod.homework.title}&rdquo;</em> đang tạm khóa. Em vui lòng hoàn thành các tiết đã đánh dấu{' '}
+                <strong>Đã dạy</strong> hoặc quay lại sau khi thầy dạy xong tiết này trên lớp.
+              </p>
+            </div>
+          )}
+
+          {activePeriod && activePeriodUnlock.unlocked && (
             <form
               onSubmit={handleSubmitHomework}
               className="bg-white rounded-2xl border border-slate-200 p-6 space-y-4 text-xs"
             >
               <div className="space-y-1 pb-3 border-b border-slate-100">
                 <div className="text-[11px] font-bold text-blue-700 uppercase">
-                  Nhiệm vụ Tiết {activePeriod.period} · Khối {selectedGrade}
+                  Nhiệm vụ Tiết {activePeriod.period} · Khối {effectiveGrade}
                 </div>
                 <h3 className="text-base font-extrabold text-slate-900">
                   {activePeriod.homework.title}

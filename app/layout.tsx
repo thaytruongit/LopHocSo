@@ -1,23 +1,8 @@
 import type { Metadata } from "next";
-import { Plus_Jakarta_Sans, JetBrains_Mono } from "next/font/google";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import ClassroomSyncWatcher from "@/components/ClassroomSyncWatcher";
 import "./globals.css";
-
-const plusJakarta = Plus_Jakarta_Sans({
-  subsets: ["latin", "vietnamese"],
-  weight: ["400", "500", "600", "700", "800"],
-  variable: "--font-sans",
-  display: "swap",
-});
-
-const jetbrainsMono = JetBrains_Mono({
-  subsets: ["latin", "vietnamese"],
-  weight: ["500", "600", "700"],
-  variable: "--font-mono",
-  display: "swap",
-});
 
 export const metadata: Metadata = {
   title: "Tin Học Số · Kiến Trúc Multi-Tenant Sư Phạm Chuẩn Hóa",
@@ -31,7 +16,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="vi" className={`${plusJakarta.variable} ${jetbrainsMono.variable}`}>
+    <html lang="vi">
       <body className="flex flex-col min-h-screen font-sans bg-slate-50 text-slate-900 antialiased">
         <Navbar />
         <ClassroomSyncWatcher />

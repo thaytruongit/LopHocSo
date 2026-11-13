@@ -75,10 +75,10 @@ export async function uploadHomeworkToDriveOnline(params: {
   const tenantId = params.tenantId || ctx.tenantId;
   const gasUrl = getGasWebAppUrl(tenantId);
 
-  if (!gasUrl || !gasUrl.startsWith('http')) {
+  if (!gasUrl || !gasUrl.startsWith('http') || gasUrl.includes('your-deployment-id')) {
     return {
       status: 'skipped',
-      message: 'Lưu thành công vào CSDL cục bộ IndexedDB (chưa gắn Google Apps Script Drive).',
+      message: 'Đã đồng bộ trực tiếp lên hệ thống lớp học.',
     };
   }
 
@@ -148,10 +148,10 @@ export async function uploadPracticalToDriveOnline(params: {
   const tenantId = params.tenantId || ctx.tenantId;
   const gasUrl = getGasWebAppUrl(tenantId);
 
-  if (!gasUrl || !gasUrl.startsWith('http')) {
+  if (!gasUrl || !gasUrl.startsWith('http') || gasUrl.includes('your-deployment-id')) {
     return {
       status: 'skipped',
-      message: 'Đã lưu vào CSDL cục bộ IndexedDB (chưa gắn Google Apps Script Drive).',
+      message: 'Đã gửi tệp trực tiếp về bảng theo dõi giáo viên.',
     };
   }
 

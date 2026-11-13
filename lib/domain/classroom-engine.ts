@@ -246,6 +246,85 @@ export function applyHelpRequest(
   };
 }
 
+export function applyResolveHelpRequest(
+  prev: ClassroomControlState,
+  requestId: string
+): ClassroomControlState {
+  const target = prev.helpRequests.find((r) => r.id === requestId);
+  const helpRequests = prev.helpRequests.map((r) =>
+    r.id === requestId ? { ...r, status: 'resolved' as const } : r
+  );
+  const machines = prev.machines.map((m) =>
+    target && m.machineId === target.machineId ? { ...m, hasHelpRequest: false } : m
+  );
+  return {
+    ...prev,
+    helpRequests,
+    machines,
+    updatedAt: Date.now(),
+  };
+}
+
+export function applyAwardStar(
+  prev: ClassroomControlState,
+  machineId: number,
+  timeLabel: string = ''
+): ClassroomControlState {
+  const updated = prev.machines.map((m) =>
+    m.machineId === machineId ? { ...m, starsEarned: m.starsEarned + 1 } : m
+  );
+  const target = updated.find((m) => m.machineId === machineId);
+  return {
+    ...prev,
+    machines: updated,
+    broadcastMessage: `Tuyên dương +1 Sao thưởng cho ${target?.machineName || `Máy ${machineId}`} (${target?.student1Name || 'Học sinh'})!`,
+    broadcastTime: timeLabel || prev.broadcastTime,
+    updatedAt: Date.now(),
+  };
+}
+
+export function toggleTaughtPeriod(
+  list: number[],
+  period: number,
+  forceValue?: boolean
+): number[] {
+  const cleanPeriod = Math.floor(period);
+  if (!Number.isFinite(cleanPeriod) || cleanPeriod <= 0) {
+    return [...new Set(list)].sort((a, b) => a - b);
+  }
+  const set = new Set(list.filter((n) => Number.isFinite(n) && n > 0));
+  const shouldBeTaught = forceValue !== undefined ? forceValue : !set.has(cleanPeriod);
+  if (shouldBeTaught) {
+    set.add(cleanPeriod);
+  } else {
+    set.delete(cleanPeriod);
+  }
+  return Array.from(set).sort((a, b) => a - b);
+}
+
+export function mergeClassroomState(
+  current: ClassroomControlState,
+  incoming: ClassroomControlState
+): ClassroomControlState {
+  const incomingIsBlankDefault =
+    incoming.activePeriod === 0 &&
+    !incoming.isLive &&
+    incoming.helpRequests.length === 0 &&
+    !incoming.machines.some((m) => typeof m.scoreH1 === 'number' || typeof m.scoreH2 === 'number' || typeof m.scoreH3 === 'number');
+
+  const currentHasActivity =
+    current.isLive ||
+    current.activePeriod > 0 ||
+    current.helpRequests.length > 0 ||
+    current.machines.some((m) => typeof m.scoreH1 === 'number' || typeof m.scoreH2 === 'number' || typeof m.scoreH3 === 'number');
+
+  if (incomingIsBlankDefault && currentHasActivity) {
+    return current;
+  }
+
+  return incoming.updatedAt >= current.updatedAt ? incoming : current;
+}
+
 export function gradePracticeQuiz(
   period: CurriculumPeriod,
   answers: Record<string, number>
